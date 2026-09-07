@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#060808">
+  <title>Morphogenesis — Diffusion Imagination</title>
+  <link rel="stylesheet" href="./style.css?v=computational-trace-v16">
+  <link rel="stylesheet" href="../rehearsal-terminal.css?v=shared-terminal-v1">
+  <link rel="stylesheet" href="../session-state.css?v=backstage-type-v1">
+  <link rel="stylesheet" href="../exhibition-idle-text.css?v=idle-copy-v2">
+</head>
+<body>
+  <main id="diffusion-stage" aria-label="Morphogenesis StreamDiffusion">
+    <img id="generated-frame" class="generated-frame"
+      src="../../09_experiments/previous_tests/03_diffusion_imagination/output/smoke_test/streamdiffusion_result.jpg"
+      alt="StreamDiffusion generated view">
+    <video id="diffusion-backup" class="generated-frame" muted loop playsinline
+      aria-label="Recorded Diffusion fallback" hidden></video>
+    <div class="atmosphere" aria-hidden="true"></div>
+    <video id="diffusion-rehearsal-source" class="diffusion-rehearsal-source" muted loop playsinline hidden></video>
+
+    <section id="diffusion-terminal" class="rehearsal-terminal" aria-live="polite">
+      <div class="rehearsal-terminal-copy">
+        <div class="rehearsal-terminal-inner">
+          <p class="rehearsal-terminal-kicker">step 03 / diffusion imagination</p>
+          <h2 class="rehearsal-terminal-title">Connecting diffusion pipeline</h2>
+          <p class="rehearsal-terminal-value">pipeline / running</p>
+          <div id="diffusion-terminal-log" class="rehearsal-terminal-log"></div>
+        </div>
+      </div>
+    </section>
+
+    <header class="topbar">
+      <div class="identity">
+        <h1>Morphogenesis</h1>
+        <p>03 / Diffusion imagination</p>
+      </div>
+      <div class="runtime-state" aria-live="polite">
+        <span id="runtime-dot" class="state-dot"></span>
+        <span id="runtime-label">GPU service / checking</span>
+        <span id="fps-label">— fps</span>
+      </div>
+    </header>
+
+    <section id="source-window" class="source-window collapsed" aria-label="Source video">
+      <div class="source-media">
+        <video id="archive-video" autoplay muted loop playsinline
+          src="../../05_shared_data/input/ice_crystal_01.mp4"></video>
+        <video id="camera-video" autoplay muted playsinline hidden></video>
+      </div>
+      <footer>
+        <span class="source-caption">
+          <span class="source-dot"></span>
+          <span id="source-label">Source / ice_crystal_01 archive</span>
+        </span>
+        <button id="source-toggle" class="source-toggle" type="button"
+          aria-label="Expand source video" aria-expanded="false">+</button>
+      </footer>
+    </section>
+
+    <aside class="imagination-panel" aria-label="AI imagination trace">
+      <div class="imagination-head">
+        <div>
+          <span class="eyebrow">Imagination in progress</span>
+          <strong id="ai-status">OpenAI / checking</strong>
+        </div>
+        <span id="ai-countdown">manual</span>
+      </div>
+      <div class="trace-register" aria-hidden="true">
+        <span><i></i>Frame reading</span>
+        <span>Structure → association</span>
+        <span>Buffer / live</span>
+      </div>
+      <div id="thought-stream" class="thought-stream" aria-live="polite">
+        <p id="thought-output" class="thought-output">Waiting to observe the next frame.</p>
+        <div id="prompt-result" class="prompt-result" hidden>
+          <span>Diffusion prompt</span>
+          <p id="prompt-output"></p>
+        </div>
+      </div>
+    </aside>
+    <div id="imagination-resizer" class="imagination-resizer" role="separator"
+      aria-label="Resize AI imagination panel" aria-orientation="vertical"
+      aria-valuemin="300" aria-valuemax="620" tabindex="0"></div>
+
+    <section id="controls-panel" class="controls collapsed" aria-label="Diffusion controls">
+      <header class="controls-head">
+        <button id="controls-toggle" class="controls-toggle" type="button"
+          aria-label="Expand controls" aria-expanded="false"
+          aria-controls="controls-body">+</button>
+      </header>
+      <div id="controls-body" class="controls-body">
+        <div class="control-row">
+          <button id="archive-button" class="active" type="button">Archive</button>
+          <button id="camera-button" type="button">USB</button>
+          <select id="camera-select" aria-label="Choose USB camera" hidden>
+            <option value="">USB camera not selected</option>
+          </select>
+          <button id="stream-button" class="primary" type="button">Start</button>
+          <button id="ai-toggle" type="button" aria-pressed="true">AI / on</button>
+          <button id="imagine-button" type="button">Refresh</button>
+        </div>
+        <label class="prompt-row" for="prompt-input">
+          <span>Prompt</span>
+          <input id="prompt-input" type="text" value="preserve the exact branching topology, growth front and local density of the source; reinterpret it as non-representational translucent ice crystal membranes and fine dendritic frost filaments, pale silver-blue and clear glass tones, dark neutral depth, soft raking light and delicate microtexture">
+        </label>
+        <label class="ai-interval-row" for="ai-interval">
+          <span>OpenAI refresh</span>
+          <input id="ai-interval" type="range" min="15" max="180" step="5" value="90">
+          <output id="ai-interval-value" for="ai-interval">90s</output>
+        </label>
+        <p id="notice" class="notice" role="status" aria-live="polite">Waiting for the local GPU worker.</p>
+      </div>
+    </section>
+
+    <canvas id="capture-canvas" width="640" height="640" hidden></canvas>
+    <canvas id="ai-canvas" width="640" height="640" hidden></canvas>
+  </main>
+  <script src="../experiment-sync.js?v=normalized-phase-rate-sync-v5"></script>
+  <script src="./stream-app.js?v=material-handoff-v26"></script>
+  <script src="../session-state.js?v=rehearsal-routing-v5" data-page="diffusion"></script>
+  <script src="./agent-monitor.js?v=compact-bottom-controls-v4"></script>
+  <script src="../agent-monitor.js?v=compact-cooling-v2" data-page="diffusion"></script>
+  <script src="../exhibition-idle-text.js?v=body-safe-v4" data-idle-ms="4000" data-preserve=".imagination-panel,.runtime-state,.rehearsal-terminal"></script>
+</body>
+</html>

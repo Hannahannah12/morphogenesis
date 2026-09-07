@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050607">
+  <title>Morphogenesis — Five-screen Layout</title>
+  <link rel="stylesheet" href="/00_websites/exhibition/layout/layout.css?v=3">
+</head>
+<body>
+  <header class="layout-header">
+    <div>
+      <p>MORPHOGENESIS / EXHIBITION MODE 2.0</p>
+      <h1>Five-screen layout preview</h1>
+    </div>
+    <div class="layout-status">
+      <span id="crystal-label" class="crystal-label">crystal 01 / 05</span>
+      <span id="phase-label">system standby</span>
+      <button id="sequence-button" type="button">Start test</button>
+      <button id="reload-button" type="button">Reload screens</button>
+      <button id="fullscreen-button" type="button">Fullscreen</button>
+    </div>
+  </header>
+
+  <main class="installation" aria-label="Five physical screens showing four synchronized display pages">
+    <div class="apparatus" aria-hidden="true">
+      <i class="rail rail-left"></i>
+      <i class="rail rail-right"></i>
+      <i class="rail rail-top"></i>
+      <i class="rail rail-middle"></i>
+      <i class="rail rail-bottom"></i>
+      <div class="chamber"><span></span></div>
+    </div>
+
+    <article class="screen screen-main">
+      <div class="screen-label"><strong>Main</strong><span>large display</span></div>
+      <iframe title="Main display" src="/exhibition/main/?monitor=1" allow="autoplay" loading="eager"></iframe>
+      <a class="screen-open" href="/exhibition/main/" target="_blank" rel="noopener" aria-label="Open Main display"></a>
+      <i class="screen-stem" aria-hidden="true"></i>
+    </article>
+
+    <article class="screen screen-medium-left">
+      <div class="screen-label"><strong>Medium 1</strong><span>left display</span></div>
+      <iframe title="Medium display 1" src="/exhibition/medium-1/" allow="autoplay" loading="eager"></iframe>
+      <a class="screen-open" href="/exhibition/medium-1/" target="_blank" rel="noopener" aria-label="Open Medium display 1"></a>
+      <i class="screen-stem" aria-hidden="true"></i>
+    </article>
+
+    <article class="screen screen-medium-right">
+      <div class="screen-label"><strong>Medium 2</strong><span>right display</span></div>
+      <iframe title="Medium display 2" src="/exhibition/medium-2/" allow="autoplay" loading="eager"></iframe>
+      <a class="screen-open" href="/exhibition/medium-2/" target="_blank" rel="noopener" aria-label="Open Medium display 2"></a>
+      <i class="screen-stem" aria-hidden="true"></i>
+    </article>
+
+    <article class="screen screen-small-left">
+      <div class="screen-label"><strong>Small A</strong><span>MacBook source</span></div>
+      <iframe title="Small display A" src="/exhibition/small-1/" allow="autoplay" loading="eager"></iframe>
+      <a class="screen-open" href="/exhibition/small-1/" target="_blank" rel="noopener" aria-label="Open Small display A"></a>
+      <i class="screen-stem" aria-hidden="true"></i>
+    </article>
+
+    <article class="screen screen-small-right">
+      <div class="screen-label"><strong>Small B</strong><span>mirrored</span></div>
+      <iframe title="Small display B mirrored" src="/exhibition/small-1/" allow="autoplay" loading="eager"></iframe>
+      <a class="screen-open" href="/exhibition/small-1/" target="_blank" rel="noopener" aria-label="Open mirrored Small display B"></a>
+      <i class="screen-stem" aria-hidden="true"></i>
+    </article>
+
+    <p class="mirror-note"><span>Small A</span> and <span>Small B</span> mirror the same <code>/exhibition/small-1/</code> page.</p>
+  </main>
+
+  <script src="/00_websites/exhibition/layout/layout.js?v=5"></script>
+</body>
+</html>

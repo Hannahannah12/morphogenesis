@@ -1,0 +1,2499 @@
+{
+  "pipeline": "migrated-notebook-recorded",
+  "source": "/05_shared_data/exhibition/ice_crystal_02/source/crystallization.mp4",
+  "model": "vit_base_patch16_224.dino",
+  "selectionMethod": "original-notebook-patch-sequence",
+  "video": "attention_blob.mp4",
+  "patches": [
+    "patches/patch_01.jpg",
+    "patches/patch_02.jpg",
+    "patches/patch_03.jpg",
+    "patches/patch_04.jpg",
+    "patches/patch_05.jpg",
+    "patches/patch_06.jpg",
+    "patches/patch_07.jpg",
+    "patches/patch_08.jpg",
+    "patches/patch_09.jpg",
+    "patches/patch_10.jpg",
+    "patches/patch_11.jpg",
+    "patches/patch_12.jpg",
+    "patches/patch_13.jpg",
+    "patches/patch_14.jpg",
+    "patches/patch_15.jpg",
+    "patches/patch_16.jpg",
+    "patches/patch_17.jpg",
+    "patches/patch_18.jpg",
+    "patches/patch_19.jpg",
+    "patches/patch_20.jpg",
+    "patches/patch_21.jpg",
+    "patches/patch_22.jpg",
+    "patches/patch_23.jpg",
+    "patches/patch_24.jpg",
+    "patches/patch_25.jpg",
+    "patches/patch_26.jpg",
+    "patches/patch_27.jpg",
+    "patches/patch_28.jpg",
+    "patches/patch_29.jpg",
+    "patches/patch_30.jpg",
+    "patches/patch_31.jpg",
+    "patches/patch_32.jpg",
+    "patches/patch_33.jpg",
+    "patches/patch_34.jpg",
+    "patches/patch_35.jpg",
+    "patches/patch_36.jpg",
+    "patches/patch_37.jpg",
+    "patches/patch_38.jpg",
+    "patches/patch_39.jpg",
+    "patches/patch_40.jpg",
+    "patches/patch_41.jpg",
+    "patches/patch_42.jpg",
+    "patches/patch_43.jpg",
+    "patches/patch_44.jpg",
+    "patches/patch_45.jpg",
+    "patches/patch_46.jpg",
+    "patches/patch_47.jpg",
+    "patches/patch_48.jpg",
+    "patches/patch_49.jpg",
+    "patches/patch_50.jpg"
+  ],
+  "patchMetadata": [
+    {
+      "path": "patches/patch_01.jpg",
+      "sourceFile": "patch_249_0.jpg",
+      "frame": 249,
+      "sourcePatchIndex": 0
+    },
+    {
+      "path": "patches/patch_02.jpg",
+      "sourceFile": "patch_249_1.jpg",
+      "frame": 249,
+      "sourcePatchIndex": 1
+    },
+    {
+      "path": "patches/patch_03.jpg",
+      "sourceFile": "patch_249_2.jpg",
+      "frame": 249,
+      "sourcePatchIndex": 2
+    },
+    {
+      "path": "patches/patch_04.jpg",
+      "sourceFile": "patch_249_3.jpg",
+      "frame": 249,
+      "sourcePatchIndex": 3
+    },
+    {
+      "path": "patches/patch_05.jpg",
+      "sourceFile": "patch_249_4.jpg",
+      "frame": 249,
+      "sourcePatchIndex": 4
+    },
+    {
+      "path": "patches/patch_06.jpg",
+      "sourceFile": "patch_249_5.jpg",
+      "frame": 249,
+      "sourcePatchIndex": 5
+    },
+    {
+      "path": "patches/patch_07.jpg",
+      "sourceFile": "patch_249_6.jpg",
+      "frame": 249,
+      "sourcePatchIndex": 6
+    },
+    {
+      "path": "patches/patch_08.jpg",
+      "sourceFile": "patch_249_7.jpg",
+      "frame": 249,
+      "sourcePatchIndex": 7
+    },
+    {
+      "path": "patches/patch_09.jpg",
+      "sourceFile": "patch_249_8.jpg",
+      "frame": 249,
+      "sourcePatchIndex": 8
+    },
+    {
+      "path": "patches/patch_10.jpg",
+      "sourceFile": "patch_259_9.jpg",
+      "frame": 259,
+      "sourcePatchIndex": 9
+    },
+    {
+      "path": "patches/patch_11.jpg",
+      "sourceFile": "patch_259_10.jpg",
+      "frame": 259,
+      "sourcePatchIndex": 10
+    },
+    {
+      "path": "patches/patch_12.jpg",
+      "sourceFile": "patch_259_11.jpg",
+      "frame": 259,
+      "sourcePatchIndex": 11
+    },
+    {
+      "path": "patches/patch_13.jpg",
+      "sourceFile": "patch_259_12.jpg",
+      "frame": 259,
+      "sourcePatchIndex": 12
+    },
+    {
+      "path": "patches/patch_14.jpg",
+      "sourceFile": "patch_269_13.jpg",
+      "frame": 269,
+      "sourcePatchIndex": 13
+    },
+    {
+      "path": "patches/patch_15.jpg",
+      "sourceFile": "patch_269_14.jpg",
+      "frame": 269,
+      "sourcePatchIndex": 14
+    },
+    {
+      "path": "patches/patch_16.jpg",
+      "sourceFile": "patch_269_15.jpg",
+      "frame": 269,
+      "sourcePatchIndex": 15
+    },
+    {
+      "path": "patches/patch_17.jpg",
+      "sourceFile": "patch_269_16.jpg",
+      "frame": 269,
+      "sourcePatchIndex": 16
+    },
+    {
+      "path": "patches/patch_18.jpg",
+      "sourceFile": "patch_269_17.jpg",
+      "frame": 269,
+      "sourcePatchIndex": 17
+    },
+    {
+      "path": "patches/patch_19.jpg",
+      "sourceFile": "patch_269_18.jpg",
+      "frame": 269,
+      "sourcePatchIndex": 18
+    },
+    {
+      "path": "patches/patch_20.jpg",
+      "sourceFile": "patch_279_19.jpg",
+      "frame": 279,
+      "sourcePatchIndex": 19
+    },
+    {
+      "path": "patches/patch_21.jpg",
+      "sourceFile": "patch_279_20.jpg",
+      "frame": 279,
+      "sourcePatchIndex": 20
+    },
+    {
+      "path": "patches/patch_22.jpg",
+      "sourceFile": "patch_289_21.jpg",
+      "frame": 289,
+      "sourcePatchIndex": 21
+    },
+    {
+      "path": "patches/patch_23.jpg",
+      "sourceFile": "patch_289_22.jpg",
+      "frame": 289,
+      "sourcePatchIndex": 22
+    },
+    {
+      "path": "patches/patch_24.jpg",
+      "sourceFile": "patch_289_23.jpg",
+      "frame": 289,
+      "sourcePatchIndex": 23
+    },
+    {
+      "path": "patches/patch_25.jpg",
+      "sourceFile": "patch_289_24.jpg",
+      "frame": 289,
+      "sourcePatchIndex": 24
+    },
+    {
+      "path": "patches/patch_26.jpg",
+      "sourceFile": "patch_289_25.jpg",
+      "frame": 289,
+      "sourcePatchIndex": 25
+    },
+    {
+      "path": "patches/patch_27.jpg",
+      "sourceFile": "patch_299_26.jpg",
+      "frame": 299,
+      "sourcePatchIndex": 26
+    },
+    {
+      "path": "patches/patch_28.jpg",
+      "sourceFile": "patch_299_27.jpg",
+      "frame": 299,
+      "sourcePatchIndex": 27
+    },
+    {
+      "path": "patches/patch_29.jpg",
+      "sourceFile": "patch_299_28.jpg",
+      "frame": 299,
+      "sourcePatchIndex": 28
+    },
+    {
+      "path": "patches/patch_30.jpg",
+      "sourceFile": "patch_299_29.jpg",
+      "frame": 299,
+      "sourcePatchIndex": 29
+    },
+    {
+      "path": "patches/patch_31.jpg",
+      "sourceFile": "patch_299_30.jpg",
+      "frame": 299,
+      "sourcePatchIndex": 30
+    },
+    {
+      "path": "patches/patch_32.jpg",
+      "sourceFile": "patch_299_31.jpg",
+      "frame": 299,
+      "sourcePatchIndex": 31
+    },
+    {
+      "path": "patches/patch_33.jpg",
+      "sourceFile": "patch_309_32.jpg",
+      "frame": 309,
+      "sourcePatchIndex": 32
+    },
+    {
+      "path": "patches/patch_34.jpg",
+      "sourceFile": "patch_309_33.jpg",
+      "frame": 309,
+      "sourcePatchIndex": 33
+    },
+    {
+      "path": "patches/patch_35.jpg",
+      "sourceFile": "patch_309_34.jpg",
+      "frame": 309,
+      "sourcePatchIndex": 34
+    },
+    {
+      "path": "patches/patch_36.jpg",
+      "sourceFile": "patch_319_35.jpg",
+      "frame": 319,
+      "sourcePatchIndex": 35
+    },
+    {
+      "path": "patches/patch_37.jpg",
+      "sourceFile": "patch_319_36.jpg",
+      "frame": 319,
+      "sourcePatchIndex": 36
+    },
+    {
+      "path": "patches/patch_38.jpg",
+      "sourceFile": "patch_319_37.jpg",
+      "frame": 319,
+      "sourcePatchIndex": 37
+    },
+    {
+      "path": "patches/patch_39.jpg",
+      "sourceFile": "patch_319_38.jpg",
+      "frame": 319,
+      "sourcePatchIndex": 38
+    },
+    {
+      "path": "patches/patch_40.jpg",
+      "sourceFile": "patch_319_39.jpg",
+      "frame": 319,
+      "sourcePatchIndex": 39
+    },
+    {
+      "path": "patches/patch_41.jpg",
+      "sourceFile": "patch_329_40.jpg",
+      "frame": 329,
+      "sourcePatchIndex": 40
+    },
+    {
+      "path": "patches/patch_42.jpg",
+      "sourceFile": "patch_329_41.jpg",
+      "frame": 329,
+      "sourcePatchIndex": 41
+    },
+    {
+      "path": "patches/patch_43.jpg",
+      "sourceFile": "patch_329_42.jpg",
+      "frame": 329,
+      "sourcePatchIndex": 42
+    },
+    {
+      "path": "patches/patch_44.jpg",
+      "sourceFile": "patch_329_43.jpg",
+      "frame": 329,
+      "sourcePatchIndex": 43
+    },
+    {
+      "path": "patches/patch_45.jpg",
+      "sourceFile": "patch_329_44.jpg",
+      "frame": 329,
+      "sourcePatchIndex": 44
+    },
+    {
+      "path": "patches/patch_46.jpg",
+      "sourceFile": "patch_329_45.jpg",
+      "frame": 329,
+      "sourcePatchIndex": 45
+    },
+    {
+      "path": "patches/patch_47.jpg",
+      "sourceFile": "patch_329_46.jpg",
+      "frame": 329,
+      "sourcePatchIndex": 46
+    },
+    {
+      "path": "patches/patch_48.jpg",
+      "sourceFile": "patch_339_47.jpg",
+      "frame": 339,
+      "sourcePatchIndex": 47
+    },
+    {
+      "path": "patches/patch_49.jpg",
+      "sourceFile": "patch_339_48.jpg",
+      "frame": 339,
+      "sourcePatchIndex": 48
+    },
+    {
+      "path": "patches/patch_50.jpg",
+      "sourceFile": "patch_339_49.jpg",
+      "frame": 339,
+      "sourcePatchIndex": 49
+    }
+  ],
+  "resonanceSets": [
+    {
+      "patchIndex": 6,
+      "patchId": "patch_07",
+      "patch": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/patches/patch_07.jpg",
+      "branch": "contrast",
+      "keywords": [
+        "convolution",
+        "cleft",
+        "corroding",
+        "collapse",
+        "crystallization",
+        "eroding",
+        "adept",
+        "defect",
+        "fracture",
+        "erosion"
+      ],
+      "patchTransform": "contrast",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_07/contrast/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA07450/PIA07450~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7483,
+          "category": "collapse"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_07/contrast/02.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/708097249/medium.jpg",
+          "provider": "inat",
+          "method": "contrast_fusion",
+          "score": 0.7317,
+          "category": "crystallization"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_07/contrast/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/sts062-85-031/sts062-85-031~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7314,
+          "category": "convolution"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_07/contrast/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA07890/PIA07890~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7242,
+          "category": "erosion"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_07/contrast/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA07858/PIA07858~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7159,
+          "category": "fracture"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_07/contrast/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA07450/PIA07450~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7483,
+          "category": "collapse"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_07/contrast/02.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/708097249/medium.jpg",
+          "provider": "inat",
+          "method": "contrast_fusion",
+          "score": 0.7317,
+          "category": "crystallization"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_07/contrast/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/sts062-85-031/sts062-85-031~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7314,
+          "category": "convolution"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_07/contrast/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA07890/PIA07890~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7242,
+          "category": "erosion"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_07/contrast/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA07858/PIA07858~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7159,
+          "category": "fracture"
+        }
+      ]
+    },
+    {
+      "patchIndex": 6,
+      "patchId": "patch_07",
+      "patch": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/patches/patch_07.jpg",
+      "branch": "structure",
+      "keywords": [
+        "river delta",
+        "faulting",
+        "asteroid",
+        "satellite",
+        "erosion",
+        "lava",
+        "cave",
+        "mountain",
+        "eroding",
+        "vitreous silica"
+      ],
+      "patchTransform": "structure",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_07/structure/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA04606/PIA04606~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.852,
+          "category": "mountain"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_07/structure/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA07435/PIA07435~small.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8467,
+          "category": "lava"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_07/structure/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA02520/PIA02520~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8319,
+          "category": "mountain"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_07/structure/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA07949/PIA07949~small.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8294,
+          "category": "faulting"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_07/structure/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA06331/PIA06331~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8182,
+          "category": "faulting"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_07/structure/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA04606/PIA04606~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.852,
+          "category": "mountain"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_07/structure/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA07435/PIA07435~small.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8467,
+          "category": "lava"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_07/structure/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA02520/PIA02520~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8319,
+          "category": "mountain"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_07/structure/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA07949/PIA07949~small.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8294,
+          "category": "faulting"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_07/structure/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA06331/PIA06331~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8182,
+          "category": "faulting"
+        }
+      ]
+    },
+    {
+      "patchIndex": 8,
+      "patchId": "patch_09",
+      "patch": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/patches/patch_09.jpg",
+      "branch": "contrast",
+      "keywords": [
+        "convolution",
+        "upheaval",
+        "collapse",
+        "flock",
+        "shift",
+        "turbulency",
+        "turbulence",
+        "sensation",
+        "vortex",
+        "foam"
+      ],
+      "patchTransform": "contrast",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_09/contrast/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA08131/PIA08131~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8316,
+          "category": "vortex"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_09/contrast/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA06584/PIA06584~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7861,
+          "category": "vortex"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_09/contrast/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/LRC-1967-B701_P-04656/LRC-1967-B701_P-04656~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.764,
+          "category": "sensation"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_09/contrast/04.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/705977653/medium.jpg",
+          "provider": "inat",
+          "method": "contrast_fusion",
+          "score": 0.7255,
+          "category": "flock"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_09/contrast/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA04122/PIA04122~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7254,
+          "category": "collapse"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_09/contrast/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA08131/PIA08131~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8316,
+          "category": "vortex"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_09/contrast/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA06584/PIA06584~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7861,
+          "category": "vortex"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_09/contrast/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/LRC-1967-B701_P-04656/LRC-1967-B701_P-04656~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.764,
+          "category": "sensation"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_09/contrast/04.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/705977653/medium.jpg",
+          "provider": "inat",
+          "method": "contrast_fusion",
+          "score": 0.7255,
+          "category": "flock"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_09/contrast/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA04122/PIA04122~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7254,
+          "category": "collapse"
+        }
+      ]
+    },
+    {
+      "patchIndex": 8,
+      "patchId": "patch_09",
+      "patch": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/patches/patch_09.jpg",
+      "branch": "structure",
+      "keywords": [
+        "flock",
+        "foam",
+        "turbulency",
+        "convolution",
+        "turbulence",
+        "crystallization",
+        "mycelium",
+        "hoarfrost",
+        "form bubbles",
+        "vitreous silica"
+      ],
+      "patchTransform": "structure",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_09/structure/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/KSC-20161212-PH_SWW02_0003/KSC-20161212-PH_SWW02_0003~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8374,
+          "category": "flock"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_09/structure/02.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/705968152/medium.jpg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.8337,
+          "category": "flock"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_09/structure/03.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/705991162/medium.jpg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.7882,
+          "category": "flock"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_09/structure/04.jpg",
+          "sourceUrl": "https://static.inaturalist.org/photos/707485533/medium.jpg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.7854,
+          "category": "crystallization"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_09/structure/05.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/708076753/medium.jpg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.7816,
+          "category": "crystallization"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_09/structure/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/KSC-20161212-PH_SWW02_0003/KSC-20161212-PH_SWW02_0003~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8374,
+          "category": "flock"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_09/structure/02.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/705968152/medium.jpg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.8337,
+          "category": "flock"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_09/structure/03.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/705991162/medium.jpg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.7882,
+          "category": "flock"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_09/structure/04.jpg",
+          "sourceUrl": "https://static.inaturalist.org/photos/707485533/medium.jpg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.7854,
+          "category": "crystallization"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_09/structure/05.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/708076753/medium.jpg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.7816,
+          "category": "crystallization"
+        }
+      ]
+    },
+    {
+      "patchIndex": 9,
+      "patchId": "patch_10",
+      "patch": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/patches/patch_10.jpg",
+      "branch": "contrast",
+      "keywords": [
+        "asteroid",
+        "faulting",
+        "eroding",
+        "fissure",
+        "collapse",
+        "ice",
+        "convolution",
+        "satellite",
+        "erosion",
+        "vitreous silica"
+      ],
+      "patchTransform": "contrast",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_10/contrast/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA01401/PIA01401~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7933,
+          "category": "ice"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_10/contrast/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA02284/PIA02284~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7911,
+          "category": "satellite"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_10/contrast/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA04616/PIA04616~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7848,
+          "category": "faulting"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_10/contrast/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA22970/PIA22970~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.783,
+          "category": "asteroid"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_10/contrast/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA04543/PIA04543~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7754,
+          "category": "eroding"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_10/contrast/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA01401/PIA01401~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7933,
+          "category": "ice"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_10/contrast/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA02284/PIA02284~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7911,
+          "category": "satellite"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_10/contrast/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA04616/PIA04616~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7848,
+          "category": "faulting"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_10/contrast/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA22970/PIA22970~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.783,
+          "category": "asteroid"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_10/contrast/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA04543/PIA04543~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7754,
+          "category": "eroding"
+        }
+      ]
+    },
+    {
+      "patchIndex": 9,
+      "patchId": "patch_10",
+      "patch": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/patches/patch_10.jpg",
+      "branch": "structure",
+      "keywords": [
+        "river delta",
+        "lava",
+        "asteroid",
+        "satellite",
+        "faulting",
+        "lichen",
+        "eroding",
+        "mycelium",
+        "turbulency",
+        "leaf vein"
+      ],
+      "patchTransform": "structure",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_10/structure/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA03003/PIA03003~small.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8253,
+          "category": "eroding"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_10/structure/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA03982/PIA03982~small.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7983,
+          "category": "eroding"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_10/structure/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA10030/PIA10030~small.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7929,
+          "category": "faulting"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_10/structure/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA01645/PIA01645~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7927,
+          "category": "faulting"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_10/structure/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA24038/PIA24038~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7883,
+          "category": "asteroid"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_10/structure/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA03003/PIA03003~small.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8253,
+          "category": "eroding"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_10/structure/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA03982/PIA03982~small.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7983,
+          "category": "eroding"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_10/structure/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA10030/PIA10030~small.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7929,
+          "category": "faulting"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_10/structure/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA01645/PIA01645~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7927,
+          "category": "faulting"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_10/structure/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA24038/PIA24038~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7883,
+          "category": "asteroid"
+        }
+      ]
+    },
+    {
+      "patchIndex": 11,
+      "patchId": "patch_12",
+      "patch": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/patches/patch_12.jpg",
+      "branch": "contrast",
+      "keywords": [
+        "convolution",
+        "upheaval",
+        "turbulency",
+        "turbulence",
+        "collapse",
+        "maelstrom",
+        "crystallization",
+        "vortex",
+        "erosion",
+        "corrosion"
+      ],
+      "patchTransform": "contrast",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_12/contrast/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA09778/PIA09778~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7922,
+          "category": "maelstrom"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_12/contrast/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA17145/PIA17145~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.787,
+          "category": "maelstrom"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_12/contrast/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA06465/PIA06465~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7399,
+          "category": "turbulency"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_12/contrast/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA23700/PIA23700~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7333,
+          "category": "convolution"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_12/contrast/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/sl2-81-014/sl2-81-014~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7319,
+          "category": "upheaval"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_12/contrast/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA09778/PIA09778~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7922,
+          "category": "maelstrom"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_12/contrast/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA17145/PIA17145~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.787,
+          "category": "maelstrom"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_12/contrast/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA06465/PIA06465~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7399,
+          "category": "turbulency"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_12/contrast/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA23700/PIA23700~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7333,
+          "category": "convolution"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_12/contrast/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/sl2-81-014/sl2-81-014~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7319,
+          "category": "upheaval"
+        }
+      ]
+    },
+    {
+      "patchIndex": 11,
+      "patchId": "patch_12",
+      "patch": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/patches/patch_12.jpg",
+      "branch": "structure",
+      "keywords": [
+        "erosion",
+        "form bubbles",
+        "crystallization",
+        "foam",
+        "convolution",
+        "river delta",
+        "ice crystal",
+        "glacier",
+        "turbulency",
+        "turbulence"
+      ],
+      "patchTransform": "structure",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_12/structure/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/STS062-85-021/STS062-85-021~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7872,
+          "category": "river delta"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_12/structure/02.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/708007331/medium.jpg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.7808,
+          "category": "crystallization"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_12/structure/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/sts054-80-024/sts054-80-024~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7797,
+          "category": "river delta"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_12/structure/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA09862/PIA09862~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7701,
+          "category": "turbulence"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_12/structure/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA03157/PIA03157~small.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7662,
+          "category": "river delta"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_12/structure/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/STS062-85-021/STS062-85-021~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7872,
+          "category": "river delta"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_12/structure/02.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/708007331/medium.jpg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.7808,
+          "category": "crystallization"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_12/structure/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/sts054-80-024/sts054-80-024~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7797,
+          "category": "river delta"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_12/structure/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA09862/PIA09862~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7701,
+          "category": "turbulence"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_12/structure/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA03157/PIA03157~small.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7662,
+          "category": "river delta"
+        }
+      ]
+    },
+    {
+      "patchIndex": 13,
+      "patchId": "patch_14",
+      "patch": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/patches/patch_14.jpg",
+      "branch": "contrast",
+      "keywords": [
+        "faulting",
+        "eroding",
+        "asteroid",
+        "fissure",
+        "corroding",
+        "vitreous silica",
+        "corrosion",
+        "fracture",
+        "collapse",
+        "erosion"
+      ],
+      "patchTransform": "contrast",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_14/contrast/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA13620/PIA13620~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7863,
+          "category": "fissure"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_14/contrast/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA04132/PIA04132~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7859,
+          "category": "eroding"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_14/contrast/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA06416/PIA06416~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7791,
+          "category": "collapse"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_14/contrast/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA19307/PIA19307~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7761,
+          "category": "fissure"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_14/contrast/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA24920/PIA24920~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.776,
+          "category": "fissure"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_14/contrast/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA13620/PIA13620~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7863,
+          "category": "fissure"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_14/contrast/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA04132/PIA04132~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7859,
+          "category": "eroding"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_14/contrast/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA06416/PIA06416~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7791,
+          "category": "collapse"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_14/contrast/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA19307/PIA19307~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7761,
+          "category": "fissure"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_14/contrast/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA24920/PIA24920~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.776,
+          "category": "fissure"
+        }
+      ]
+    },
+    {
+      "patchIndex": 13,
+      "patchId": "patch_14",
+      "patch": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/patches/patch_14.jpg",
+      "branch": "structure",
+      "keywords": [
+        "faulting",
+        "tree bark",
+        "asteroid",
+        "eroding",
+        "lichen",
+        "lava",
+        "leaf vein",
+        "diatom",
+        "mycelium",
+        "vitreous silica"
+      ],
+      "patchTransform": "structure",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_14/structure/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001969/GSFC_20171208_Archive_e001969~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.823,
+          "category": "diatom"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_14/structure/02.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/675069361/medium.jpg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.8053,
+          "category": "diatom"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_14/structure/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA04753/PIA04753~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7913,
+          "category": "eroding"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_14/structure/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA04553/PIA04553~small.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7881,
+          "category": "lava"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_14/structure/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA09615/PIA09615~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7869,
+          "category": "eroding"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_14/structure/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001969/GSFC_20171208_Archive_e001969~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.823,
+          "category": "diatom"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_14/structure/02.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/675069361/medium.jpg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.8053,
+          "category": "diatom"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_14/structure/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA04753/PIA04753~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7913,
+          "category": "eroding"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_14/structure/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA04553/PIA04553~small.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7881,
+          "category": "lava"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_14/structure/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA09615/PIA09615~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7869,
+          "category": "eroding"
+        }
+      ]
+    },
+    {
+      "patchIndex": 20,
+      "patchId": "patch_21",
+      "patch": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/patches/patch_21.jpg",
+      "branch": "contrast",
+      "keywords": [
+        "convolution",
+        "upheaval",
+        "crystallization",
+        "erosion",
+        "faulting",
+        "turbulency",
+        "turbulence",
+        "collapse",
+        "corrosion",
+        "fissure"
+      ],
+      "patchTransform": "contrast",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_21/contrast/01.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/704912917/medium.jpg",
+          "provider": "inat",
+          "method": "contrast_fusion",
+          "score": 0.7372,
+          "category": "erosion"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_21/contrast/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA03906/PIA03906~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7269,
+          "category": "fissure"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_21/contrast/03.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/707361989/medium.jpg",
+          "provider": "inat",
+          "method": "contrast_fusion",
+          "score": 0.7208,
+          "category": "crystallization"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_21/contrast/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA21063/PIA21063~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7121,
+          "category": "fissure"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_21/contrast/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA11305/PIA11305~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.705,
+          "category": "erosion"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_21/contrast/01.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/704912917/medium.jpg",
+          "provider": "inat",
+          "method": "contrast_fusion",
+          "score": 0.7372,
+          "category": "erosion"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_21/contrast/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA03906/PIA03906~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7269,
+          "category": "fissure"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_21/contrast/03.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/707361989/medium.jpg",
+          "provider": "inat",
+          "method": "contrast_fusion",
+          "score": 0.7208,
+          "category": "crystallization"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_21/contrast/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA21063/PIA21063~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7121,
+          "category": "fissure"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_21/contrast/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA11305/PIA11305~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.705,
+          "category": "erosion"
+        }
+      ]
+    },
+    {
+      "patchIndex": 20,
+      "patchId": "patch_21",
+      "patch": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/patches/patch_21.jpg",
+      "branch": "structure",
+      "keywords": [
+        "erosion",
+        "convolution",
+        "tree bark",
+        "form bubbles",
+        "cave",
+        "foam",
+        "crystallization",
+        "stalactite",
+        "mycelium",
+        "faulting"
+      ],
+      "patchTransform": "structure",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_21/structure/01.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/678337411/medium.jpg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.7691,
+          "category": "mycelium"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_21/structure/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA09930/PIA09930~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.765,
+          "category": "cave"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_21/structure/03.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/707443211/medium.jpg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.7588,
+          "category": "crystallization"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_21/structure/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA18589/PIA18589~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7555,
+          "category": "cave"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_21/structure/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/iss073e1047143/iss073e1047143~large.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7553,
+          "category": "cave"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_21/structure/01.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/678337411/medium.jpg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.7691,
+          "category": "mycelium"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_21/structure/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA09930/PIA09930~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.765,
+          "category": "cave"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_21/structure/03.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/707443211/medium.jpg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.7588,
+          "category": "crystallization"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_21/structure/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA18589/PIA18589~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7555,
+          "category": "cave"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_21/structure/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/iss073e1047143/iss073e1047143~large.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7553,
+          "category": "cave"
+        }
+      ]
+    },
+    {
+      "patchIndex": 31,
+      "patchId": "patch_32",
+      "patch": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/patches/patch_32.jpg",
+      "branch": "contrast",
+      "keywords": [
+        "convolution",
+        "turbulence",
+        "turbulency",
+        "upheaval",
+        "crystallization",
+        "erosion",
+        "maelstrom",
+        "corrosion",
+        "collapse",
+        "vortex"
+      ],
+      "patchTransform": "contrast",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_32/contrast/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA07884/PIA07884~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7051,
+          "category": "collapse"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_32/contrast/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/S72-55208/S72-55208~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.704,
+          "category": "crystallization"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_32/contrast/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA04586/PIA04586~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7017,
+          "category": "erosion"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_32/contrast/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/9807368/9807368~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7015,
+          "category": "crystallization"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_32/contrast/05.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/706643826/medium.jpg",
+          "provider": "inat",
+          "method": "contrast_fusion",
+          "score": 0.7007,
+          "category": "erosion"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_32/contrast/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA07884/PIA07884~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7051,
+          "category": "collapse"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_32/contrast/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/S72-55208/S72-55208~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.704,
+          "category": "crystallization"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_32/contrast/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA04586/PIA04586~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7017,
+          "category": "erosion"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_32/contrast/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/9807368/9807368~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7015,
+          "category": "crystallization"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_32/contrast/05.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/706643826/medium.jpg",
+          "provider": "inat",
+          "method": "contrast_fusion",
+          "score": 0.7007,
+          "category": "erosion"
+        }
+      ]
+    },
+    {
+      "patchIndex": 31,
+      "patchId": "patch_32",
+      "patch": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/patches/patch_32.jpg",
+      "branch": "structure",
+      "keywords": [
+        "erosion",
+        "river delta",
+        "form bubbles",
+        "glacier",
+        "faulting",
+        "convolution",
+        "mountain",
+        "maelstrom",
+        "foam",
+        "geological fault"
+      ],
+      "patchTransform": "structure",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_32/structure/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA03352/PIA03352~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7985,
+          "category": "geological fault"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_32/structure/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA12802/PIA12802~small.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7895,
+          "category": "geological fault"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_32/structure/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA01781/PIA01781~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7893,
+          "category": "glacier"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_32/structure/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA13665/PIA13665~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7892,
+          "category": "geological fault"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_32/structure/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA03475/PIA03475~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7857,
+          "category": "glacier"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_32/structure/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA03352/PIA03352~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7985,
+          "category": "geological fault"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_32/structure/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA12802/PIA12802~small.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7895,
+          "category": "geological fault"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_32/structure/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA01781/PIA01781~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7893,
+          "category": "glacier"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_32/structure/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA13665/PIA13665~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7892,
+          "category": "geological fault"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_32/structure/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA03475/PIA03475~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7857,
+          "category": "glacier"
+        }
+      ]
+    },
+    {
+      "patchIndex": 41,
+      "patchId": "patch_42",
+      "patch": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/patches/patch_42.jpg",
+      "branch": "contrast",
+      "keywords": [
+        "faulting",
+        "asteroid",
+        "vitreous silica",
+        "satellite",
+        "ice",
+        "scissure",
+        "diatom",
+        "fracture",
+        "comet",
+        "tornado"
+      ],
+      "patchTransform": "contrast",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_42/contrast/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA14174/PIA14174~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8025,
+          "category": "tornado"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_42/contrast/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA19969/PIA19969~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7794,
+          "category": "comet"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_42/contrast/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA21072/PIA21072~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7788,
+          "category": "comet"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_42/contrast/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA04789/PIA04789~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7749,
+          "category": "ice"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_42/contrast/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/AAL-4479/AAL-4479~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7743,
+          "category": "tornado"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_42/contrast/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA14174/PIA14174~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8025,
+          "category": "tornado"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_42/contrast/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA19969/PIA19969~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7794,
+          "category": "comet"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_42/contrast/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA21072/PIA21072~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7788,
+          "category": "comet"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_42/contrast/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA04789/PIA04789~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7749,
+          "category": "ice"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_42/contrast/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/AAL-4479/AAL-4479~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7743,
+          "category": "tornado"
+        }
+      ]
+    },
+    {
+      "patchIndex": 41,
+      "patchId": "patch_42",
+      "patch": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/patches/patch_42.jpg",
+      "branch": "structure",
+      "keywords": [
+        "asteroid",
+        "faulting",
+        "river delta",
+        "satellite",
+        "vitreous silica",
+        "mycelium",
+        "diatom",
+        "form bubbles",
+        "flock",
+        "fungus"
+      ],
+      "patchTransform": "structure",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_42/structure/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA22969/PIA22969~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7917,
+          "category": "asteroid"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_42/structure/02.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/699418269/medium.jpg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.7775,
+          "category": "diatom"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_42/structure/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/sts41g-120-175/sts41g-120-175~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7769,
+          "category": "river delta"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_42/structure/04.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/681322003/medium.jpg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.7759,
+          "category": "diatom"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_42/structure/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA18943/PIA18943~small.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7753,
+          "category": "faulting"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_42/structure/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA22969/PIA22969~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7917,
+          "category": "asteroid"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_42/structure/02.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/699418269/medium.jpg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.7775,
+          "category": "diatom"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_42/structure/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/sts41g-120-175/sts41g-120-175~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7769,
+          "category": "river delta"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_42/structure/04.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/681322003/medium.jpg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.7759,
+          "category": "diatom"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_42/structure/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA18943/PIA18943~small.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7753,
+          "category": "faulting"
+        }
+      ]
+    },
+    {
+      "patchIndex": 43,
+      "patchId": "patch_44",
+      "patch": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/patches/patch_44.jpg",
+      "branch": "contrast",
+      "keywords": [
+        "leaf vein",
+        "convolution",
+        "crystallization",
+        "fracture",
+        "corroding",
+        "tree bark",
+        "vitreous silica",
+        "eroding",
+        "upheaval",
+        "collapse"
+      ],
+      "patchTransform": "contrast",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_44/contrast/01.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/705749677/medium.jpg",
+          "provider": "inat",
+          "method": "contrast_fusion",
+          "score": 0.7486,
+          "category": "fracture"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_44/contrast/02.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/684526752/medium.jpg",
+          "provider": "inat",
+          "method": "contrast_fusion",
+          "score": 0.7233,
+          "category": "leaf vein"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_44/contrast/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA11262/PIA11262~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7046,
+          "category": "fracture"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_44/contrast/04.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/655536480/medium.jpg",
+          "provider": "inat",
+          "method": "contrast_fusion",
+          "score": 0.7016,
+          "category": "convolution"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_44/contrast/05.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/707648612/medium.jpg",
+          "provider": "inat",
+          "method": "contrast_fusion",
+          "score": 0.6998,
+          "category": "eroding"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_44/contrast/01.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/705749677/medium.jpg",
+          "provider": "inat",
+          "method": "contrast_fusion",
+          "score": 0.7486,
+          "category": "fracture"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_44/contrast/02.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/684526752/medium.jpg",
+          "provider": "inat",
+          "method": "contrast_fusion",
+          "score": 0.7233,
+          "category": "leaf vein"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_44/contrast/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA11262/PIA11262~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7046,
+          "category": "fracture"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_44/contrast/04.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/655536480/medium.jpg",
+          "provider": "inat",
+          "method": "contrast_fusion",
+          "score": 0.7016,
+          "category": "convolution"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_44/contrast/05.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/707648612/medium.jpg",
+          "provider": "inat",
+          "method": "contrast_fusion",
+          "score": 0.6998,
+          "category": "eroding"
+        }
+      ]
+    },
+    {
+      "patchIndex": 43,
+      "patchId": "patch_44",
+      "patch": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/patches/patch_44.jpg",
+      "branch": "structure",
+      "keywords": [
+        "river delta",
+        "glacier",
+        "leaf vein",
+        "erosion",
+        "ice",
+        "faulting",
+        "asteroid",
+        "foam",
+        "lava",
+        "turbulency"
+      ],
+      "patchTransform": "structure",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_44/structure/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA11871/PIA11871~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7819,
+          "category": "erosion"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_44/structure/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA22304/PIA22304~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7806,
+          "category": "glacier"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_44/structure/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA18747/PIA18747~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7748,
+          "category": "ice"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_44/structure/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA04884/PIA04884~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7664,
+          "category": "erosion"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_44/structure/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA04644/PIA04644~small.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7655,
+          "category": "lava"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_44/structure/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA11871/PIA11871~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7819,
+          "category": "erosion"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_44/structure/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA22304/PIA22304~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7806,
+          "category": "glacier"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_44/structure/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA18747/PIA18747~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7748,
+          "category": "ice"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_44/structure/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA04884/PIA04884~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7664,
+          "category": "erosion"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_44/structure/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA04644/PIA04644~small.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7655,
+          "category": "lava"
+        }
+      ]
+    },
+    {
+      "patchIndex": 49,
+      "patchId": "patch_50",
+      "patch": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/patches/patch_50.jpg",
+      "branch": "contrast",
+      "keywords": [
+        "convolution",
+        "upheaval",
+        "collapse",
+        "mycelium",
+        "corrosion",
+        "vortex",
+        "adept",
+        "maelstrom",
+        "diffraction",
+        "crystallization"
+      ],
+      "patchTransform": "contrast",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_50/contrast/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA26702/PIA26702~large.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7348,
+          "category": "adept"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_50/contrast/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/0101745/0101745~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7347,
+          "category": "diffraction"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_50/contrast/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA11417/PIA11417~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.6934,
+          "category": "crystallization"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_50/contrast/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/0101744/0101744~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.6768,
+          "category": "crystallization"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_50/contrast/05.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/607362226/medium.jpg",
+          "provider": "inat",
+          "method": "contrast_fusion",
+          "score": 0.669,
+          "category": "adept"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_50/contrast/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA26702/PIA26702~large.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7348,
+          "category": "adept"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_50/contrast/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/0101745/0101745~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.7347,
+          "category": "diffraction"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_50/contrast/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA11417/PIA11417~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.6934,
+          "category": "crystallization"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_50/contrast/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/0101744/0101744~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.6768,
+          "category": "crystallization"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_50/contrast/05.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/607362226/medium.jpg",
+          "provider": "inat",
+          "method": "contrast_fusion",
+          "score": 0.669,
+          "category": "adept"
+        }
+      ]
+    },
+    {
+      "patchIndex": 49,
+      "patchId": "patch_50",
+      "patch": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/patches/patch_50.jpg",
+      "branch": "structure",
+      "keywords": [
+        "whirlpool",
+        "corroding",
+        "erosion",
+        "maelstrom",
+        "crystallization",
+        "convolution",
+        "corrosion",
+        "upheaval",
+        "vortex",
+        "diffraction"
+      ],
+      "patchTransform": "structure",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_50/structure/01.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/645445072/medium.jpg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.7694,
+          "category": "whirlpool"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_50/structure/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA10200/PIA10200~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7472,
+          "category": "whirlpool"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_50/structure/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001935/GSFC_20171208_Archive_e001935~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7443,
+          "category": "whirlpool"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_50/structure/04.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/479955102/medium.jpeg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.7383,
+          "category": "diffraction"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_50/structure/05.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/608734282/medium.jpg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.7366,
+          "category": "corroding"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_50/structure/01.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/645445072/medium.jpg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.7694,
+          "category": "whirlpool"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_50/structure/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA10200/PIA10200~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7472,
+          "category": "whirlpool"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_50/structure/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001935/GSFC_20171208_Archive_e001935~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.7443,
+          "category": "whirlpool"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_50/structure/04.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/479955102/medium.jpeg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.7383,
+          "category": "diffraction"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_02/02_structural_resonance/search_results/patch_50/structure/05.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/608734282/medium.jpg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.7366,
+          "category": "corroding"
+        }
+      ]
+    }
+  ],
+  "migration": {
+    "source": "09_experiments/previous_tests/02_structural_resonance/output/ice_crystal_02",
+    "note": "Copied from the tested Notebook output; no structural analysis or image search was rerun."
+  },
+  "videos": {
+    "combined": "attention_blob.mp4",
+    "attentionMap": "attention_map.mp4",
+    "blobTrack": "blob_track.mp4"
+  },
+  "patchSelectionMethod": "operator-specified-1-based-manifest-patch-numbers",
+  "selectedPatchNumbers": [
+    7,
+    9,
+    10,
+    12,
+    14,
+    21,
+    32,
+    42,
+    44,
+    50
+  ],
+  "selectedPatchIndices": [
+    6,
+    8,
+    9,
+    11,
+    13,
+    20,
+    31,
+    41,
+    43,
+    49
+  ],
+  "searchState": "complete",
+  "searchPipeline": "dual-contrast-structure-inaturalist-nasa-clip-hog",
+  "patchPreprocessing": "dual",
+  "searchBranches": [
+    "contrast",
+    "structure"
+  ],
+  "rankingMode": "structure_fusion",
+  "candidateSource": "live-inaturalist+nasa-apis",
+  "candidateCount": 2646,
+  "candidateCountByBranch": {
+    "contrast": 1305,
+    "structure": 1341
+  },
+  "wordPoolCount": 220,
+  "apiErrors": [],
+  "searchResultLayout": "search_results/<patch_id>/<contrast|structure>/<01..10>.jpg",
+  "searchResultsPerPatch": {
+    "contrast": 5,
+    "structure": 5
+  },
+  "patchQualitySelectionMethod": "nonblack-texture-clarity+64px-visual-deduplication"
+}

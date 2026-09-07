@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#060808">
+  <title>Morphogenesis — 01 Material Analysis</title>
+  <link rel="stylesheet" href="./style.css?v=motion-attention-blue-v1">
+  <link rel="stylesheet" href="../session-state.css?v=backstage-type-v1">
+  <link rel="stylesheet" href="../exhibition-idle-text.css?v=idle-copy-v2">
+</head>
+<body>
+  <main id="material-stage" aria-label="Morphogenesis Material Analysis">
+    <video id="analysis-video" autoplay muted playsinline preload="auto"></video>
+    <div class="stage-shade" aria-hidden="true"></div>
+    <canvas id="edge-numbers" aria-hidden="true"></canvas>
+
+    <header class="topbar">
+      <div class="identity">
+        <h1>Morphogenesis</h1>
+        <p>01 / Material analysis</p>
+      </div>
+      <div class="runtime-state">
+        <span class="state-dot"></span>
+        <span id="source-label">Recorded analysis / ice crystal 01</span>
+        <span id="sequence-count">01 / 03</span>
+      </div>
+    </header>
+
+    <section class="analysis-ledger" aria-label="Automatic analysis sequence">
+      <p class="eyebrow">Material reading</p>
+      <ol id="sequence-list"></ol>
+    </section>
+
+    <footer class="sequence-readout">
+      <div>
+        <span id="method-index">[01]</span>
+        <strong id="method-name">EDGE FIELD</strong>
+      </div>
+      <span id="time-readout">00:00 / 00:23</span>
+    </footer>
+  </main>
+
+  <script src="../experiment-sync.js?v=normalized-phase-rate-sync-v5"></script>
+  <script src="./app.js?v=motion-brightness-v1"></script>
+  <script src="../session-state.js?v=shared-live-v4" data-page="material"></script>
+  <script src="../agent-monitor.js?v=compact-cooling-v2" data-page="material"></script>
+  <script src="../exhibition-idle-text.js?v=idle-copy-v2" data-idle-ms="4000"></script>
+</body>
+</html>

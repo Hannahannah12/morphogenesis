@@ -1,0 +1,2069 @@
+{
+  "pipeline": "migrated-notebook-recorded",
+  "source": "/05_shared_data/exhibition/ice_crystal_01/source/crystallization.mp4",
+  "model": "vit_base_patch16_224.dino",
+  "selectionMethod": "original-notebook-patch-sequence",
+  "video": "attention_blob.mp4",
+  "patches": [
+    "patches/patch_01.jpg",
+    "patches/patch_02.jpg",
+    "patches/patch_03.jpg",
+    "patches/patch_04.jpg",
+    "patches/patch_05.jpg",
+    "patches/patch_06.jpg",
+    "patches/patch_07.jpg",
+    "patches/patch_08.jpg",
+    "patches/patch_09.jpg",
+    "patches/patch_10.jpg",
+    "patches/patch_11.jpg",
+    "patches/patch_12.jpg",
+    "patches/patch_13.jpg",
+    "patches/patch_14.jpg",
+    "patches/patch_15.jpg",
+    "patches/patch_16.jpg",
+    "patches/patch_17.jpg",
+    "patches/patch_18.jpg",
+    "patches/patch_19.jpg",
+    "patches/patch_20.jpg",
+    "patches/patch_21.jpg",
+    "patches/patch_22.jpg",
+    "patches/patch_23.jpg",
+    "patches/patch_24.jpg",
+    "patches/patch_25.jpg",
+    "patches/patch_26.jpg",
+    "patches/patch_27.jpg",
+    "patches/patch_28.jpg",
+    "patches/patch_29.jpg",
+    "patches/patch_30.jpg",
+    "patches/patch_31.jpg",
+    "patches/patch_32.jpg",
+    "patches/patch_33.jpg",
+    "patches/patch_34.jpg",
+    "patches/patch_35.jpg",
+    "patches/patch_36.jpg",
+    "patches/patch_37.jpg",
+    "patches/patch_38.jpg",
+    "patches/patch_39.jpg",
+    "patches/patch_40.jpg",
+    "patches/patch_41.jpg",
+    "patches/patch_42.jpg",
+    "patches/patch_43.jpg",
+    "patches/patch_44.jpg",
+    "patches/patch_45.jpg",
+    "patches/patch_46.jpg",
+    "patches/patch_47.jpg",
+    "patches/patch_48.jpg",
+    "patches/patch_49.jpg",
+    "patches/patch_50.jpg"
+  ],
+  "patchMetadata": [
+    {
+      "path": "patches/patch_01.jpg",
+      "sourceFile": "patch_328_0.jpg",
+      "frame": 328,
+      "sourcePatchIndex": 0
+    },
+    {
+      "path": "patches/patch_02.jpg",
+      "sourceFile": "patch_328_1.jpg",
+      "frame": 328,
+      "sourcePatchIndex": 1
+    },
+    {
+      "path": "patches/patch_03.jpg",
+      "sourceFile": "patch_328_2.jpg",
+      "frame": 328,
+      "sourcePatchIndex": 2
+    },
+    {
+      "path": "patches/patch_04.jpg",
+      "sourceFile": "patch_328_3.jpg",
+      "frame": 328,
+      "sourcePatchIndex": 3
+    },
+    {
+      "path": "patches/patch_05.jpg",
+      "sourceFile": "patch_328_4.jpg",
+      "frame": 328,
+      "sourcePatchIndex": 4
+    },
+    {
+      "path": "patches/patch_06.jpg",
+      "sourceFile": "patch_328_5.jpg",
+      "frame": 328,
+      "sourcePatchIndex": 5
+    },
+    {
+      "path": "patches/patch_07.jpg",
+      "sourceFile": "patch_328_6.jpg",
+      "frame": 328,
+      "sourcePatchIndex": 6
+    },
+    {
+      "path": "patches/patch_08.jpg",
+      "sourceFile": "patch_328_7.jpg",
+      "frame": 328,
+      "sourcePatchIndex": 7
+    },
+    {
+      "path": "patches/patch_09.jpg",
+      "sourceFile": "patch_338_8.jpg",
+      "frame": 338,
+      "sourcePatchIndex": 8
+    },
+    {
+      "path": "patches/patch_10.jpg",
+      "sourceFile": "patch_338_9.jpg",
+      "frame": 338,
+      "sourcePatchIndex": 9
+    },
+    {
+      "path": "patches/patch_11.jpg",
+      "sourceFile": "patch_338_10.jpg",
+      "frame": 338,
+      "sourcePatchIndex": 10
+    },
+    {
+      "path": "patches/patch_12.jpg",
+      "sourceFile": "patch_338_11.jpg",
+      "frame": 338,
+      "sourcePatchIndex": 11
+    },
+    {
+      "path": "patches/patch_13.jpg",
+      "sourceFile": "patch_338_12.jpg",
+      "frame": 338,
+      "sourcePatchIndex": 12
+    },
+    {
+      "path": "patches/patch_14.jpg",
+      "sourceFile": "patch_348_13.jpg",
+      "frame": 348,
+      "sourcePatchIndex": 13
+    },
+    {
+      "path": "patches/patch_15.jpg",
+      "sourceFile": "patch_348_14.jpg",
+      "frame": 348,
+      "sourcePatchIndex": 14
+    },
+    {
+      "path": "patches/patch_16.jpg",
+      "sourceFile": "patch_348_15.jpg",
+      "frame": 348,
+      "sourcePatchIndex": 15
+    },
+    {
+      "path": "patches/patch_17.jpg",
+      "sourceFile": "patch_358_16.jpg",
+      "frame": 358,
+      "sourcePatchIndex": 16
+    },
+    {
+      "path": "patches/patch_18.jpg",
+      "sourceFile": "patch_358_17.jpg",
+      "frame": 358,
+      "sourcePatchIndex": 17
+    },
+    {
+      "path": "patches/patch_19.jpg",
+      "sourceFile": "patch_358_18.jpg",
+      "frame": 358,
+      "sourcePatchIndex": 18
+    },
+    {
+      "path": "patches/patch_20.jpg",
+      "sourceFile": "patch_368_19.jpg",
+      "frame": 368,
+      "sourcePatchIndex": 19
+    },
+    {
+      "path": "patches/patch_21.jpg",
+      "sourceFile": "patch_368_20.jpg",
+      "frame": 368,
+      "sourcePatchIndex": 20
+    },
+    {
+      "path": "patches/patch_22.jpg",
+      "sourceFile": "patch_368_21.jpg",
+      "frame": 368,
+      "sourcePatchIndex": 21
+    },
+    {
+      "path": "patches/patch_23.jpg",
+      "sourceFile": "patch_368_22.jpg",
+      "frame": 368,
+      "sourcePatchIndex": 22
+    },
+    {
+      "path": "patches/patch_24.jpg",
+      "sourceFile": "patch_378_23.jpg",
+      "frame": 378,
+      "sourcePatchIndex": 23
+    },
+    {
+      "path": "patches/patch_25.jpg",
+      "sourceFile": "patch_378_24.jpg",
+      "frame": 378,
+      "sourcePatchIndex": 24
+    },
+    {
+      "path": "patches/patch_26.jpg",
+      "sourceFile": "patch_378_25.jpg",
+      "frame": 378,
+      "sourcePatchIndex": 25
+    },
+    {
+      "path": "patches/patch_27.jpg",
+      "sourceFile": "patch_378_26.jpg",
+      "frame": 378,
+      "sourcePatchIndex": 26
+    },
+    {
+      "path": "patches/patch_28.jpg",
+      "sourceFile": "patch_378_27.jpg",
+      "frame": 378,
+      "sourcePatchIndex": 27
+    },
+    {
+      "path": "patches/patch_29.jpg",
+      "sourceFile": "patch_388_28.jpg",
+      "frame": 388,
+      "sourcePatchIndex": 28
+    },
+    {
+      "path": "patches/patch_30.jpg",
+      "sourceFile": "patch_388_29.jpg",
+      "frame": 388,
+      "sourcePatchIndex": 29
+    },
+    {
+      "path": "patches/patch_31.jpg",
+      "sourceFile": "patch_388_30.jpg",
+      "frame": 388,
+      "sourcePatchIndex": 30
+    },
+    {
+      "path": "patches/patch_32.jpg",
+      "sourceFile": "patch_388_31.jpg",
+      "frame": 388,
+      "sourcePatchIndex": 31
+    },
+    {
+      "path": "patches/patch_33.jpg",
+      "sourceFile": "patch_388_32.jpg",
+      "frame": 388,
+      "sourcePatchIndex": 32
+    },
+    {
+      "path": "patches/patch_34.jpg",
+      "sourceFile": "patch_388_33.jpg",
+      "frame": 388,
+      "sourcePatchIndex": 33
+    },
+    {
+      "path": "patches/patch_35.jpg",
+      "sourceFile": "patch_398_34.jpg",
+      "frame": 398,
+      "sourcePatchIndex": 34
+    },
+    {
+      "path": "patches/patch_36.jpg",
+      "sourceFile": "patch_398_35.jpg",
+      "frame": 398,
+      "sourcePatchIndex": 35
+    },
+    {
+      "path": "patches/patch_37.jpg",
+      "sourceFile": "patch_398_36.jpg",
+      "frame": 398,
+      "sourcePatchIndex": 36
+    },
+    {
+      "path": "patches/patch_38.jpg",
+      "sourceFile": "patch_398_37.jpg",
+      "frame": 398,
+      "sourcePatchIndex": 37
+    },
+    {
+      "path": "patches/patch_39.jpg",
+      "sourceFile": "patch_398_38.jpg",
+      "frame": 398,
+      "sourcePatchIndex": 38
+    },
+    {
+      "path": "patches/patch_40.jpg",
+      "sourceFile": "patch_398_39.jpg",
+      "frame": 398,
+      "sourcePatchIndex": 39
+    },
+    {
+      "path": "patches/patch_41.jpg",
+      "sourceFile": "patch_398_40.jpg",
+      "frame": 398,
+      "sourcePatchIndex": 40
+    },
+    {
+      "path": "patches/patch_42.jpg",
+      "sourceFile": "patch_408_41.jpg",
+      "frame": 408,
+      "sourcePatchIndex": 41
+    },
+    {
+      "path": "patches/patch_43.jpg",
+      "sourceFile": "patch_408_42.jpg",
+      "frame": 408,
+      "sourcePatchIndex": 42
+    },
+    {
+      "path": "patches/patch_44.jpg",
+      "sourceFile": "patch_418_43.jpg",
+      "frame": 418,
+      "sourcePatchIndex": 43
+    },
+    {
+      "path": "patches/patch_45.jpg",
+      "sourceFile": "patch_418_44.jpg",
+      "frame": 418,
+      "sourcePatchIndex": 44
+    },
+    {
+      "path": "patches/patch_46.jpg",
+      "sourceFile": "patch_418_45.jpg",
+      "frame": 418,
+      "sourcePatchIndex": 45
+    },
+    {
+      "path": "patches/patch_47.jpg",
+      "sourceFile": "patch_418_46.jpg",
+      "frame": 418,
+      "sourcePatchIndex": 46
+    },
+    {
+      "path": "patches/patch_48.jpg",
+      "sourceFile": "patch_418_47.jpg",
+      "frame": 418,
+      "sourcePatchIndex": 47
+    },
+    {
+      "path": "patches/patch_49.jpg",
+      "sourceFile": "patch_418_48.jpg",
+      "frame": 418,
+      "sourcePatchIndex": 48
+    },
+    {
+      "path": "patches/patch_50.jpg",
+      "sourceFile": "patch_418_49.jpg",
+      "frame": 418,
+      "sourcePatchIndex": 49
+    }
+  ],
+  "resonanceSets": [
+    {
+      "patchIndex": 0,
+      "patch": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/patches/patch_01.jpg",
+      "keywords": [
+        "foam_0.",
+        "frost_0.",
+        "glacier_0.",
+        "sand dune_0.",
+        "whirlpool_0."
+      ],
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_01/01.jpg",
+          "provider": "previous_test",
+          "method": "legacy",
+          "score": 0.78,
+          "category": "sand dune_0.",
+          "legacyFile": "00_sand dune_0.78.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_01/02.jpg",
+          "provider": "previous_test",
+          "method": "legacy",
+          "score": 0.78,
+          "category": "sand dune_0.",
+          "legacyFile": "01_sand dune_0.78.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_01/03.jpg",
+          "provider": "previous_test",
+          "method": "legacy",
+          "score": 0.76,
+          "category": "frost_0.",
+          "legacyFile": "02_frost_0.76.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_01/04.jpg",
+          "provider": "previous_test",
+          "method": "legacy",
+          "score": 0.76,
+          "category": "sand dune_0.",
+          "legacyFile": "03_sand dune_0.76.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_01/05.jpg",
+          "provider": "previous_test",
+          "method": "legacy",
+          "score": 0.75,
+          "category": "sand dune_0.",
+          "legacyFile": "04_sand dune_0.75.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_01/06.jpg",
+          "provider": "previous_test",
+          "method": "legacy",
+          "score": 0.69,
+          "category": "whirlpool_0.",
+          "legacyFile": "05_whirlpool_0.69.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_01/07.jpg",
+          "provider": "previous_test",
+          "method": "legacy",
+          "score": 0.68,
+          "category": "foam_0.",
+          "legacyFile": "06_foam_0.68.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_01/08.jpg",
+          "provider": "previous_test",
+          "method": "legacy",
+          "score": 0.67,
+          "category": "glacier_0.",
+          "legacyFile": "07_glacier_0.67.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_01/09.jpg",
+          "provider": "previous_test",
+          "method": "legacy",
+          "score": 0.67,
+          "category": "frost_0.",
+          "legacyFile": "08_frost_0.67.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_01/10.jpg",
+          "provider": "previous_test",
+          "method": "legacy",
+          "score": 0.67,
+          "category": "whirlpool_0.",
+          "legacyFile": "09_whirlpool_0.67.jpg"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_01/01.jpg",
+          "provider": "previous_test",
+          "method": "legacy",
+          "score": 0.78,
+          "category": "sand dune_0.",
+          "legacyFile": "00_sand dune_0.78.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_01/02.jpg",
+          "provider": "previous_test",
+          "method": "legacy",
+          "score": 0.78,
+          "category": "sand dune_0.",
+          "legacyFile": "01_sand dune_0.78.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_01/03.jpg",
+          "provider": "previous_test",
+          "method": "legacy",
+          "score": 0.76,
+          "category": "frost_0.",
+          "legacyFile": "02_frost_0.76.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_01/04.jpg",
+          "provider": "previous_test",
+          "method": "legacy",
+          "score": 0.76,
+          "category": "sand dune_0.",
+          "legacyFile": "03_sand dune_0.76.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_01/05.jpg",
+          "provider": "previous_test",
+          "method": "legacy",
+          "score": 0.75,
+          "category": "sand dune_0.",
+          "legacyFile": "04_sand dune_0.75.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_01/06.jpg",
+          "provider": "previous_test",
+          "method": "legacy",
+          "score": 0.69,
+          "category": "whirlpool_0.",
+          "legacyFile": "05_whirlpool_0.69.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_01/07.jpg",
+          "provider": "previous_test",
+          "method": "legacy",
+          "score": 0.68,
+          "category": "foam_0.",
+          "legacyFile": "06_foam_0.68.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_01/08.jpg",
+          "provider": "previous_test",
+          "method": "legacy",
+          "score": 0.67,
+          "category": "glacier_0.",
+          "legacyFile": "07_glacier_0.67.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_01/09.jpg",
+          "provider": "previous_test",
+          "method": "legacy",
+          "score": 0.67,
+          "category": "frost_0.",
+          "legacyFile": "08_frost_0.67.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_01/10.jpg",
+          "provider": "previous_test",
+          "method": "legacy",
+          "score": 0.67,
+          "category": "whirlpool_0.",
+          "legacyFile": "09_whirlpool_0.67.jpg"
+        }
+      ]
+    },
+    {
+      "patchIndex": 1,
+      "patch": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/patches/patch_02.jpg",
+      "keywords": [
+        "bacterium_0.",
+        "convolution_0.",
+        "faulting_0.",
+        "nerve cell_0.",
+        "neuron_0."
+      ],
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_02/01.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.79,
+          "category": "faulting_0.",
+          "legacyFile": "clip_00_faulting_0.79.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_02/02.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.72,
+          "category": "faulting_0.",
+          "legacyFile": "clip_01_faulting_0.72.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_02/03.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.67,
+          "category": "faulting_0.",
+          "legacyFile": "clip_02_faulting_0.67.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_02/04.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.67,
+          "category": "faulting_0.",
+          "legacyFile": "clip_03_faulting_0.67.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_02/05.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.66,
+          "category": "bacterium_0.",
+          "legacyFile": "clip_04_bacterium_0.66.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_02/06.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.66,
+          "category": "nerve cell_0.",
+          "legacyFile": "clip_05_nerve cell_0.66.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_02/07.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.66,
+          "category": "neuron_0.",
+          "legacyFile": "clip_06_neuron_0.66.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_02/08.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.65,
+          "category": "faulting_0.",
+          "legacyFile": "clip_07_faulting_0.65.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_02/09.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.61,
+          "category": "convolution_0.",
+          "legacyFile": "clip_08_convolution_0.61.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_02/10.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.6,
+          "category": "convolution_0.",
+          "legacyFile": "clip_09_convolution_0.60.jpg"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_02/01.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.79,
+          "category": "faulting_0.",
+          "legacyFile": "clip_00_faulting_0.79.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_02/02.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.72,
+          "category": "faulting_0.",
+          "legacyFile": "clip_01_faulting_0.72.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_02/03.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.67,
+          "category": "faulting_0.",
+          "legacyFile": "clip_02_faulting_0.67.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_02/04.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.67,
+          "category": "faulting_0.",
+          "legacyFile": "clip_03_faulting_0.67.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_02/05.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.66,
+          "category": "bacterium_0.",
+          "legacyFile": "clip_04_bacterium_0.66.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_02/06.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.66,
+          "category": "nerve cell_0.",
+          "legacyFile": "clip_05_nerve cell_0.66.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_02/07.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.66,
+          "category": "neuron_0.",
+          "legacyFile": "clip_06_neuron_0.66.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_02/08.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.65,
+          "category": "faulting_0.",
+          "legacyFile": "clip_07_faulting_0.65.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_02/09.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.61,
+          "category": "convolution_0.",
+          "legacyFile": "clip_08_convolution_0.61.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_02/10.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.6,
+          "category": "convolution_0.",
+          "legacyFile": "clip_09_convolution_0.60.jpg"
+        }
+      ]
+    },
+    {
+      "patchIndex": 2,
+      "patch": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/patches/patch_03.jpg",
+      "keywords": [
+        "asteroid_0.",
+        "erosion_0.",
+        "foam_0.",
+        "glacier_0.",
+        "lava_0.",
+        "sand dune_0."
+      ],
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_03/01.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.76,
+          "category": "erosion_0.",
+          "legacyFile": "clip_00_erosion_0.76.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_03/02.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.74,
+          "category": "lava_0.",
+          "legacyFile": "clip_01_lava_0.74.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_03/03.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.74,
+          "category": "sand dune_0.",
+          "legacyFile": "clip_02_sand dune_0.74.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_03/04.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.72,
+          "category": "sand dune_0.",
+          "legacyFile": "clip_03_sand dune_0.72.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_03/05.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.72,
+          "category": "asteroid_0.",
+          "legacyFile": "clip_04_asteroid_0.72.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_03/06.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.71,
+          "category": "foam_0.",
+          "legacyFile": "clip_05_foam_0.71.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_03/07.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.69,
+          "category": "lava_0.",
+          "legacyFile": "clip_06_lava_0.69.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_03/08.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.68,
+          "category": "erosion_0.",
+          "legacyFile": "clip_07_erosion_0.68.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_03/09.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.68,
+          "category": "glacier_0.",
+          "legacyFile": "clip_08_glacier_0.68.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_03/10.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.66,
+          "category": "glacier_0.",
+          "legacyFile": "clip_09_glacier_0.66.jpg"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_03/01.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.76,
+          "category": "erosion_0.",
+          "legacyFile": "clip_00_erosion_0.76.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_03/02.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.74,
+          "category": "lava_0.",
+          "legacyFile": "clip_01_lava_0.74.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_03/03.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.74,
+          "category": "sand dune_0.",
+          "legacyFile": "clip_02_sand dune_0.74.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_03/04.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.72,
+          "category": "sand dune_0.",
+          "legacyFile": "clip_03_sand dune_0.72.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_03/05.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.72,
+          "category": "asteroid_0.",
+          "legacyFile": "clip_04_asteroid_0.72.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_03/06.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.71,
+          "category": "foam_0.",
+          "legacyFile": "clip_05_foam_0.71.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_03/07.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.69,
+          "category": "lava_0.",
+          "legacyFile": "clip_06_lava_0.69.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_03/08.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.68,
+          "category": "erosion_0.",
+          "legacyFile": "clip_07_erosion_0.68.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_03/09.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.68,
+          "category": "glacier_0.",
+          "legacyFile": "clip_08_glacier_0.68.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_03/10.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.66,
+          "category": "glacier_0.",
+          "legacyFile": "clip_09_glacier_0.66.jpg"
+        }
+      ]
+    },
+    {
+      "patchIndex": 3,
+      "patch": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/patches/patch_04.jpg",
+      "keywords": [
+        "bacterium_0.",
+        "diatom_0.",
+        "faulting_0.",
+        "ice_0."
+      ],
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_04/01.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.91,
+          "category": "ice_0.",
+          "legacyFile": "clip_00_ice_0.91.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_04/02.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.78,
+          "category": "faulting_0.",
+          "legacyFile": "clip_01_faulting_0.78.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_04/03.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.77,
+          "category": "ice_0.",
+          "legacyFile": "clip_02_ice_0.77.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_04/04.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.74,
+          "category": "faulting_0.",
+          "legacyFile": "clip_03_faulting_0.74.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_04/05.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.71,
+          "category": "ice_0.",
+          "legacyFile": "clip_04_ice_0.71.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_04/06.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.69,
+          "category": "diatom_0.",
+          "legacyFile": "clip_05_diatom_0.69.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_04/07.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.68,
+          "category": "bacterium_0.",
+          "legacyFile": "clip_06_bacterium_0.68.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_04/08.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.65,
+          "category": "diatom_0.",
+          "legacyFile": "clip_07_diatom_0.65.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_04/09.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.63,
+          "category": "diatom_0.",
+          "legacyFile": "clip_08_diatom_0.63.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_04/10.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.63,
+          "category": "ice_0.",
+          "legacyFile": "clip_09_ice_0.63.jpg"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_04/01.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.91,
+          "category": "ice_0.",
+          "legacyFile": "clip_00_ice_0.91.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_04/02.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.78,
+          "category": "faulting_0.",
+          "legacyFile": "clip_01_faulting_0.78.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_04/03.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.77,
+          "category": "ice_0.",
+          "legacyFile": "clip_02_ice_0.77.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_04/04.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.74,
+          "category": "faulting_0.",
+          "legacyFile": "clip_03_faulting_0.74.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_04/05.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.71,
+          "category": "ice_0.",
+          "legacyFile": "clip_04_ice_0.71.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_04/06.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.69,
+          "category": "diatom_0.",
+          "legacyFile": "clip_05_diatom_0.69.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_04/07.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.68,
+          "category": "bacterium_0.",
+          "legacyFile": "clip_06_bacterium_0.68.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_04/08.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.65,
+          "category": "diatom_0.",
+          "legacyFile": "clip_07_diatom_0.65.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_04/09.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.63,
+          "category": "diatom_0.",
+          "legacyFile": "clip_08_diatom_0.63.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_04/10.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.63,
+          "category": "ice_0.",
+          "legacyFile": "clip_09_ice_0.63.jpg"
+        }
+      ]
+    },
+    {
+      "patchIndex": 4,
+      "patch": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/patches/patch_05.jpg",
+      "keywords": [
+        "glacier_0.",
+        "ice_0.",
+        "mountain_0.",
+        "tornado_0."
+      ],
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_05/01.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.91,
+          "category": "ice_0.",
+          "legacyFile": "clip_00_ice_0.91.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_05/02.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.77,
+          "category": "ice_0.",
+          "legacyFile": "clip_01_ice_0.77.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_05/03.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.72,
+          "category": "mountain_0.",
+          "legacyFile": "clip_02_mountain_0.72.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_05/04.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.71,
+          "category": "ice_0.",
+          "legacyFile": "clip_03_ice_0.71.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_05/05.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.7,
+          "category": "mountain_0.",
+          "legacyFile": "clip_04_mountain_0.70.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_05/06.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.68,
+          "category": "tornado_0.",
+          "legacyFile": "clip_05_tornado_0.68.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_05/07.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.67,
+          "category": "mountain_0.",
+          "legacyFile": "clip_06_mountain_0.67.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_05/08.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.63,
+          "category": "glacier_0.",
+          "legacyFile": "clip_07_glacier_0.63.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_05/09.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.63,
+          "category": "glacier_0.",
+          "legacyFile": "clip_08_glacier_0.63.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_05/10.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.62,
+          "category": "ice_0.",
+          "legacyFile": "clip_09_ice_0.62.jpg"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_05/01.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.91,
+          "category": "ice_0.",
+          "legacyFile": "clip_00_ice_0.91.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_05/02.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.77,
+          "category": "ice_0.",
+          "legacyFile": "clip_01_ice_0.77.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_05/03.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.72,
+          "category": "mountain_0.",
+          "legacyFile": "clip_02_mountain_0.72.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_05/04.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.71,
+          "category": "ice_0.",
+          "legacyFile": "clip_03_ice_0.71.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_05/05.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.7,
+          "category": "mountain_0.",
+          "legacyFile": "clip_04_mountain_0.70.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_05/06.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.68,
+          "category": "tornado_0.",
+          "legacyFile": "clip_05_tornado_0.68.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_05/07.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.67,
+          "category": "mountain_0.",
+          "legacyFile": "clip_06_mountain_0.67.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_05/08.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.63,
+          "category": "glacier_0.",
+          "legacyFile": "clip_07_glacier_0.63.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_05/09.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.63,
+          "category": "glacier_0.",
+          "legacyFile": "clip_08_glacier_0.63.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_05/10.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.62,
+          "category": "ice_0.",
+          "legacyFile": "clip_09_ice_0.62.jpg"
+        }
+      ]
+    },
+    {
+      "patchIndex": 5,
+      "patch": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/patches/patch_06.jpg",
+      "keywords": [
+        "convolution_0.",
+        "diatom_0.",
+        "mountain_0.",
+        "snap_0."
+      ],
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_06/01.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.68,
+          "category": "mountain_0.",
+          "legacyFile": "clip_00_mountain_0.68.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_06/02.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.68,
+          "category": "mountain_0.",
+          "legacyFile": "clip_01_mountain_0.68.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_06/03.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.66,
+          "category": "diatom_0.",
+          "legacyFile": "clip_02_diatom_0.66.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_06/04.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.65,
+          "category": "diatom_0.",
+          "legacyFile": "clip_03_diatom_0.65.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_06/05.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.65,
+          "category": "mountain_0.",
+          "legacyFile": "clip_04_mountain_0.65.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_06/06.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.62,
+          "category": "snap_0.",
+          "legacyFile": "clip_05_snap_0.62.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_06/07.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.62,
+          "category": "diatom_0.",
+          "legacyFile": "clip_06_diatom_0.62.jpg"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_06/01.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.68,
+          "category": "mountain_0.",
+          "legacyFile": "clip_00_mountain_0.68.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_06/02.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.68,
+          "category": "mountain_0.",
+          "legacyFile": "clip_01_mountain_0.68.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_06/03.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.66,
+          "category": "diatom_0.",
+          "legacyFile": "clip_02_diatom_0.66.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_06/04.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.65,
+          "category": "diatom_0.",
+          "legacyFile": "clip_03_diatom_0.65.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_06/05.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.65,
+          "category": "mountain_0.",
+          "legacyFile": "clip_04_mountain_0.65.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_06/06.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.62,
+          "category": "snap_0.",
+          "legacyFile": "clip_05_snap_0.62.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_06/07.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.62,
+          "category": "diatom_0.",
+          "legacyFile": "clip_06_diatom_0.62.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_06/08.jpg",
+          "provider": "previous_test",
+          "method": "canny",
+          "score": 0.64,
+          "category": "mountain_0.",
+          "legacyFile": "canny_05_mountain_0.64.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_06/09.jpg",
+          "provider": "previous_test",
+          "method": "canny",
+          "score": 0.64,
+          "category": "snap_0.",
+          "legacyFile": "canny_07_snap_0.64.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_06/10.jpg",
+          "provider": "previous_test",
+          "method": "canny",
+          "score": 0.63,
+          "category": "convolution_0.",
+          "legacyFile": "canny_08_convolution_0.63.jpg"
+        }
+      ]
+    },
+    {
+      "patchIndex": 6,
+      "patch": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/patches/patch_07.jpg",
+      "keywords": [
+        "crevice_0.",
+        "faulting_0.",
+        "gap_0.",
+        "ice_0.",
+        "neuron_0.",
+        "tornado_0."
+      ],
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_07/01.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.83,
+          "category": "ice_0.",
+          "legacyFile": "clip_00_ice_0.83.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_07/02.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.78,
+          "category": "faulting_0.",
+          "legacyFile": "clip_01_faulting_0.78.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_07/03.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.77,
+          "category": "ice_0.",
+          "legacyFile": "clip_02_ice_0.77.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_07/04.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.73,
+          "category": "faulting_0.",
+          "legacyFile": "clip_03_faulting_0.73.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_07/05.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.73,
+          "category": "gap_0.",
+          "legacyFile": "clip_04_gap_0.73.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_07/06.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.7,
+          "category": "neuron_0.",
+          "legacyFile": "clip_05_neuron_0.70.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_07/07.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.67,
+          "category": "crevice_0.",
+          "legacyFile": "clip_06_crevice_0.67.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_07/08.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.67,
+          "category": "tornado_0.",
+          "legacyFile": "clip_07_tornado_0.67.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_07/09.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.62,
+          "category": "gap_0.",
+          "legacyFile": "clip_08_gap_0.62.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_07/10.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.61,
+          "category": "crevice_0.",
+          "legacyFile": "clip_09_crevice_0.61.jpg"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_07/01.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.83,
+          "category": "ice_0.",
+          "legacyFile": "clip_00_ice_0.83.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_07/02.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.78,
+          "category": "faulting_0.",
+          "legacyFile": "clip_01_faulting_0.78.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_07/03.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.77,
+          "category": "ice_0.",
+          "legacyFile": "clip_02_ice_0.77.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_07/04.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.73,
+          "category": "faulting_0.",
+          "legacyFile": "clip_03_faulting_0.73.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_07/05.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.73,
+          "category": "gap_0.",
+          "legacyFile": "clip_04_gap_0.73.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_07/06.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.7,
+          "category": "neuron_0.",
+          "legacyFile": "clip_05_neuron_0.70.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_07/07.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.67,
+          "category": "crevice_0.",
+          "legacyFile": "clip_06_crevice_0.67.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_07/08.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.67,
+          "category": "tornado_0.",
+          "legacyFile": "clip_07_tornado_0.67.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_07/09.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.62,
+          "category": "gap_0.",
+          "legacyFile": "clip_08_gap_0.62.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_07/10.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.61,
+          "category": "crevice_0.",
+          "legacyFile": "clip_09_crevice_0.61.jpg"
+        }
+      ]
+    },
+    {
+      "patchIndex": 7,
+      "patch": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/patches/patch_08.jpg",
+      "keywords": [
+        "convolution_0.",
+        "faulting_0.",
+        "first-rate_0.",
+        "hoar_0.",
+        "mistake_0."
+      ],
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_08/01.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.69,
+          "category": "faulting_0.",
+          "legacyFile": "clip_00_faulting_0.69.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_08/02.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.67,
+          "category": "faulting_0.",
+          "legacyFile": "clip_01_faulting_0.67.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_08/03.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.61,
+          "category": "hoar_0.",
+          "legacyFile": "clip_02_hoar_0.61.jpg"
+        }
+      ],
+      "hogResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_08/09.jpg",
+          "provider": "previous_test",
+          "method": "hog",
+          "score": 0.78,
+          "category": "mistake_0.",
+          "legacyFile": "hog_00_mistake_0.78.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_08/10.jpg",
+          "provider": "previous_test",
+          "method": "hog",
+          "score": 0.77,
+          "category": "convolution_0.",
+          "legacyFile": "hog_01_convolution_0.77.jpg"
+        }
+      ],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_08/01.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.69,
+          "category": "faulting_0.",
+          "legacyFile": "clip_00_faulting_0.69.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_08/02.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.67,
+          "category": "faulting_0.",
+          "legacyFile": "clip_01_faulting_0.67.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_08/03.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.61,
+          "category": "hoar_0.",
+          "legacyFile": "clip_02_hoar_0.61.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_08/04.jpg",
+          "provider": "previous_test",
+          "method": "canny",
+          "score": 0.63,
+          "category": "first-rate_0.",
+          "legacyFile": "canny_02_first-rate_0.63.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_08/05.jpg",
+          "provider": "previous_test",
+          "method": "canny",
+          "score": 0.61,
+          "category": "hoar_0.",
+          "legacyFile": "canny_03_hoar_0.61.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_08/06.jpg",
+          "provider": "previous_test",
+          "method": "canny",
+          "score": 0.61,
+          "category": "faulting_0.",
+          "legacyFile": "canny_04_faulting_0.61.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_08/07.jpg",
+          "provider": "previous_test",
+          "method": "canny",
+          "score": 0.6,
+          "category": "first-rate_0.",
+          "legacyFile": "canny_05_first-rate_0.60.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_08/08.jpg",
+          "provider": "previous_test",
+          "method": "canny",
+          "score": 0.6,
+          "category": "first-rate_0.",
+          "legacyFile": "canny_06_first-rate_0.60.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_08/09.jpg",
+          "provider": "previous_test",
+          "method": "hog",
+          "score": 0.78,
+          "category": "mistake_0.",
+          "legacyFile": "hog_00_mistake_0.78.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_08/10.jpg",
+          "provider": "previous_test",
+          "method": "hog",
+          "score": 0.77,
+          "category": "convolution_0.",
+          "legacyFile": "hog_01_convolution_0.77.jpg"
+        }
+      ]
+    },
+    {
+      "patchIndex": 8,
+      "patch": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/patches/patch_09.jpg",
+      "keywords": [
+        "foam_0.",
+        "river delta_0.",
+        "sand dune_0.",
+        "turbulence_0.",
+        "vortex_0."
+      ],
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_09/01.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.85,
+          "category": "sand dune_0.",
+          "legacyFile": "clip_00_sand dune_0.85.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_09/02.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.84,
+          "category": "turbulence_0.",
+          "legacyFile": "clip_01_turbulence_0.84.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_09/03.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.84,
+          "category": "vortex_0.",
+          "legacyFile": "clip_02_vortex_0.84.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_09/04.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.83,
+          "category": "sand dune_0.",
+          "legacyFile": "clip_03_sand dune_0.83.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_09/05.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.82,
+          "category": "vortex_0.",
+          "legacyFile": "clip_04_vortex_0.82.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_09/06.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.75,
+          "category": "foam_0.",
+          "legacyFile": "clip_05_foam_0.75.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_09/07.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.74,
+          "category": "river delta_0.",
+          "legacyFile": "clip_06_river delta_0.74.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_09/08.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.74,
+          "category": "turbulence_0.",
+          "legacyFile": "clip_07_turbulence_0.74.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_09/09.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.73,
+          "category": "river delta_0.",
+          "legacyFile": "clip_08_river delta_0.73.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_09/10.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.73,
+          "category": "vortex_0.",
+          "legacyFile": "clip_09_vortex_0.73.jpg"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_09/01.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.85,
+          "category": "sand dune_0.",
+          "legacyFile": "clip_00_sand dune_0.85.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_09/02.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.84,
+          "category": "turbulence_0.",
+          "legacyFile": "clip_01_turbulence_0.84.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_09/03.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.84,
+          "category": "vortex_0.",
+          "legacyFile": "clip_02_vortex_0.84.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_09/04.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.83,
+          "category": "sand dune_0.",
+          "legacyFile": "clip_03_sand dune_0.83.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_09/05.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.82,
+          "category": "vortex_0.",
+          "legacyFile": "clip_04_vortex_0.82.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_09/06.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.75,
+          "category": "foam_0.",
+          "legacyFile": "clip_05_foam_0.75.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_09/07.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.74,
+          "category": "river delta_0.",
+          "legacyFile": "clip_06_river delta_0.74.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_09/08.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.74,
+          "category": "turbulence_0.",
+          "legacyFile": "clip_07_turbulence_0.74.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_09/09.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.73,
+          "category": "river delta_0.",
+          "legacyFile": "clip_08_river delta_0.73.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_09/10.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.73,
+          "category": "vortex_0.",
+          "legacyFile": "clip_09_vortex_0.73.jpg"
+        }
+      ]
+    },
+    {
+      "patchIndex": 10,
+      "patch": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/patches/patch_11.jpg",
+      "keywords": [
+        "ice_0.",
+        "tornado_0.",
+        "turbulence_0.",
+        "turbulency_0.",
+        "vortex_0.",
+        "whirlpool_0."
+      ],
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_11/01.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.81,
+          "category": "turbulence_0.",
+          "legacyFile": "clip_00_turbulence_0.81.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_11/02.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.8,
+          "category": "vortex_0.",
+          "legacyFile": "clip_01_vortex_0.80.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_11/03.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.78,
+          "category": "vortex_0.",
+          "legacyFile": "clip_02_vortex_0.78.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_11/04.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.76,
+          "category": "ice_0.",
+          "legacyFile": "clip_03_ice_0.76.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_11/05.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.75,
+          "category": "ice_0.",
+          "legacyFile": "clip_04_ice_0.75.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_11/06.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.7,
+          "category": "tornado_0.",
+          "legacyFile": "clip_05_tornado_0.70.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_11/07.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.69,
+          "category": "vortex_0.",
+          "legacyFile": "clip_06_vortex_0.69.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_11/08.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.69,
+          "category": "whirlpool_0.",
+          "legacyFile": "clip_07_whirlpool_0.69.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_11/09.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.68,
+          "category": "turbulency_0.",
+          "legacyFile": "clip_08_turbulency_0.68.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_11/10.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.68,
+          "category": "ice_0.",
+          "legacyFile": "clip_09_ice_0.68.jpg"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_11/01.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.81,
+          "category": "turbulence_0.",
+          "legacyFile": "clip_00_turbulence_0.81.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_11/02.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.8,
+          "category": "vortex_0.",
+          "legacyFile": "clip_01_vortex_0.80.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_11/03.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.78,
+          "category": "vortex_0.",
+          "legacyFile": "clip_02_vortex_0.78.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_11/04.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.76,
+          "category": "ice_0.",
+          "legacyFile": "clip_03_ice_0.76.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_11/05.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.75,
+          "category": "ice_0.",
+          "legacyFile": "clip_04_ice_0.75.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_11/06.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.7,
+          "category": "tornado_0.",
+          "legacyFile": "clip_05_tornado_0.70.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_11/07.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.69,
+          "category": "vortex_0.",
+          "legacyFile": "clip_06_vortex_0.69.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_11/08.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.69,
+          "category": "whirlpool_0.",
+          "legacyFile": "clip_07_whirlpool_0.69.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_11/09.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.68,
+          "category": "turbulency_0.",
+          "legacyFile": "clip_08_turbulency_0.68.jpg"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/search_results/patch_11/10.jpg",
+          "provider": "previous_test",
+          "method": "clip",
+          "score": 0.68,
+          "category": "ice_0.",
+          "legacyFile": "clip_09_ice_0.68.jpg"
+        }
+      ]
+    }
+  ],
+  "migration": {
+    "source": "09_experiments/previous_tests/02_structural_resonance/output/ice_crystal_01",
+    "note": "Copied from the tested Notebook output; no structural analysis or image search was rerun."
+  },
+  "videos": {
+    "combined": "attention_blob.mp4",
+    "attentionMap": "attention_map.mp4",
+    "blobTrack": "blob_track.mp4"
+  }
+}

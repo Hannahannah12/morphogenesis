@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050607">
+  <title>Morphogenesis — Medium-Screen Display</title>
+  <link rel="stylesheet" href="./style.css?v=waiting-terminal-cursor-v7">
+</head>
+<body data-page="medium_display" data-rotation-seconds="30">
+  <main class="display-stage" aria-label="Morphogenesis medium-screen display">
+    <section class="display-scene" data-scene="resonance" aria-label="Structural Resonance">
+      <iframe id="resonance-frame" src="about:blank" data-src="../02_structural/?display=medium"
+        title="Morphogenesis Structural Resonance"
+        allow="autoplay; fullscreen; camera" tabindex="-1"></iframe>
+    </section>
+
+    <section class="display-scene" data-scene="diffusion" aria-label="Diffusion Imagination">
+      <iframe id="diffusion-frame" src="about:blank" data-src="../03_diffusion/?display=medium&amp;mirror=primary&amp;revision=medium-mirror-v1"
+        title="Morphogenesis Diffusion Imagination"
+        allow="autoplay; fullscreen; camera" tabindex="-1"></iframe>
+    </section>
+
+    <p id="scene-status" class="visually-hidden" aria-live="polite"></p>
+  </main>
+  <section id="shared-countdown" class="shared-countdown" hidden aria-live="polite">
+    <div class="shared-countdown-copy">
+      <p>ICE CRYSTALLISATION BEGINS IN</p>
+      <strong id="shared-countdown-value">00:08</strong>
+    </div>
+  </section>
+  <script src="../experiment-sync.js?v=normalized-phase-rate-sync-v5"></script>
+  <script src="./app.js?v=material-handoff-v12"></script>
+</body>
+</html>

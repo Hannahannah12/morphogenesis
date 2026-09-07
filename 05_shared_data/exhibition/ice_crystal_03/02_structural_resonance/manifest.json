@@ -1,0 +1,2772 @@
+{
+  "pipeline": "notebook-faithful-dino-structural",
+  "source": "C:\\Users\\xiaoh\\OneDrive\\Desktop\\Final_morphogenesis\\05_shared_data\\exhibition\\ice_crystal_03\\source\\crystallization.mp4",
+  "model": "vit_base_patch16_224.dino",
+  "sourceResolution": "1280x720",
+  "videoResolution": "1440x720",
+  "onsetFrame": 19,
+  "formationPeakFrame": 54,
+  "globalBrightnessPeakFrame": 1008,
+  "stableWindowStartFrame": 47,
+  "completeFrame": 67,
+  "selectionMethod": "notebook-first-growth-stability",
+  "stableFrame": 67,
+  "patchStartFrame": 67,
+  "patchEndFrame": 167,
+  "brightnessSamples": 1202,
+  "attentionThreshold": 120,
+  "contourAreaAt1080": 500,
+  "patchWindowFrames": 100,
+  "patchSampleEvery": 10,
+  "video": "attention_blob.mp4",
+  "patches": [
+    "patches/patch_01.jpg",
+    "patches/patch_02.jpg",
+    "patches/patch_03.jpg",
+    "patches/patch_04.jpg",
+    "patches/patch_05.jpg",
+    "patches/patch_06.jpg",
+    "patches/patch_07.jpg",
+    "patches/patch_08.jpg",
+    "patches/patch_09.jpg",
+    "patches/patch_10.jpg",
+    "patches/patch_11.jpg",
+    "patches/patch_12.jpg",
+    "patches/patch_13.jpg",
+    "patches/patch_14.jpg",
+    "patches/patch_15.jpg",
+    "patches/patch_16.jpg",
+    "patches/patch_17.jpg",
+    "patches/patch_18.jpg",
+    "patches/patch_19.jpg",
+    "patches/patch_20.jpg",
+    "patches/patch_21.jpg",
+    "patches/patch_22.jpg",
+    "patches/patch_23.jpg",
+    "patches/patch_24.jpg",
+    "patches/patch_25.jpg",
+    "patches/patch_26.jpg",
+    "patches/patch_27.jpg",
+    "patches/patch_28.jpg",
+    "patches/patch_29.jpg",
+    "patches/patch_30.jpg",
+    "patches/patch_31.jpg",
+    "patches/patch_32.jpg",
+    "patches/patch_33.jpg",
+    "patches/patch_34.jpg",
+    "patches/patch_35.jpg",
+    "patches/patch_36.jpg",
+    "patches/patch_37.jpg",
+    "patches/patch_38.jpg",
+    "patches/patch_39.jpg",
+    "patches/patch_40.jpg",
+    "patches/patch_41.jpg",
+    "patches/patch_42.jpg",
+    "patches/patch_43.jpg",
+    "patches/patch_44.jpg",
+    "patches/patch_45.jpg",
+    "patches/patch_46.jpg",
+    "patches/patch_47.jpg",
+    "patches/patch_48.jpg",
+    "patches/patch_49.jpg"
+  ],
+  "searchState": "complete",
+  "wordPoolCount": 220,
+  "patchMetadata": [
+    {
+      "id": "patch_01",
+      "file": "patches/patch_01.jpg",
+      "sourceFrame": 67,
+      "legacyExtractionIndex": 0
+    },
+    {
+      "id": "patch_02",
+      "file": "patches/patch_02.jpg",
+      "sourceFrame": 67,
+      "legacyExtractionIndex": 1
+    },
+    {
+      "id": "patch_03",
+      "file": "patches/patch_03.jpg",
+      "sourceFrame": 67,
+      "legacyExtractionIndex": 2
+    },
+    {
+      "id": "patch_04",
+      "file": "patches/patch_04.jpg",
+      "sourceFrame": 67,
+      "legacyExtractionIndex": 3
+    },
+    {
+      "id": "patch_05",
+      "file": "patches/patch_05.jpg",
+      "sourceFrame": 67,
+      "legacyExtractionIndex": 4
+    },
+    {
+      "id": "patch_06",
+      "file": "patches/patch_06.jpg",
+      "sourceFrame": 77,
+      "legacyExtractionIndex": 5
+    },
+    {
+      "id": "patch_07",
+      "file": "patches/patch_07.jpg",
+      "sourceFrame": 77,
+      "legacyExtractionIndex": 6
+    },
+    {
+      "id": "patch_08",
+      "file": "patches/patch_08.jpg",
+      "sourceFrame": 77,
+      "legacyExtractionIndex": 7
+    },
+    {
+      "id": "patch_09",
+      "file": "patches/patch_09.jpg",
+      "sourceFrame": 77,
+      "legacyExtractionIndex": 8
+    },
+    {
+      "id": "patch_10",
+      "file": "patches/patch_10.jpg",
+      "sourceFrame": 77,
+      "legacyExtractionIndex": 9
+    },
+    {
+      "id": "patch_11",
+      "file": "patches/patch_11.jpg",
+      "sourceFrame": 77,
+      "legacyExtractionIndex": 10
+    },
+    {
+      "id": "patch_12",
+      "file": "patches/patch_12.jpg",
+      "sourceFrame": 77,
+      "legacyExtractionIndex": 11
+    },
+    {
+      "id": "patch_13",
+      "file": "patches/patch_13.jpg",
+      "sourceFrame": 77,
+      "legacyExtractionIndex": 12
+    },
+    {
+      "id": "patch_14",
+      "file": "patches/patch_14.jpg",
+      "sourceFrame": 87,
+      "legacyExtractionIndex": 13
+    },
+    {
+      "id": "patch_15",
+      "file": "patches/patch_15.jpg",
+      "sourceFrame": 87,
+      "legacyExtractionIndex": 14
+    },
+    {
+      "id": "patch_16",
+      "file": "patches/patch_16.jpg",
+      "sourceFrame": 87,
+      "legacyExtractionIndex": 15
+    },
+    {
+      "id": "patch_17",
+      "file": "patches/patch_17.jpg",
+      "sourceFrame": 87,
+      "legacyExtractionIndex": 16
+    },
+    {
+      "id": "patch_18",
+      "file": "patches/patch_18.jpg",
+      "sourceFrame": 97,
+      "legacyExtractionIndex": 17
+    },
+    {
+      "id": "patch_19",
+      "file": "patches/patch_19.jpg",
+      "sourceFrame": 97,
+      "legacyExtractionIndex": 18
+    },
+    {
+      "id": "patch_20",
+      "file": "patches/patch_20.jpg",
+      "sourceFrame": 107,
+      "legacyExtractionIndex": 19
+    },
+    {
+      "id": "patch_21",
+      "file": "patches/patch_21.jpg",
+      "sourceFrame": 107,
+      "legacyExtractionIndex": 20
+    },
+    {
+      "id": "patch_22",
+      "file": "patches/patch_22.jpg",
+      "sourceFrame": 107,
+      "legacyExtractionIndex": 21
+    },
+    {
+      "id": "patch_23",
+      "file": "patches/patch_23.jpg",
+      "sourceFrame": 107,
+      "legacyExtractionIndex": 22
+    },
+    {
+      "id": "patch_24",
+      "file": "patches/patch_24.jpg",
+      "sourceFrame": 107,
+      "legacyExtractionIndex": 23
+    },
+    {
+      "id": "patch_25",
+      "file": "patches/patch_25.jpg",
+      "sourceFrame": 107,
+      "legacyExtractionIndex": 24
+    },
+    {
+      "id": "patch_26",
+      "file": "patches/patch_26.jpg",
+      "sourceFrame": 107,
+      "legacyExtractionIndex": 25
+    },
+    {
+      "id": "patch_27",
+      "file": "patches/patch_27.jpg",
+      "sourceFrame": 107,
+      "legacyExtractionIndex": 26
+    },
+    {
+      "id": "patch_28",
+      "file": "patches/patch_28.jpg",
+      "sourceFrame": 107,
+      "legacyExtractionIndex": 27
+    },
+    {
+      "id": "patch_29",
+      "file": "patches/patch_29.jpg",
+      "sourceFrame": 107,
+      "legacyExtractionIndex": 28
+    },
+    {
+      "id": "patch_30",
+      "file": "patches/patch_30.jpg",
+      "sourceFrame": 107,
+      "legacyExtractionIndex": 29
+    },
+    {
+      "id": "patch_31",
+      "file": "patches/patch_31.jpg",
+      "sourceFrame": 107,
+      "legacyExtractionIndex": 30
+    },
+    {
+      "id": "patch_32",
+      "file": "patches/patch_32.jpg",
+      "sourceFrame": 107,
+      "legacyExtractionIndex": 31
+    },
+    {
+      "id": "patch_33",
+      "file": "patches/patch_33.jpg",
+      "sourceFrame": 107,
+      "legacyExtractionIndex": 32
+    },
+    {
+      "id": "patch_34",
+      "file": "patches/patch_34.jpg",
+      "sourceFrame": 107,
+      "legacyExtractionIndex": 33
+    },
+    {
+      "id": "patch_35",
+      "file": "patches/patch_35.jpg",
+      "sourceFrame": 107,
+      "legacyExtractionIndex": 34
+    },
+    {
+      "id": "patch_36",
+      "file": "patches/patch_36.jpg",
+      "sourceFrame": 117,
+      "legacyExtractionIndex": 35
+    },
+    {
+      "id": "patch_37",
+      "file": "patches/patch_37.jpg",
+      "sourceFrame": 117,
+      "legacyExtractionIndex": 36
+    },
+    {
+      "id": "patch_38",
+      "file": "patches/patch_38.jpg",
+      "sourceFrame": 127,
+      "legacyExtractionIndex": 37
+    },
+    {
+      "id": "patch_39",
+      "file": "patches/patch_39.jpg",
+      "sourceFrame": 127,
+      "legacyExtractionIndex": 38
+    },
+    {
+      "id": "patch_40",
+      "file": "patches/patch_40.jpg",
+      "sourceFrame": 137,
+      "legacyExtractionIndex": 39
+    },
+    {
+      "id": "patch_41",
+      "file": "patches/patch_41.jpg",
+      "sourceFrame": 137,
+      "legacyExtractionIndex": 40
+    },
+    {
+      "id": "patch_42",
+      "file": "patches/patch_42.jpg",
+      "sourceFrame": 137,
+      "legacyExtractionIndex": 41
+    },
+    {
+      "id": "patch_43",
+      "file": "patches/patch_43.jpg",
+      "sourceFrame": 137,
+      "legacyExtractionIndex": 42
+    },
+    {
+      "id": "patch_44",
+      "file": "patches/patch_44.jpg",
+      "sourceFrame": 147,
+      "legacyExtractionIndex": 43
+    },
+    {
+      "id": "patch_45",
+      "file": "patches/patch_45.jpg",
+      "sourceFrame": 147,
+      "legacyExtractionIndex": 44
+    },
+    {
+      "id": "patch_46",
+      "file": "patches/patch_46.jpg",
+      "sourceFrame": 147,
+      "legacyExtractionIndex": 45
+    },
+    {
+      "id": "patch_47",
+      "file": "patches/patch_47.jpg",
+      "sourceFrame": 157,
+      "legacyExtractionIndex": 46
+    },
+    {
+      "id": "patch_48",
+      "file": "patches/patch_48.jpg",
+      "sourceFrame": 157,
+      "legacyExtractionIndex": 47
+    },
+    {
+      "id": "patch_49",
+      "file": "patches/patch_49.jpg",
+      "sourceFrame": 157,
+      "legacyExtractionIndex": 48
+    }
+  ],
+  "videos": {
+    "combined": "attention_blob.mp4",
+    "attentionMap": "attention_map.mp4",
+    "blobTrack": "blob_track.mp4"
+  },
+  "searchPolicy": "6 representative patches / contrast 5 + structure 5",
+  "resonanceSets": [
+    {
+      "patchIndex": 4,
+      "patchId": "patch_05",
+      "patch": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/patches/patch_05.jpg",
+      "branch": "contrast",
+      "keywords": [
+        "whirlpool",
+        "turbulence",
+        "diatom",
+        "turbulency",
+        "river delta",
+        "convolution",
+        "swirl",
+        "vortex",
+        "vitreous silica",
+        "diffraction"
+      ],
+      "patchTransform": "contrast",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_05/contrast/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA08873/PIA08873~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8999,
+          "category": "vortex"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_05/contrast/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA06584/PIA06584~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8909,
+          "category": "vortex"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_05/contrast/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA10495/PIA10495~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8706,
+          "category": "swirl"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_05/contrast/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA05406/PIA05406~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8659,
+          "category": "swirl"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_05/contrast/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA08131/PIA08131~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8637,
+          "category": "vortex"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_05/contrast/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA08873/PIA08873~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8999,
+          "category": "vortex"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_05/contrast/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA06584/PIA06584~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8909,
+          "category": "vortex"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_05/contrast/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA10495/PIA10495~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8706,
+          "category": "swirl"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_05/contrast/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA05406/PIA05406~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8659,
+          "category": "swirl"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_05/contrast/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA08131/PIA08131~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8637,
+          "category": "vortex"
+        }
+      ]
+    },
+    {
+      "patchIndex": 4,
+      "patchId": "patch_05",
+      "patch": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/patches/patch_05.jpg",
+      "branch": "structure",
+      "keywords": [
+        "diatom",
+        "erosion",
+        "form bubbles",
+        "foam",
+        "mycelium",
+        "crystallization",
+        "whirlpool",
+        "froth",
+        "bacterium",
+        "ice crystal"
+      ],
+      "patchTransform": "structure",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_05/structure/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA06369/PIA06369~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.881,
+          "category": "erosion"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_05/structure/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA07890/PIA07890~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8624,
+          "category": "erosion"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_05/structure/03.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/703765838/medium.jpg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.8603,
+          "category": "crystallization"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_05/structure/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/0201079/0201079~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8496,
+          "category": "form bubbles"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_05/structure/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA02374/PIA02374~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8489,
+          "category": "erosion"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_05/structure/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA06369/PIA06369~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.881,
+          "category": "erosion"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_05/structure/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA07890/PIA07890~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8624,
+          "category": "erosion"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_05/structure/03.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/703765838/medium.jpg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.8603,
+          "category": "crystallization"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_05/structure/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/0201079/0201079~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8496,
+          "category": "form bubbles"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_05/structure/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA02374/PIA02374~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8489,
+          "category": "erosion"
+        }
+      ]
+    },
+    {
+      "patchIndex": 7,
+      "patchId": "patch_08",
+      "patch": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/patches/patch_08.jpg",
+      "branch": "contrast",
+      "keywords": [
+        "tree bark",
+        "erosion",
+        "faulting",
+        "crystallization",
+        "fault",
+        "eroding",
+        "geological fault",
+        "fracture",
+        "collapse",
+        "lichen"
+      ],
+      "patchTransform": "contrast",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_08/contrast/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA07177/PIA07177~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8428,
+          "category": "fault"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_08/contrast/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA00849/PIA00849~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.837,
+          "category": "fracture"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_08/contrast/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA06331/PIA06331~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8242,
+          "category": "fault"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_08/contrast/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA01644/PIA01644~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8151,
+          "category": "faulting"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_08/contrast/05.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/704991309/medium.jpg",
+          "provider": "inat",
+          "method": "contrast_fusion",
+          "score": 0.7979,
+          "category": "crystallization"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_08/contrast/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA07177/PIA07177~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8428,
+          "category": "fault"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_08/contrast/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA00849/PIA00849~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.837,
+          "category": "fracture"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_08/contrast/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA06331/PIA06331~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8242,
+          "category": "fault"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_08/contrast/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA01644/PIA01644~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8151,
+          "category": "faulting"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_08/contrast/05.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/704991309/medium.jpg",
+          "provider": "inat",
+          "method": "contrast_fusion",
+          "score": 0.7979,
+          "category": "crystallization"
+        }
+      ]
+    },
+    {
+      "patchIndex": 7,
+      "patchId": "patch_08",
+      "patch": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/patches/patch_08.jpg",
+      "branch": "structure",
+      "keywords": [
+        "bacteria",
+        "bacterium",
+        "diatom",
+        "vitreous silica",
+        "crystallization",
+        "convolution",
+        "form bubbles",
+        "tree bark",
+        "mycelium",
+        "lichen"
+      ],
+      "patchTransform": "structure",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_08/structure/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA00285/PIA00285~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8854,
+          "category": "bacteria"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_08/structure/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA00283/PIA00283~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8751,
+          "category": "bacteria"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_08/structure/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/0201079/0201079~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8664,
+          "category": "form bubbles"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_08/structure/04.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/402403574/medium.jpeg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.8605,
+          "category": "bacterium"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_08/structure/05.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/675069361/medium.jpg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.8465,
+          "category": "diatom"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_08/structure/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA00285/PIA00285~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8854,
+          "category": "bacteria"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_08/structure/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA00283/PIA00283~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8751,
+          "category": "bacteria"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_08/structure/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/0201079/0201079~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8664,
+          "category": "form bubbles"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_08/structure/04.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/402403574/medium.jpeg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.8605,
+          "category": "bacterium"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_08/structure/05.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/675069361/medium.jpg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.8465,
+          "category": "diatom"
+        }
+      ]
+    },
+    {
+      "patchIndex": 13,
+      "patchId": "patch_14",
+      "patch": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/patches/patch_14.jpg",
+      "branch": "contrast",
+      "keywords": [
+        "vitreous silica",
+        "diatom",
+        "diffraction",
+        "bacterium",
+        "crystallization",
+        "bacteria",
+        "convolution",
+        "mycelium",
+        "electric cell",
+        "asteroid"
+      ],
+      "patchTransform": "contrast",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_14/contrast/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA00283/PIA00283~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8748,
+          "category": "bacteria"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_14/contrast/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA00285/PIA00285~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8595,
+          "category": "bacteria"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_14/contrast/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA19647/PIA19647~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.846,
+          "category": "asteroid"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_14/contrast/04.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/703765838/medium.jpg",
+          "provider": "inat",
+          "method": "contrast_fusion",
+          "score": 0.8363,
+          "category": "crystallization"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_14/contrast/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/0300210/0300210~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8315,
+          "category": "bacterium"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_14/contrast/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA00283/PIA00283~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8748,
+          "category": "bacteria"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_14/contrast/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA00285/PIA00285~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8595,
+          "category": "bacteria"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_14/contrast/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA19647/PIA19647~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.846,
+          "category": "asteroid"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_14/contrast/04.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/703765838/medium.jpg",
+          "provider": "inat",
+          "method": "contrast_fusion",
+          "score": 0.8363,
+          "category": "crystallization"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_14/contrast/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/0300210/0300210~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8315,
+          "category": "bacterium"
+        }
+      ]
+    },
+    {
+      "patchIndex": 13,
+      "patchId": "patch_14",
+      "patch": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/patches/patch_14.jpg",
+      "branch": "structure",
+      "keywords": [
+        "bacteria",
+        "bacterium",
+        "diatom",
+        "crystallization",
+        "mycelium",
+        "form bubbles",
+        "tree bark",
+        "vitreous silica",
+        "nerve cell",
+        "corrosion"
+      ],
+      "patchTransform": "structure",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_14/structure/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA00283/PIA00283~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8797,
+          "category": "bacteria"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_14/structure/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA00285/PIA00285~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.863,
+          "category": "bacteria"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_14/structure/03.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/402403574/medium.jpeg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.8569,
+          "category": "bacterium"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_14/structure/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/0201079/0201079~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8542,
+          "category": "form bubbles"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_14/structure/05.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/675069361/medium.jpg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.8531,
+          "category": "diatom"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_14/structure/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA00283/PIA00283~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8797,
+          "category": "bacteria"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_14/structure/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA00285/PIA00285~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.863,
+          "category": "bacteria"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_14/structure/03.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/402403574/medium.jpeg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.8569,
+          "category": "bacterium"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_14/structure/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/0201079/0201079~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8542,
+          "category": "form bubbles"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_14/structure/05.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/675069361/medium.jpg",
+          "provider": "inat",
+          "method": "structure_fusion",
+          "score": 0.8531,
+          "category": "diatom"
+        }
+      ]
+    },
+    {
+      "patchIndex": 32,
+      "patchId": "patch_33",
+      "patch": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/patches/patch_33.jpg",
+      "branch": "contrast",
+      "keywords": [
+        "Sturm und Drang",
+        "swirl",
+        "turbulence",
+        "vortex",
+        "whirlpool",
+        "turbulency",
+        "maelstrom",
+        "tornado",
+        "convolution",
+        "upheaval"
+      ],
+      "patchTransform": "contrast",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_33/contrast/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA08873/PIA08873~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8777,
+          "category": "vortex"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_33/contrast/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA17145/PIA17145~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8644,
+          "category": "maelstrom"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_33/contrast/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA05406/PIA05406~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8444,
+          "category": "swirl"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_33/contrast/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA10495/PIA10495~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8441,
+          "category": "swirl"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_33/contrast/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA06584/PIA06584~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8389,
+          "category": "vortex"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_33/contrast/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA08873/PIA08873~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8777,
+          "category": "vortex"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_33/contrast/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA17145/PIA17145~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8644,
+          "category": "maelstrom"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_33/contrast/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA05406/PIA05406~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8444,
+          "category": "swirl"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_33/contrast/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA10495/PIA10495~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8441,
+          "category": "swirl"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_33/contrast/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA06584/PIA06584~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8389,
+          "category": "vortex"
+        }
+      ]
+    },
+    {
+      "patchIndex": 32,
+      "patchId": "patch_33",
+      "patch": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/patches/patch_33.jpg",
+      "branch": "structure",
+      "keywords": [
+        "form bubbles",
+        "whirlpool",
+        "diatom",
+        "erosion",
+        "crystallization",
+        "vortex",
+        "foam",
+        "froth",
+        "swirl",
+        "turbulence"
+      ],
+      "patchTransform": "structure",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_33/structure/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA08873/PIA08873~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8919,
+          "category": "vortex"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_33/structure/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA06584/PIA06584~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8863,
+          "category": "vortex"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_33/structure/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA10495/PIA10495~small.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8717,
+          "category": "swirl"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_33/structure/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA05406/PIA05406~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8655,
+          "category": "swirl"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_33/structure/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA06496/PIA06496~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.863,
+          "category": "turbulence"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_33/structure/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA08873/PIA08873~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8919,
+          "category": "vortex"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_33/structure/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA06584/PIA06584~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8863,
+          "category": "vortex"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_33/structure/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA10495/PIA10495~small.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8717,
+          "category": "swirl"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_33/structure/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA05406/PIA05406~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8655,
+          "category": "swirl"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_33/structure/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA06496/PIA06496~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.863,
+          "category": "turbulence"
+        }
+      ]
+    },
+    {
+      "patchIndex": 36,
+      "patchId": "patch_37",
+      "patch": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/patches/patch_37.jpg",
+      "branch": "contrast",
+      "keywords": [
+        "diatom",
+        "foam",
+        "turbulence",
+        "Frost",
+        "frost",
+        "froth",
+        "ice",
+        "form bubbles",
+        "turbulency",
+        "vitreous silica"
+      ],
+      "patchTransform": "contrast",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_37/contrast/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA04655/PIA04655~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8762,
+          "category": "frost"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_37/contrast/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA05916/PIA05916~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8674,
+          "category": "Frost"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_37/contrast/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA03006/PIA03006~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8644,
+          "category": "Frost"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_37/contrast/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA06290/PIA06290~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8634,
+          "category": "frost"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_37/contrast/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA06496/PIA06496~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8587,
+          "category": "turbulence"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_37/contrast/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA04655/PIA04655~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8762,
+          "category": "frost"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_37/contrast/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA05916/PIA05916~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8674,
+          "category": "Frost"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_37/contrast/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA03006/PIA03006~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8644,
+          "category": "Frost"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_37/contrast/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA06290/PIA06290~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8634,
+          "category": "frost"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_37/contrast/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA06496/PIA06496~thumb.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8587,
+          "category": "turbulence"
+        }
+      ]
+    },
+    {
+      "patchIndex": 36,
+      "patchId": "patch_37",
+      "patch": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/patches/patch_37.jpg",
+      "branch": "structure",
+      "keywords": [
+        "diatom",
+        "whirlpool",
+        "foam",
+        "swirl",
+        "vitreous silica",
+        "erosion",
+        "froth",
+        "form bubbles",
+        "crystallization",
+        "maelstrom"
+      ],
+      "patchTransform": "structure",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_37/structure/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA10495/PIA10495~small.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8926,
+          "category": "swirl"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_37/structure/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA06369/PIA06369~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8923,
+          "category": "erosion"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_37/structure/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA09778/PIA09778~small.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8755,
+          "category": "maelstrom"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_37/structure/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA05406/PIA05406~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8731,
+          "category": "swirl"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_37/structure/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA07890/PIA07890~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8638,
+          "category": "erosion"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_37/structure/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA10495/PIA10495~small.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8926,
+          "category": "swirl"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_37/structure/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA06369/PIA06369~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8923,
+          "category": "erosion"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_37/structure/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA09778/PIA09778~small.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8755,
+          "category": "maelstrom"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_37/structure/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA05406/PIA05406~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8731,
+          "category": "swirl"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_37/structure/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA07890/PIA07890~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8638,
+          "category": "erosion"
+        }
+      ]
+    },
+    {
+      "patchIndex": 37,
+      "patchId": "patch_38",
+      "patch": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/patches/patch_38.jpg",
+      "branch": "contrast",
+      "keywords": [
+        "asteroid",
+        "crystallization",
+        "mycelium",
+        "foam",
+        "lava",
+        "corrosion",
+        "form bubbles",
+        "fracture",
+        "ice",
+        "stalactite"
+      ],
+      "patchTransform": "contrast",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_38/contrast/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/9901874/9901874~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8528,
+          "category": "form bubbles"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_38/contrast/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/0201079/0201079~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8504,
+          "category": "form bubbles"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_38/contrast/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA07435/PIA07435~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8494,
+          "category": "lava"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_38/contrast/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA00849/PIA00849~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.823,
+          "category": "fracture"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_38/contrast/05.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/705479178/medium.jpg",
+          "provider": "inat",
+          "method": "contrast_fusion",
+          "score": 0.8112,
+          "category": "lava"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_38/contrast/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/9901874/9901874~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8528,
+          "category": "form bubbles"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_38/contrast/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/0201079/0201079~medium.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8504,
+          "category": "form bubbles"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_38/contrast/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA07435/PIA07435~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.8494,
+          "category": "lava"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_38/contrast/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA00849/PIA00849~small.jpg",
+          "provider": "nasa",
+          "method": "contrast_fusion",
+          "score": 0.823,
+          "category": "fracture"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_38/contrast/05.jpg",
+          "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/705479178/medium.jpg",
+          "provider": "inat",
+          "method": "contrast_fusion",
+          "score": 0.8112,
+          "category": "lava"
+        }
+      ]
+    },
+    {
+      "patchIndex": 37,
+      "patchId": "patch_38",
+      "patch": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/patches/patch_38.jpg",
+      "branch": "structure",
+      "keywords": [
+        "convolution",
+        "river delta",
+        "lichen",
+        "lava",
+        "faulting",
+        "crystallization",
+        "geological fault",
+        "erosion",
+        "lechatelierite",
+        "asteroid"
+      ],
+      "patchTransform": "structure",
+      "clipResults": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_38/structure/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA07435/PIA07435~small.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.852,
+          "category": "lava"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_38/structure/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA06331/PIA06331~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8482,
+          "category": "faulting"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_38/structure/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA09558/PIA09558~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8437,
+          "category": "river delta"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_38/structure/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA07177/PIA07177~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8373,
+          "category": "faulting"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_38/structure/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA01644/PIA01644~small.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8257,
+          "category": "faulting"
+        }
+      ],
+      "hogResults": [],
+      "results": [
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_38/structure/01.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA07435/PIA07435~small.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.852,
+          "category": "lava"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_38/structure/02.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA06331/PIA06331~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8482,
+          "category": "faulting"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_38/structure/03.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA09558/PIA09558~medium.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8437,
+          "category": "river delta"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_38/structure/04.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA07177/PIA07177~thumb.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8373,
+          "category": "faulting"
+        },
+        {
+          "url": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/search_results/patch_38/structure/05.jpg",
+          "sourceUrl": "https://images-assets.nasa.gov/image/PIA01644/PIA01644~small.jpg",
+          "provider": "nasa",
+          "method": "structure_fusion",
+          "score": 0.8257,
+          "category": "faulting"
+        }
+      ]
+    }
+  ],
+  "searchPipeline": "dual-contrast-structure-inaturalist-nasa-clip-hog",
+  "patchPreprocessing": "dual",
+  "searchBranches": [
+    "contrast",
+    "structure"
+  ],
+  "rankingMode": "structure_fusion",
+  "candidateSource": "live-inaturalist+nasa-apis",
+  "candidateCount": 2752,
+  "candidateCountByBranch": {
+    "contrast": 1349,
+    "structure": 1403
+  },
+  "apiErrors": [],
+  "searchResultLayout": "search_results/<patch_id>/<contrast|structure>/<01..10>.jpg",
+  "searchResultsPerPatch": {
+    "contrast": 5,
+    "structure": 5
+  },
+  "patchSelectionMethod": "fast-texture-clarity+64px-visual-deduplication",
+  "selectedPatchIndices": [
+    4,
+    7,
+    13,
+    32,
+    36,
+    37
+  ],
+  "patchQualityAudit": [
+    {
+      "index": 0,
+      "file": "patch_01.jpg",
+      "source_frame": 67,
+      "width": 431,
+      "height": 317,
+      "contrast": 0.4431,
+      "sharpness": 0.2395,
+      "edge_density": 0.1848,
+      "gradient": 0.0616,
+      "texture_coverage": 0.9444,
+      "illumination_uniformity": 0.3948,
+      "size_score": 1.0,
+      "aspect_score": 0.7355,
+      "score": 0.5948,
+      "eligible": true,
+      "rejection_reasons": [],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 1,
+      "file": "patch_02.jpg",
+      "source_frame": 67,
+      "width": 53,
+      "height": 62,
+      "contrast": 0.1137,
+      "sharpness": 0.2574,
+      "edge_density": 0.2398,
+      "gradient": 0.0644,
+      "texture_coverage": 0.9444,
+      "illumination_uniformity": 0.8918,
+      "size_score": 0.0366,
+      "aspect_score": 0.8548,
+      "score": 0.5185,
+      "eligible": false,
+      "rejection_reasons": [
+        "too-small",
+        "insufficient-area",
+        "flat-grey"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 2,
+      "file": "patch_03.jpg",
+      "source_frame": 67,
+      "width": 71,
+      "height": 73,
+      "contrast": 0.102,
+      "sharpness": 0.1844,
+      "edge_density": 0.0232,
+      "gradient": 0.0291,
+      "texture_coverage": 0.2222,
+      "illumination_uniformity": 0.8589,
+      "size_score": 0.0774,
+      "aspect_score": 0.9726,
+      "score": 0.3024,
+      "eligible": false,
+      "rejection_reasons": [
+        "too-small",
+        "insufficient-area",
+        "flat-grey",
+        "weak-gradient",
+        "no-readable-contour",
+        "sparse-texture"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 3,
+      "file": "patch_04.jpg",
+      "source_frame": 67,
+      "width": 36,
+      "height": 51,
+      "contrast": 0.1059,
+      "sharpness": 0.2368,
+      "edge_density": 0.2843,
+      "gradient": 0.0591,
+      "texture_coverage": 0.8889,
+      "illumination_uniformity": 0.8813,
+      "size_score": 0.0139,
+      "aspect_score": 0.7059,
+      "score": 0.4381,
+      "eligible": false,
+      "rejection_reasons": [
+        "too-small",
+        "insufficient-area",
+        "flat-grey"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 4,
+      "file": "patch_05.jpg",
+      "source_frame": 67,
+      "width": 1084,
+      "height": 720,
+      "contrast": 0.3294,
+      "sharpness": 0.4123,
+      "edge_density": 0.1943,
+      "gradient": 0.075,
+      "texture_coverage": 1.0,
+      "illumination_uniformity": 0.6217,
+      "size_score": 1.0,
+      "aspect_score": 0.6642,
+      "score": 0.6547,
+      "eligible": true,
+      "rejection_reasons": [],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 5,
+      "file": "patch_06.jpg",
+      "source_frame": 77,
+      "width": 85,
+      "height": 45,
+      "contrast": 0.0902,
+      "sharpness": 0.2162,
+      "edge_density": 0.2063,
+      "gradient": 0.0472,
+      "texture_coverage": 0.7778,
+      "illumination_uniformity": 0.9091,
+      "size_score": 0.0362,
+      "aspect_score": 0.5294,
+      "score": 0.4735,
+      "eligible": false,
+      "rejection_reasons": [
+        "too-small",
+        "insufficient-area",
+        "flat-grey"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 6,
+      "file": "patch_07.jpg",
+      "source_frame": 77,
+      "width": 87,
+      "height": 55,
+      "contrast": 0.1373,
+      "sharpness": 0.2641,
+      "edge_density": 0.2408,
+      "gradient": 0.074,
+      "texture_coverage": 1.0,
+      "illumination_uniformity": 0.8624,
+      "size_score": 0.0554,
+      "aspect_score": 0.6322,
+      "score": 0.5268,
+      "eligible": false,
+      "rejection_reasons": [
+        "too-small",
+        "insufficient-area",
+        "flat-grey"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 7,
+      "file": "patch_08.jpg",
+      "source_frame": 77,
+      "width": 372,
+      "height": 310,
+      "contrast": 0.3451,
+      "sharpness": 0.5168,
+      "edge_density": 0.2368,
+      "gradient": 0.1076,
+      "texture_coverage": 1.0,
+      "illumination_uniformity": 0.5726,
+      "size_score": 1.0,
+      "aspect_score": 0.8333,
+      "score": 0.694,
+      "eligible": true,
+      "rejection_reasons": [],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 8,
+      "file": "patch_09.jpg",
+      "source_frame": 77,
+      "width": 363,
+      "height": 239,
+      "contrast": 0.2824,
+      "sharpness": 0.539,
+      "edge_density": 0.2445,
+      "gradient": 0.1164,
+      "texture_coverage": 1.0,
+      "illumination_uniformity": 0.6192,
+      "size_score": 1.0,
+      "aspect_score": 0.6584,
+      "score": 0.6927,
+      "eligible": true,
+      "rejection_reasons": [],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 9,
+      "file": "patch_10.jpg",
+      "source_frame": 77,
+      "width": 686,
+      "height": 642,
+      "contrast": 0.2314,
+      "sharpness": 0.2423,
+      "edge_density": 0.1915,
+      "gradient": 0.0626,
+      "texture_coverage": 1.0,
+      "illumination_uniformity": 0.7505,
+      "size_score": 1.0,
+      "aspect_score": 0.9359,
+      "score": 0.6295,
+      "eligible": true,
+      "rejection_reasons": [],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 10,
+      "file": "patch_11.jpg",
+      "source_frame": 77,
+      "width": 203,
+      "height": 131,
+      "contrast": 0.1294,
+      "sharpness": 0.2254,
+      "edge_density": 0.1734,
+      "gradient": 0.0578,
+      "texture_coverage": 1.0,
+      "illumination_uniformity": 0.9022,
+      "size_score": 0.6715,
+      "aspect_score": 0.6453,
+      "score": 0.604,
+      "eligible": false,
+      "rejection_reasons": [
+        "flat-grey"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 11,
+      "file": "patch_12.jpg",
+      "source_frame": 77,
+      "width": 31,
+      "height": 28,
+      "contrast": 0.102,
+      "sharpness": 0.2076,
+      "edge_density": 0.3065,
+      "gradient": 0.0465,
+      "texture_coverage": 0.75,
+      "illumination_uniformity": 0.878,
+      "size_score": 0.0051,
+      "aspect_score": 0.9032,
+      "score": 0.3831,
+      "eligible": false,
+      "rejection_reasons": [
+        "too-small",
+        "insufficient-area",
+        "flat-grey"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 12,
+      "file": "patch_13.jpg",
+      "source_frame": 77,
+      "width": 269,
+      "height": 187,
+      "contrast": 0.2941,
+      "sharpness": 0.3974,
+      "edge_density": 0.1983,
+      "gradient": 0.0732,
+      "texture_coverage": 0.9444,
+      "illumination_uniformity": 0.5944,
+      "size_score": 1.0,
+      "aspect_score": 0.6952,
+      "score": 0.6345,
+      "eligible": true,
+      "rejection_reasons": [],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 13,
+      "file": "patch_14.jpg",
+      "source_frame": 87,
+      "width": 393,
+      "height": 399,
+      "contrast": 0.4392,
+      "sharpness": 0.2569,
+      "edge_density": 0.2106,
+      "gradient": 0.0685,
+      "texture_coverage": 0.9722,
+      "illumination_uniformity": 0.4112,
+      "size_score": 1.0,
+      "aspect_score": 0.985,
+      "score": 0.6049,
+      "eligible": true,
+      "rejection_reasons": [],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 14,
+      "file": "patch_15.jpg",
+      "source_frame": 87,
+      "width": 84,
+      "height": 91,
+      "contrast": 0.1765,
+      "sharpness": 0.1913,
+      "edge_density": 0.0818,
+      "gradient": 0.0345,
+      "texture_coverage": 0.3889,
+      "illumination_uniformity": 0.7694,
+      "size_score": 0.1351,
+      "aspect_score": 0.9231,
+      "score": 0.3924,
+      "eligible": false,
+      "rejection_reasons": [
+        "too-small",
+        "insufficient-area",
+        "weak-gradient",
+        "sparse-texture"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 15,
+      "file": "patch_16.jpg",
+      "source_frame": 87,
+      "width": 70,
+      "height": 76,
+      "contrast": 0.1529,
+      "sharpness": 0.2514,
+      "edge_density": 0.2216,
+      "gradient": 0.0631,
+      "texture_coverage": 0.9444,
+      "illumination_uniformity": 0.8258,
+      "size_score": 0.0784,
+      "aspect_score": 0.9211,
+      "score": 0.5381,
+      "eligible": false,
+      "rejection_reasons": [
+        "too-small",
+        "insufficient-area",
+        "flat-grey"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 16,
+      "file": "patch_17.jpg",
+      "source_frame": 87,
+      "width": 1068,
+      "height": 720,
+      "contrast": 0.3333,
+      "sharpness": 0.4107,
+      "edge_density": 0.198,
+      "gradient": 0.0747,
+      "texture_coverage": 1.0,
+      "illumination_uniformity": 0.6181,
+      "size_score": 1.0,
+      "aspect_score": 0.6742,
+      "score": 0.6508,
+      "eligible": true,
+      "rejection_reasons": [],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 17,
+      "file": "patch_18.jpg",
+      "source_frame": 97,
+      "width": 78,
+      "height": 67,
+      "contrast": 0.1059,
+      "sharpness": 0.2225,
+      "edge_density": 0.1005,
+      "gradient": 0.051,
+      "texture_coverage": 0.8611,
+      "illumination_uniformity": 0.8924,
+      "size_score": 0.0737,
+      "aspect_score": 0.859,
+      "score": 0.5021,
+      "eligible": false,
+      "rejection_reasons": [
+        "too-small",
+        "insufficient-area",
+        "flat-grey"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 18,
+      "file": "patch_19.jpg",
+      "source_frame": 97,
+      "width": 1280,
+      "height": 720,
+      "contrast": 0.4314,
+      "sharpness": 0.394,
+      "edge_density": 0.1806,
+      "gradient": 0.0708,
+      "texture_coverage": 1.0,
+      "illumination_uniformity": 0.4799,
+      "size_score": 1.0,
+      "aspect_score": 0.5625,
+      "score": 0.6454,
+      "eligible": true,
+      "rejection_reasons": [],
+      "duplicate_of": 36,
+      "visual_similarity": 0.9436
+    },
+    {
+      "index": 19,
+      "file": "patch_20.jpg",
+      "source_frame": 107,
+      "width": 151,
+      "height": 56,
+      "contrast": 0.1647,
+      "sharpness": 0.2109,
+      "edge_density": 0.1121,
+      "gradient": 0.0484,
+      "texture_coverage": 0.8333,
+      "illumination_uniformity": 0.818,
+      "size_score": 0.0996,
+      "aspect_score": 0.3709,
+      "score": 0.4691,
+      "eligible": false,
+      "rejection_reasons": [
+        "too-small",
+        "insufficient-area"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 20,
+      "file": "patch_21.jpg",
+      "source_frame": 107,
+      "width": 221,
+      "height": 88,
+      "contrast": 0.2627,
+      "sharpness": 0.5378,
+      "edge_density": 0.2623,
+      "gradient": 0.1236,
+      "texture_coverage": 1.0,
+      "illumination_uniformity": 0.6534,
+      "size_score": 0.3601,
+      "aspect_score": 0.3982,
+      "score": 0.6315,
+      "eligible": false,
+      "rejection_reasons": [
+        "too-small"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 21,
+      "file": "patch_22.jpg",
+      "source_frame": 107,
+      "width": 198,
+      "height": 57,
+      "contrast": 0.0941,
+      "sharpness": 0.2007,
+      "edge_density": 0.0247,
+      "gradient": 0.0385,
+      "texture_coverage": 0.5833,
+      "illumination_uniformity": 0.9119,
+      "size_score": 0.1354,
+      "aspect_score": 0.2879,
+      "score": 0.3272,
+      "eligible": false,
+      "rejection_reasons": [
+        "too-small",
+        "insufficient-area",
+        "flat-grey",
+        "no-readable-contour",
+        "sparse-texture"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 22,
+      "file": "patch_23.jpg",
+      "source_frame": 107,
+      "width": 301,
+      "height": 95,
+      "contrast": 0.1922,
+      "sharpness": 0.4315,
+      "edge_density": 0.1703,
+      "gradient": 0.0704,
+      "texture_coverage": 0.9167,
+      "illumination_uniformity": 0.7879,
+      "size_score": 0.5717,
+      "aspect_score": 0.3156,
+      "score": 0.6212,
+      "eligible": false,
+      "rejection_reasons": [
+        "too-small"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 23,
+      "file": "patch_24.jpg",
+      "source_frame": 107,
+      "width": 446,
+      "height": 234,
+      "contrast": 0.4353,
+      "sharpness": 0.2485,
+      "edge_density": 0.1923,
+      "gradient": 0.0645,
+      "texture_coverage": 0.9167,
+      "illumination_uniformity": 0.4017,
+      "size_score": 1.0,
+      "aspect_score": 0.5247,
+      "score": 0.5757,
+      "eligible": true,
+      "rejection_reasons": [],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 24,
+      "file": "patch_25.jpg",
+      "source_frame": 107,
+      "width": 209,
+      "height": 109,
+      "contrast": 0.1961,
+      "sharpness": 0.2752,
+      "edge_density": 0.2176,
+      "gradient": 0.0753,
+      "texture_coverage": 1.0,
+      "illumination_uniformity": 0.7755,
+      "size_score": 0.5225,
+      "aspect_score": 0.5215,
+      "score": 0.5719,
+      "eligible": false,
+      "rejection_reasons": [
+        "too-small"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 25,
+      "file": "patch_26.jpg",
+      "source_frame": 107,
+      "width": 351,
+      "height": 155,
+      "contrast": 0.1451,
+      "sharpness": 0.2013,
+      "edge_density": 0.096,
+      "gradient": 0.0449,
+      "texture_coverage": 0.9167,
+      "illumination_uniformity": 0.8577,
+      "size_score": 1.0,
+      "aspect_score": 0.4416,
+      "score": 0.5156,
+      "eligible": false,
+      "rejection_reasons": [
+        "flat-grey"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 26,
+      "file": "patch_27.jpg",
+      "source_frame": 107,
+      "width": 185,
+      "height": 98,
+      "contrast": 0.2549,
+      "sharpness": 0.6126,
+      "edge_density": 0.3164,
+      "gradient": 0.1756,
+      "texture_coverage": 1.0,
+      "illumination_uniformity": 0.7528,
+      "size_score": 0.3739,
+      "aspect_score": 0.5297,
+      "score": 0.6092,
+      "eligible": false,
+      "rejection_reasons": [
+        "too-small"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 27,
+      "file": "patch_28.jpg",
+      "source_frame": 107,
+      "width": 84,
+      "height": 70,
+      "contrast": 0.1529,
+      "sharpness": 0.3799,
+      "edge_density": 0.2105,
+      "gradient": 0.0817,
+      "texture_coverage": 0.8889,
+      "illumination_uniformity": 0.8717,
+      "size_score": 0.0866,
+      "aspect_score": 0.8333,
+      "score": 0.5981,
+      "eligible": false,
+      "rejection_reasons": [
+        "too-small",
+        "insufficient-area",
+        "flat-grey"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 28,
+      "file": "patch_29.jpg",
+      "source_frame": 107,
+      "width": 70,
+      "height": 43,
+      "contrast": 0.102,
+      "sharpness": 0.2099,
+      "edge_density": 0.1924,
+      "gradient": 0.0443,
+      "texture_coverage": 0.8056,
+      "illumination_uniformity": 0.885,
+      "size_score": 0.0272,
+      "aspect_score": 0.6143,
+      "score": 0.4893,
+      "eligible": false,
+      "rejection_reasons": [
+        "too-small",
+        "insufficient-area",
+        "flat-grey"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 29,
+      "file": "patch_30.jpg",
+      "source_frame": 107,
+      "width": 167,
+      "height": 117,
+      "contrast": 0.1255,
+      "sharpness": 0.2174,
+      "edge_density": 0.1192,
+      "gradient": 0.05,
+      "texture_coverage": 1.0,
+      "illumination_uniformity": 0.8973,
+      "size_score": 0.4811,
+      "aspect_score": 0.7006,
+      "score": 0.5514,
+      "eligible": false,
+      "rejection_reasons": [
+        "too-small",
+        "flat-grey"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 30,
+      "file": "patch_31.jpg",
+      "source_frame": 107,
+      "width": 89,
+      "height": 59,
+      "contrast": 0.1725,
+      "sharpness": 0.1967,
+      "edge_density": 0.0804,
+      "gradient": 0.0348,
+      "texture_coverage": 0.3611,
+      "illumination_uniformity": 0.7701,
+      "size_score": 0.0652,
+      "aspect_score": 0.6629,
+      "score": 0.3665,
+      "eligible": false,
+      "rejection_reasons": [
+        "too-small",
+        "insufficient-area",
+        "weak-gradient",
+        "sparse-texture"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 31,
+      "file": "patch_32.jpg",
+      "source_frame": 107,
+      "width": 79,
+      "height": 55,
+      "contrast": 0.1608,
+      "sharpness": 0.2455,
+      "edge_density": 0.2216,
+      "gradient": 0.0587,
+      "texture_coverage": 0.9167,
+      "illumination_uniformity": 0.8176,
+      "size_score": 0.0503,
+      "aspect_score": 0.6962,
+      "score": 0.5083,
+      "eligible": false,
+      "rejection_reasons": [
+        "too-small",
+        "insufficient-area"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 32,
+      "file": "patch_33.jpg",
+      "source_frame": 107,
+      "width": 510,
+      "height": 476,
+      "contrast": 0.2235,
+      "sharpness": 0.2522,
+      "edge_density": 0.1986,
+      "gradient": 0.0648,
+      "texture_coverage": 1.0,
+      "illumination_uniformity": 0.7408,
+      "size_score": 1.0,
+      "aspect_score": 0.9333,
+      "score": 0.6258,
+      "eligible": true,
+      "rejection_reasons": [],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 33,
+      "file": "patch_34.jpg",
+      "source_frame": 107,
+      "width": 107,
+      "height": 44,
+      "contrast": 0.1176,
+      "sharpness": 0.2,
+      "edge_density": 0.1453,
+      "gradient": 0.0431,
+      "texture_coverage": 0.75,
+      "illumination_uniformity": 0.869,
+      "size_score": 0.0436,
+      "aspect_score": 0.4112,
+      "score": 0.4839,
+      "eligible": false,
+      "rejection_reasons": [
+        "too-small",
+        "insufficient-area",
+        "flat-grey"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 34,
+      "file": "patch_35.jpg",
+      "source_frame": 107,
+      "width": 197,
+      "height": 147,
+      "contrast": 0.2706,
+      "sharpness": 0.3646,
+      "edge_density": 0.2267,
+      "gradient": 0.0692,
+      "texture_coverage": 1.0,
+      "illumination_uniformity": 0.6465,
+      "size_score": 0.7313,
+      "aspect_score": 0.7462,
+      "score": 0.5891,
+      "eligible": true,
+      "rejection_reasons": [],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 35,
+      "file": "patch_36.jpg",
+      "source_frame": 117,
+      "width": 55,
+      "height": 26,
+      "contrast": 0.1546,
+      "sharpness": 0.5109,
+      "edge_density": 0.3273,
+      "gradient": 0.1133,
+      "texture_coverage": 0.9722,
+      "illumination_uniformity": 0.8651,
+      "size_score": 0.0078,
+      "aspect_score": 0.4727,
+      "score": 0.5404,
+      "eligible": false,
+      "rejection_reasons": [
+        "too-small",
+        "insufficient-area",
+        "flat-grey"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 36,
+      "file": "patch_37.jpg",
+      "source_frame": 117,
+      "width": 1280,
+      "height": 720,
+      "contrast": 0.4275,
+      "sharpness": 0.3888,
+      "edge_density": 0.167,
+      "gradient": 0.0684,
+      "texture_coverage": 1.0,
+      "illumination_uniformity": 0.4836,
+      "size_score": 1.0,
+      "aspect_score": 0.5625,
+      "score": 0.6549,
+      "eligible": true,
+      "rejection_reasons": [],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 37,
+      "file": "patch_38.jpg",
+      "source_frame": 127,
+      "width": 256,
+      "height": 130,
+      "contrast": 0.2784,
+      "sharpness": 0.4976,
+      "edge_density": 0.262,
+      "gradient": 0.1093,
+      "texture_coverage": 1.0,
+      "illumination_uniformity": 0.6446,
+      "size_score": 0.8404,
+      "aspect_score": 0.5078,
+      "score": 0.6363,
+      "eligible": true,
+      "rejection_reasons": [],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 38,
+      "file": "patch_39.jpg",
+      "source_frame": 127,
+      "width": 67,
+      "height": 49,
+      "contrast": 0.0902,
+      "sharpness": 0.1767,
+      "edge_density": 0.0228,
+      "gradient": 0.0256,
+      "texture_coverage": 0.1111,
+      "illumination_uniformity": 0.8732,
+      "size_score": 0.0339,
+      "aspect_score": 0.7313,
+      "score": 0.2622,
+      "eligible": false,
+      "rejection_reasons": [
+        "too-small",
+        "insufficient-area",
+        "flat-grey",
+        "weak-gradient",
+        "no-readable-contour",
+        "sparse-texture"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 39,
+      "file": "patch_40.jpg",
+      "source_frame": 137,
+      "width": 85,
+      "height": 46,
+      "contrast": 0.0902,
+      "sharpness": 0.2061,
+      "edge_density": 0.1517,
+      "gradient": 0.045,
+      "texture_coverage": 0.7778,
+      "illumination_uniformity": 0.9105,
+      "size_score": 0.0378,
+      "aspect_score": 0.5412,
+      "score": 0.5091,
+      "eligible": false,
+      "rejection_reasons": [
+        "too-small",
+        "insufficient-area",
+        "flat-grey"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 40,
+      "file": "patch_41.jpg",
+      "source_frame": 137,
+      "width": 165,
+      "height": 139,
+      "contrast": 0.1059,
+      "sharpness": 0.1761,
+      "edge_density": 0.0368,
+      "gradient": 0.0359,
+      "texture_coverage": 0.5556,
+      "illumination_uniformity": 0.9073,
+      "size_score": 0.5792,
+      "aspect_score": 0.8424,
+      "score": 0.3935,
+      "eligible": false,
+      "rejection_reasons": [
+        "flat-grey",
+        "no-readable-contour",
+        "sparse-texture"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 41,
+      "file": "patch_42.jpg",
+      "source_frame": 137,
+      "width": 266,
+      "height": 93,
+      "contrast": 0.3294,
+      "sharpness": 0.2264,
+      "edge_density": 0.1368,
+      "gradient": 0.0511,
+      "texture_coverage": 0.8333,
+      "illumination_uniformity": 0.5262,
+      "size_score": 0.4841,
+      "aspect_score": 0.3496,
+      "score": 0.5086,
+      "eligible": false,
+      "rejection_reasons": [
+        "too-small"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 42,
+      "file": "patch_43.jpg",
+      "source_frame": 137,
+      "width": 1280,
+      "height": 720,
+      "contrast": 0.4235,
+      "sharpness": 0.3777,
+      "edge_density": 0.1527,
+      "gradient": 0.0654,
+      "texture_coverage": 0.9722,
+      "illumination_uniformity": 0.4875,
+      "size_score": 1.0,
+      "aspect_score": 0.5625,
+      "score": 0.6441,
+      "eligible": true,
+      "rejection_reasons": [],
+      "duplicate_of": 36,
+      "visual_similarity": 0.9446
+    },
+    {
+      "index": 43,
+      "file": "patch_44.jpg",
+      "source_frame": 147,
+      "width": 19,
+      "height": 35,
+      "contrast": 0.0588,
+      "sharpness": 0.1693,
+      "edge_density": 0.3459,
+      "gradient": 0.0255,
+      "texture_coverage": 0.2222,
+      "illumination_uniformity": 0.9195,
+      "size_score": 0.0027,
+      "aspect_score": 0.5429,
+      "score": 0.2368,
+      "eligible": false,
+      "rejection_reasons": [
+        "too-small",
+        "insufficient-area",
+        "flat-grey",
+        "weak-gradient",
+        "edge-noise",
+        "sparse-texture"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 44,
+      "file": "patch_45.jpg",
+      "source_frame": 147,
+      "width": 62,
+      "height": 26,
+      "contrast": 0.1599,
+      "sharpness": 0.5045,
+      "edge_density": 0.3474,
+      "gradient": 0.1196,
+      "texture_coverage": 0.9722,
+      "illumination_uniformity": 0.869,
+      "size_score": 0.0088,
+      "aspect_score": 0.4194,
+      "score": 0.5475,
+      "eligible": false,
+      "rejection_reasons": [
+        "too-small",
+        "insufficient-area",
+        "flat-grey",
+        "edge-noise"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 45,
+      "file": "patch_46.jpg",
+      "source_frame": 147,
+      "width": 64,
+      "height": 49,
+      "contrast": 0.0863,
+      "sharpness": 0.1736,
+      "edge_density": 0.0293,
+      "gradient": 0.0251,
+      "texture_coverage": 0.1111,
+      "illumination_uniformity": 0.8804,
+      "size_score": 0.0323,
+      "aspect_score": 0.7656,
+      "score": 0.2704,
+      "eligible": false,
+      "rejection_reasons": [
+        "too-small",
+        "insufficient-area",
+        "flat-grey",
+        "weak-gradient",
+        "no-readable-contour",
+        "sparse-texture"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 46,
+      "file": "patch_47.jpg",
+      "source_frame": 157,
+      "width": 68,
+      "height": 40,
+      "contrast": 0.098,
+      "sharpness": 0.1967,
+      "edge_density": 0.1732,
+      "gradient": 0.041,
+      "texture_coverage": 0.6667,
+      "illumination_uniformity": 0.8887,
+      "size_score": 0.0229,
+      "aspect_score": 0.5882,
+      "score": 0.4829,
+      "eligible": false,
+      "rejection_reasons": [
+        "too-small",
+        "insufficient-area",
+        "flat-grey",
+        "sparse-texture"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 47,
+      "file": "patch_48.jpg",
+      "source_frame": 157,
+      "width": 145,
+      "height": 63,
+      "contrast": 0.0941,
+      "sharpness": 0.1954,
+      "edge_density": 0.0274,
+      "gradient": 0.0386,
+      "texture_coverage": 0.6389,
+      "illumination_uniformity": 0.9184,
+      "size_score": 0.1211,
+      "aspect_score": 0.4345,
+      "score": 0.3458,
+      "eligible": false,
+      "rejection_reasons": [
+        "too-small",
+        "insufficient-area",
+        "flat-grey",
+        "no-readable-contour",
+        "sparse-texture"
+      ],
+      "duplicate_of": null,
+      "visual_similarity": null
+    },
+    {
+      "index": 48,
+      "file": "patch_49.jpg",
+      "source_frame": 157,
+      "width": 1280,
+      "height": 720,
+      "contrast": 0.4235,
+      "sharpness": 0.3662,
+      "edge_density": 0.1567,
+      "gradient": 0.0641,
+      "texture_coverage": 0.9722,
+      "illumination_uniformity": 0.4924,
+      "size_score": 1.0,
+      "aspect_score": 0.5625,
+      "score": 0.6443,
+      "eligible": true,
+      "rejection_reasons": [],
+      "duplicate_of": 36,
+      "visual_similarity": 0.9555
+    }
+  ]
+}

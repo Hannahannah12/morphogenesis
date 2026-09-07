@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070a0b">
+  <title>Morphogenesis — BGM Workbench</title>
+  <link rel="stylesheet" href="./style.css?v=audio-workbench-v1">
+</head>
+<body data-page="bgm_workbench">
+  <main class="workbench">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Morphogenesis / Studio tool</p>
+        <h1>BGM Workbench</h1>
+      </div>
+      <div class="top-actions">
+        <span id="audio-state" class="status"><i></i>Audio waiting</span>
+        <button id="export-button" class="button primary" type="button">Export WAV</button>
+      </div>
+    </header>
+
+    <nav id="crystal-tabs" class="crystal-tabs" aria-label="Choose crystal"></nav>
+
+    <section class="workspace">
+      <div class="monitor-column">
+        <article class="monitor-panel">
+          <header class="panel-heading">
+            <div>
+              <span class="eyebrow">Visual reference</span>
+              <strong id="crystal-title">Crystal 01</strong>
+            </div>
+            <span id="duration-label">--:--</span>
+          </header>
+          <div class="video-stage">
+            <video id="crystal-video" muted playsinline preload="metadata"></video>
+            <div class="video-grid" aria-hidden="true"></div>
+          </div>
+          <canvas id="master-waveform" class="master-waveform" width="1200" height="130"
+            aria-label="Combined audio waveform"></canvas>
+          <div class="transport">
+            <button id="play-button" class="transport-button" type="button" aria-label="Play">▶</button>
+            <button id="stop-button" class="transport-button" type="button" aria-label="Stop">■</button>
+            <span id="current-time">00:00.0</span>
+            <input id="timeline" type="range" min="0" max="1" step="0.001" value="0"
+              aria-label="Audio timeline">
+            <span id="total-time">00:00.0</span>
+            <label class="toggle-label"><input id="loop-project" type="checkbox" checked> Loop</label>
+          </div>
+        </article>
+
+        <article class="noise-panel">
+          <header class="panel-heading">
+            <div>
+              <span class="eyebrow">Source-motion sonification</span>
+              <strong>Electrical current / interference</strong>
+            </div>
+            <label class="switch"><input id="noise-enabled" type="checkbox" checked><span></span></label>
+          </header>
+          <div class="noise-controls">
+            <label>Level <output id="noise-level-value">18%</output>
+              <input id="noise-level" type="range" min="0" max="0.5" step="0.01" value="0.18">
+            </label>
+            <label>Tone <output id="noise-tone-value">2.8 kHz</output>
+              <input id="noise-tone" type="range" min="180" max="12000" step="10" value="2800">
+            </label>
+            <label>Pulse <output id="noise-pulse-value">2.4 Hz</output>
+              <input id="noise-pulse" type="range" min="0" max="12" step="0.1" value="2.4">
+            </label>
+            <label>Arc <output id="noise-grain-value">42%</output>
+              <input id="noise-grain" type="range" min="0" max="1" step="0.01" value="0.42">
+            </label>
+          </div>
+          <div class="noise-actions">
+            <button id="randomise-noise" class="button" type="button">New variation</button>
+            <span id="noise-seed">Seed 0101</span>
+          </div>
+        </article>
+      </div>
+
+      <section class="mixer-panel">
+        <header class="panel-heading mixer-heading">
+          <div>
+            <span class="eyebrow">Imported layers</span>
+            <strong>Crystal mixer</strong>
+          </div>
+          <label class="master-volume">Master
+            <input id="master-volume" type="range" min="0" max="1" step="0.01" value="0.82">
+            <output id="master-volume-value">82%</output>
+          </label>
+        </header>
+
+        <label id="drop-zone" class="drop-zone">
+          <input id="audio-input" type="file" accept="audio/*,.wav,.mp3,.m4a,.aac,.ogg,.flac" multiple>
+          <span class="drop-plus">+</span>
+          <strong>Import sound layers</strong>
+          <small>Drop WAV, MP3, M4A, AAC, OGG or FLAC here</small>
+          <small>Files stay on this computer and are assigned to the selected Crystal.</small>
+        </label>
+
+        <div id="tracks" class="tracks" aria-live="polite"></div>
+        <div id="empty-tracks" class="empty-tracks">
+          No imported layers yet. The generated radio-noise layer can be auditioned on its own.
+        </div>
+      </section>
+    </section>
+
+    <footer class="footer-note">
+      <span id="project-status">Crystal 01 / unsaved session</span>
+      <span>Space: play/pause · R: new noise · audio remains local</span>
+    </footer>
+  </main>
+  <script src="./app.js?v=source-linked-current-v3"></script>
+</body>
+</html>

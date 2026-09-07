@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050706">
+  <title>Morphogenesis — Diffusion Crystallisation</title>
+  <link rel="stylesheet" href="./style.css?v=blue-palette-v1">
+</head>
+<body>
+  <main id="diffusion" aria-label="Diffusion crystallisation experiment">
+    <canvas id="diffusion-canvas" aria-label="Real-time reaction-diffusion field"></canvas>
+    <div class="veil" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="identity">
+        <p>Morphogenesis / Direction 02</p>
+        <h1>Diffusion Crystallisation</h1>
+      </div>
+      <div class="runtime-state" aria-live="polite">
+        <span id="runtime-dot"></span>
+        <div><strong id="runtime-label">Initialising</strong><small id="runtime-detail">WebGL reaction–diffusion</small></div>
+      </div>
+    </header>
+
+    <figure id="source-monitor" class="source-monitor" aria-label="Current diffusion source">
+      <div class="source-frame">
+        <video id="crystal-video" muted loop playsinline preload="auto" aria-label="Current crystal source video"></video>
+        <img id="source-preview-image" alt="Current structural source map">
+        <div id="source-preview-placeholder" class="source-preview-placeholder">Procedural field</div>
+        <span class="frame-marker">Input</span>
+      </div>
+      <figcaption>
+        <span id="preview-label">Ice Crystal 01 / source video</span>
+        <strong>Current frame → diffusion seed</strong>
+      </figcaption>
+    </figure>
+
+    <section class="field-data" aria-label="Field data">
+      <p><span>Source</span><strong id="source-readout">Procedural seed</strong></p>
+      <p><span>Iteration</span><strong id="iteration-readout">0</strong></p>
+      <p><span>Frame rate</span><strong><span id="fps-readout">—</span> fps</strong></p>
+    </section>
+
+    <section class="sensor-data" aria-label="Physical sensor status">
+      <div class="sensor-status"><span id="sensor-dot"></span><strong id="sensor-label">Arduino disconnected</strong></div>
+      <p>Object <span id="object-temperature">--.-</span>°C</p>
+      <p>Ambient <span id="ambient-temperature">--.-</span>°C</p>
+    </section>
+
+    <aside class="controls" aria-label="Diffusion controls">
+      <div class="control-heading">
+        <span>Field parameters</span>
+        <button id="pause-button" type="button">Pause</button>
+      </div>
+
+      <label for="seed-source">Seed source</label>
+      <select id="seed-source">
+        <option value="ice_crystal_01">Ice Crystal 01 / video</option>
+        <option value="ice_crystal_02">Ice Crystal 02 / video</option>
+        <option value="structural">Structural map / Ice Crystal 01</option>
+        <option value="procedural">Procedural field</option>
+      </select>
+
+      <label for="feed">Feed <output id="feed-value">0.0367</output></label>
+      <input id="feed" type="range" min="0.0100" max="0.0800" step="0.0001" value="0.0367">
+
+      <label for="kill">Kill <output id="kill-value">0.0649</output></label>
+      <input id="kill" type="range" min="0.0400" max="0.0750" step="0.0001" value="0.0649">
+
+      <label for="speed">Steps / frame <output id="speed-value">8</output></label>
+      <input id="speed" type="range" min="1" max="18" step="1" value="8">
+
+      <div class="control-actions">
+        <button id="seed-button" type="button">Apply seed</button>
+        <button id="reset-button" type="button">Reset field</button>
+        <button id="fullscreen-button" type="button">Fullscreen</button>
+      </div>
+      <p id="control-note">Move Feed and Kill slowly. Drag across the field to introduce new material.</p>
+    </aside>
+
+    <div id="notice" class="notice" role="status" aria-live="polite"></div>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>

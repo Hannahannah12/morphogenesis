@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050607">
+  <title>Morphogenesis — Ice Crystallizing</title>
+  <link rel="stylesheet" href="./style.css?v=material-case-v18">
+  <link rel="stylesheet" href="../session-state.css?v=backstage-type-v1">
+  <link rel="stylesheet" href="../exhibition-idle-text.css?v=idle-copy-v2">
+</head>
+<body>
+  <main id="observation" aria-label="Morphogenesis archive and live observation">
+    <div class="media-stage">
+      <section class="media-pane archive-pane" aria-label="Archive">
+        <video id="archive-video" class="media media-archive active" autoplay muted loop playsinline
+          src="/09_experiments/05_stabilization/ice_crystal_01_fixed_lock/source/crystallization_stabilized.mp4"></video>
+        <video id="archive-edge-video" class="media media-archive" muted loop playsinline preload="auto"
+          src="/09_experiments/05_stabilization/ice_crystal_01_fixed_lock/01_material_analysis/edge_numbers.mp4" aria-hidden="true"></video>
+        <video id="archive-threshold-video" class="media media-archive" muted loop playsinline preload="auto"
+          src="/09_experiments/05_stabilization/ice_crystal_01_fixed_lock/01_material_analysis/threshold.mp4" aria-hidden="true"></video>
+        <video id="archive-motion-video" class="media media-archive" muted loop playsinline preload="auto"
+          src="/09_experiments/05_stabilization/ice_crystal_01_fixed_lock/01_material_analysis/motion.mp4" aria-hidden="true"></video>
+        <div id="archive-cut-flash" aria-hidden="true"></div>
+        <span class="pane-label">Archive</span>
+      </section>
+      <div id="main-splitter" class="pane-splitter main-splitter" role="separator"
+        aria-label="Resize Archive and Live panels" aria-orientation="vertical"
+        aria-valuemin="20" aria-valuemax="80" aria-valuenow="50" tabindex="0"></div>
+      <section class="media-pane live-pane" aria-label="Live observation">
+        <div class="camera-stage">
+          <video id="camera-video" class="media media-camera" autoplay muted playsinline></video>
+          <span class="pane-label">Live camera</span>
+        </div>
+        <div id="thermal-splitter" class="pane-splitter thermal-splitter" role="separator"
+          aria-label="Resize camera and thermal panels" aria-orientation="horizontal"
+          aria-valuemin="20" aria-valuemax="80" aria-valuenow="67" tabindex="0"></div>
+        <div class="thermal-stage">
+          <canvas id="thermal-canvas" width="640" height="480" aria-label="MLX90640 thermal image"></canvas>
+          <span class="pane-label">MLX90640 / thermal</span>
+        </div>
+      </section>
+      <div class="vignette"></div>
+      <div class="grain"></div>
+    </div>
+
+    <header class="topbar">
+      <div class="identity">
+        <h1>Morphogenesis</h1>
+        <p>Ice crystallizing</p>
+      </div>
+      <div class="source-state" aria-live="polite">
+        <span id="source-dot" class="status-dot"></span>
+        <span id="source-label">Archive observation / standby</span>
+        <span id="agent-label" class="agent-label">Agent / connecting</span>
+      </div>
+    </header>
+
+    <section class="reading" aria-label="Surface temperature">
+      <div class="reading-values">
+        <div class="secondary-reading">
+          <p class="ambient-label">Ambient</p>
+          <p class="ambient-value"><span id="ambient-temperature">--.-</span><span class="ambient-unit">°C</span></p>
+        </div>
+        <div class="minimum-reading">
+          <p class="reading-label">Minimum</p>
+          <p class="reading-value"><span id="temperature">--.-</span><span class="unit">°C</span></p>
+        </div>
+      </div>
+      <p id="sensor-state" class="reading-state">Sensor awaiting connection</p>
+    </section>
+
+    <section class="timecode" aria-label="Observation time">
+      <p id="date-label"></p>
+      <time id="clock-label"></time>
+    </section>
+
+    <section id="analysis-overlay" class="analysis-overlay" aria-live="polite" hidden>
+      <div class="analysis-veil" aria-hidden="true"></div>
+      <div class="analysis-copy">
+        <p id="analysis-kicker" class="analysis-kicker">SIMULATED OBSERVATION</p>
+        <h2 id="analysis-title" class="analysis-title">ICE CRYSTALLISATION BEGINS IN</h2>
+        <p id="analysis-value" class="analysis-value">00:08</p>
+        <div id="analysis-process" class="analysis-process"></div>
+      </div>
+    </section>
+
+    <button id="analysis-start-button" class="analysis-start-button" type="button">Start</button>
+
+    <nav class="controls" aria-label="Observation controls" hidden>
+      <button id="camera-button" type="button">Start camera</button>
+      <select id="camera-select" aria-label="Choose camera">
+        <option value="">USB camera (auto)</option>
+      </select>
+      <button id="archive-button" type="button" class="active">Archive</button>
+      <select id="agent-state-select" class="agent-state-select" aria-label="Choose Agent state">
+        <option value="IDLE">Agent / Idle</option>
+        <option value="OBSERVING">Agent / Observing</option>
+        <option value="GROWING">Agent / Growing</option>
+        <option value="ARCHIVING">Agent / Archiving</option>
+      </select>
+      <button id="fullscreen-button" type="button" aria-label="Enter fullscreen">Fullscreen</button>
+    </nav>
+
+    <div id="notice" class="notice" role="status" aria-live="polite"></div>
+  </main>
+  <script src="../experiment-sync.js?v=normalized-phase-rate-sync-v5"></script>
+  <script src="./app.js?v=material-handoff-v24"></script>
+  <script src="../session-state.js?v=shared-live-v4" data-page="live"></script>
+  <script src="../agent-monitor.js?v=compact-cooling-v2" data-page="live"></script>
+  <script src="../exhibition-idle-text.js?v=body-safe-v4" data-idle-ms="4000" data-preserve=".reading,.source-state,.analysis-overlay"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+# -----------------------------------------------------------------------------
+# Morphogenesis GitHub submission profile
+#
+# The working installation keeps raw media and research history locally. The
+# repository contains the current code, notebooks and current exhibition set,
+# without duplicating the separately published Archive website or old renders.
+# -----------------------------------------------------------------------------
+
+# Local runtime environments, downloaded weights and third-party checkout
+03_diffusion_imagination/.conda/
+03_diffusion_imagination/models/huggingface/
+03_diffusion_imagination/runtime/StreamDiffusion/
+
+# Archive is maintained in its own GitHub publication
+00_websites/archive/
+
+# Historical and generated research outputs (retained locally)
+09_experiments/previous_tests/
+09_experiments/05_stabilization/
+09_experiments/06_patch_reprocess_20260812/
+05_shared_data/exhibition/**/revisions/
+05_shared_data/exhibition/**/_preserved_originals/
+
+# Raw shared captures are local masters. Current trimmed exhibition sources
+# remain under 05_shared_data/exhibition/ and are tracked through Git LFS.
+05_shared_data/input/
+
+# Exact duplicate exports; the canonical files without this suffix are retained
+05_shared_data/exhibition/**/*_0_5px.mp4
+
+# The final coursework installation does not use the earlier 3D/TouchDesigner
+# direction. Keep it in the studio workspace but omit it from the GitHub hand-in.
+07_3d_touchdesigner/
+
+# Runtime state, diagnostics and temporary previews
+08_system_agent/runtime/
+08_system_agent/logs/
+*.log
+*.jsonl
+*.bak
+*.tmp
+
+# Python and notebook noise
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+.agents/
+.claude/
+.codex/
+
+# Local secrets (never commit API keys)
+*.env
+08_system_agent/openai.env

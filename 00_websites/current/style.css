@@ -1,0 +1,180 @@
+:root {
+  color-scheme: dark;
+  --ink: #f4f5f2;
+  --muted: rgba(244, 245, 242, 0.64);
+  --line: rgba(244, 245, 242, 0.18);
+  --black: #050607;
+}
+
+* { box-sizing: border-box; }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: var(--black);
+  color: var(--ink);
+  font-family: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+}
+
+button,
+select { font: inherit; }
+
+#current-image {
+  position: fixed;
+  inset: 0;
+  background: var(--black);
+}
+
+#camera-video {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  background: var(--black);
+}
+
+.camera-empty {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  gap: 15px;
+  justify-items: center;
+  background: var(--black);
+  color: var(--muted);
+}
+
+.camera-empty[hidden] { display: none; }
+
+.camera-empty p {
+  margin: 0;
+  font-size: 10px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.camera-empty button,
+.controls button,
+.controls select {
+  min-height: 31px;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  background: rgba(5, 8, 8, .62);
+  color: var(--ink);
+  font-size: 10px;
+  letter-spacing: .08em;
+}
+
+.camera-empty button,
+.controls button {
+  padding: 0 11px;
+  cursor: pointer;
+}
+
+.topbar {
+  position: absolute;
+  inset: 0 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 28px 32px;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(0, 0, 0, .38), transparent);
+}
+
+.identity h1,
+.identity p { margin: 0; }
+
+.identity h1 {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.identity p,
+.source-state {
+  font-size: 10px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.identity p {
+  margin-top: 7px;
+  color: var(--muted);
+}
+
+.source-state {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #d7a77b;
+}
+
+.camera-connected .status-dot {
+  background: #8fdcff;
+  box-shadow: 0 0 12px rgba(143, 220, 255, .65);
+}
+
+.controls {
+  position: absolute;
+  right: 32px;
+  bottom: 32px;
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.controls-toggle {
+  width: 30px;
+  min-width: 30px;
+  padding: 0 !important;
+  font-size: 16px !important;
+}
+
+.controls-body {
+  display: flex;
+  gap: 6px;
+}
+
+.controls-body[hidden] { display: none; }
+
+.controls select {
+  max-width: 220px;
+  padding: 0 10px;
+}
+
+.notice {
+  position: absolute;
+  left: 50%;
+  bottom: 34px;
+  max-width: min(520px, calc(100vw - 170px));
+  transform: translateX(-50%);
+  color: var(--muted);
+  font-size: 9px;
+  letter-spacing: .08em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 720px) {
+  .topbar { padding: 20px; }
+  .controls { right: 20px; bottom: 20px; }
+  .controls-body { flex-wrap: wrap; justify-content: flex-end; }
+  .controls select { max-width: 150px; }
+  .notice { bottom: 72px; max-width: calc(100vw - 40px); }
+}

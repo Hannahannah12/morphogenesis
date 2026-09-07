@@ -1,0 +1,169 @@
+{
+  "server": {
+    "host": "0.0.0.0",
+    "port": 8080
+  },
+  "capturePolicy": {
+    "mode": "formation_only",
+    "recordStartTrigger": "arduino_peltier_cooling_started",
+    "preRollSeconds": 2.0,
+    "postCompletionHoldSeconds": 2.0,
+    "liveStopCondition": "stable_structural_plateau",
+    "offlineStartDetection": "rolling_roi_texture_growth",
+    "preserveRawCapture": true,
+    "excludeDissolution": true
+  },
+  "captureModes": {
+    "recorded_rehearsal": {
+      "source": "existing_video",
+      "recordingTrigger": "not_applicable",
+      "boundaryPass": "offline_onset_and_completion"
+    },
+    "live_capture": {
+      "source": "usb_camera",
+      "recordingTrigger": "arduino_peltier_cooling_started",
+      "boundaryPass": "online_completion_then_offline_onset"
+    }
+  },
+  "projectSections": {
+    "websites": "00_websites",
+    "materialAnalysis": "01_material_analysis",
+    "structural": "02_structural_resonance",
+    "diffusion": "03_diffusion_imagination",
+    "sharedData": "05_shared_data",
+    "hardware": "06_hardware",
+    "touchdesigner": "07_3d_touchdesigner",
+    "systemAgent": "08_system_agent"
+  },
+  "websitePages": {
+    "current": {
+      "label": "Current Image",
+      "url": "/00_websites/current/",
+      "file": "00_websites/current/index.html"
+    },
+    "live": {
+      "label": "Ice Crystallizing",
+      "url": "/00_websites/live/",
+      "file": "00_websites/live/index.html"
+    },
+    "archive": {
+      "label": "Morphogenesis Archive",
+      "url": "/00_websites/archive/",
+      "file": "00_websites/archive/index.html"
+    },
+    "material": {
+      "label": "01 / Material Analysis",
+      "url": "/00_websites/01_material/",
+      "file": "00_websites/01_material/index.html"
+    },
+    "structural": {
+      "label": "02 / Structural Resonance",
+      "url": "/00_websites/02_structural/",
+      "file": "00_websites/02_structural/index.html"
+    },
+    "resonance_attention": {
+      "label": "Display / Only Small Screen — Rotating Analysis",
+      "url": "/00_websites/02_structural/attention.html",
+      "file": "00_websites/02_structural/attention.html"
+    },
+    "medium_display": {
+      "label": "Display / Medium Screens — Resonance + Diffusion",
+      "url": "/00_websites/medium-display/",
+      "file": "00_websites/medium-display/index.html"
+    },
+    "medium_display_2": {
+      "label": "Display / Medium Screen 2 — Synchronized Companion",
+      "url": "/00_websites/medium-display-2/",
+      "file": "00_websites/medium-display-2/index.html"
+    },
+    "bgm_workbench": {
+      "label": "Studio / BGM Workbench",
+      "url": "/00_websites/bgm-workbench/",
+      "file": "00_websites/bgm-workbench/index.html"
+    },
+    "spacetime_row_200": {
+      "label": "Display / Spacetime Row 200 — Fullscreen",
+      "url": "/00_websites/spacetime-row-200/",
+      "file": "00_websites/spacetime-row-200/index.html"
+    },
+    "crystal_cut_preview": {
+      "label": "Preview / Crystal 01 — Source + Edge + Threshold + Motion",
+      "url": "/00_websites/crystal-cut-preview/",
+      "file": "00_websites/crystal-cut-preview/index.html"
+    },
+    "stabilization_preview": {
+      "label": "Preview / Crystal 01 — Stabilization Comparison",
+      "url": "/00_websites/stabilization-preview/",
+      "file": "00_websites/stabilization-preview/index.html"
+    },
+    "diffusion": {
+      "label": "03 / Diffusion Imagination",
+      "url": "/00_websites/03_diffusion/",
+      "file": "00_websites/03_diffusion/index.html"
+    },
+    "backstage": {
+      "label": "Processing Backstage",
+      "url": "/00_websites/backstage/",
+      "file": "00_websites/backstage/index.html"
+    },
+    "exhibition_main": {
+      "label": "Exhibition Mode / Main Display",
+      "url": "/exhibition/main/",
+      "file": "00_websites/exhibition/main/index.html"
+    },
+    "exhibition_medium_1": {
+      "label": "Exhibition Mode / Medium Display 1",
+      "url": "/exhibition/medium-1/",
+      "file": "00_websites/exhibition/medium-1/index.html"
+    },
+    "exhibition_medium_2": {
+      "label": "Exhibition Mode / Medium Display 2",
+      "url": "/exhibition/medium-2/",
+      "file": "00_websites/exhibition/medium-2/index.html"
+    },
+    "exhibition_small_1": {
+      "label": "Exhibition Mode / Small Display 1",
+      "url": "/exhibition/small-1/",
+      "file": "00_websites/exhibition/small-1/index.html"
+    }
+  },
+  "projectProgress": {
+    "material": {
+      "label": "01 / Material Analysis",
+      "stage": "Analysis outputs",
+      "milestones": [
+        { "label": "Material analysis notebook", "path": "01_material_analysis/notebooks/crystal_analysis.ipynb" },
+        { "label": "Skeleton extraction notebook", "path": "01_material_analysis/notebooks/crystal_skeleton.ipynb" },
+        { "label": "Ice Crystal 01 analysis output", "path": "09_experiments/previous_tests/01_material_analysis/output/ice_crystal_01/analysis" },
+        { "label": "Ice Crystal 02 analysis output", "path": "09_experiments/previous_tests/01_material_analysis/output/ice_crystal_02/analysis" },
+        { "label": "Material exhibition entry", "path": "00_websites/01_material/index.html" },
+        { "label": "Final interpretation and thesis integration", "complete": false }
+      ]
+    },
+    "structural": {
+      "label": "02 / Structural Resonance",
+      "stage": "Advanced analysis",
+      "milestones": [
+        { "label": "Attention analysis notebook", "path": "02_structural_resonance/notebooks/structural_resonance_attention.ipynb" },
+        { "label": "Structural search notebook", "path": "02_structural_resonance/notebooks/structural_resonance_search.ipynb" },
+        { "label": "Ice Crystal 01 analysis output", "path": "09_experiments/previous_tests/02_structural_resonance/output/ice_crystal_01/attention_maps" },
+        { "label": "Ice Crystal 02 analysis output", "path": "09_experiments/previous_tests/02_structural_resonance/output/ice_crystal_02/attention_maps" },
+        { "label": "Archive integration", "complete": true },
+        { "label": "Structural exhibition entry", "path": "00_websites/02_structural/index.html" },
+        { "label": "Final interpretation and thesis integration", "complete": false }
+      ]
+    },
+    "diffusion": {
+      "label": "03 / Diffusion Imagination",
+      "stage": "StreamDiffusion prototype",
+      "milestones": [
+        { "label": "Define diffusion research question", "complete": true },
+        { "label": "Preserve reaction-diffusion experiment", "path": "00_websites/experiments/reaction_diffusion/index.html" },
+        { "label": "Install and verify StreamDiffusion GPU runtime", "path": "09_experiments/previous_tests/03_diffusion_imagination/output/smoke_test/streamdiffusion_result.jpg" },
+        { "label": "Build live camera and archive video interface", "path": "00_websites/03_diffusion/index.html" },
+        { "label": "Integrate GPU status with Control Room", "complete": true },
+        { "label": "Visual evaluation and thesis integration", "complete": false }
+      ]
+    }
+  }
+}

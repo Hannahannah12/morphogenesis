@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050607">
+  <title>Morphogenesis — Current Image</title>
+  <link rel="stylesheet" href="./style.css?v=raw-camera-v1">
+</head>
+<body>
+  <main id="current-image" aria-label="Morphogenesis current physical image">
+    <video id="camera-video" autoplay muted playsinline></video>
+    <div class="camera-empty" id="camera-empty">
+      <p>Current image</p>
+      <button id="camera-start" type="button">Connect USB camera</button>
+    </div>
+
+    <header class="topbar">
+      <div class="identity">
+        <h1>Morphogenesis</h1>
+        <p>Current image</p>
+      </div>
+      <div class="source-state" aria-live="polite">
+        <span id="source-dot" class="status-dot"></span>
+        <span id="source-label">Camera / waiting</span>
+      </div>
+    </header>
+
+    <section class="controls" aria-label="Current image controls">
+      <button id="controls-toggle" class="controls-toggle" type="button"
+        aria-label="Expand controls" aria-expanded="false">+</button>
+      <div id="controls-body" class="controls-body" hidden>
+        <button id="camera-button" type="button">Camera</button>
+        <select id="camera-select" aria-label="Choose camera">
+          <option value="">USB camera (auto)</option>
+        </select>
+        <button id="fullscreen-button" type="button">Fullscreen</button>
+      </div>
+    </section>
+
+    <div id="notice" class="notice" role="status" aria-live="polite"></div>
+  </main>
+
+  <script src="./app.js?v=raw-camera-v1"></script>
+  <script src="../agent-monitor.js?v=current-image-v1" data-page="current"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#060808">
+  <title>Morphogenesis — Processing Backstage</title>
+  <link rel="stylesheet" href="./style.css?v=no-video-v6">
+</head>
+<body>
+  <main>
+    <header class="topbar">
+      <div>
+        <h1>Morphogenesis</h1>
+        <p>Processing backstage</p>
+      </div>
+      <div class="session-state">
+        <span id="state-dot"></span>
+        <strong id="phase">IDLE</strong>
+        <span id="clock">--:--</span>
+      </div>
+    </header>
+
+    <section class="session-summary" aria-label="Experiment session summary">
+      <div>
+        <span>PROCESSING SOURCE</span>
+        <strong id="source-name">Waiting for Agent</strong>
+      </div>
+      <div>
+        <span>FORMATION ONSET</span>
+        <strong id="onset">--.- s</strong>
+      </div>
+      <div>
+        <span>CLIP BEGINS</span>
+        <strong id="trim">--.- s</strong>
+      </div>
+    </section>
+
+    <section id="jobs" class="jobs" aria-label="Processing jobs"></section>
+
+    <section class="console-panel" aria-label="Processing console">
+      <header>
+        <span class="eyebrow">Process console</span>
+        <span><i></i> stdout / live</span>
+      </header>
+      <div id="console-output" class="console-output" role="log" aria-live="polite"></div>
+    </section>
+
+    <section class="event-panel">
+      <header>
+        <span class="eyebrow">Agent event stream</span>
+        <span id="updated">not connected</span>
+      </header>
+      <ol id="events"></ol>
+    </section>
+  </main>
+
+  <script src="../experiment-sync.js?v=duration-sync-v2"></script>
+  <script src="./app.js?v=rehearsal-safe-v9"></script>
+  <script src="../agent-monitor.js?v=compact-cooling-v2" data-page="backstage"></script>
+</body>
+</html>

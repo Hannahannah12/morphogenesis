@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#050607">
+  <title>Morphogenesis — Exhibition Main</title>
+  <link rel="stylesheet" href="/00_websites/exhibition/exhibition.css?v=5">
+</head>
+<body data-role="main">
+  <main id="display" class="display" aria-live="polite">
+    <section id="media-stage" class="stage media-stage">
+      <video id="video-a" class="media media-a" muted playsinline preload="auto"></video>
+      <video id="video-b" class="media media-b" muted playsinline preload="auto"></video>
+      <div id="analysis-caption" class="analysis-caption" hidden><span id="analysis-label">material analysis</span><span id="analysis-state">processing</span></div>
+    </section>
+    <section id="resonance-stage" class="stage resonance-stage">
+      <video id="blob-video" class="media" muted playsinline preload="auto"></video>
+      <div class="resonance-vignette"></div>
+      <div id="resonance-pair" class="resonance-pair">
+        <figure class="resonance-card patch-card"><img id="patch-image" alt="Detected crystal patch"><figcaption id="patch-caption">detected patch</figcaption></figure>
+        <div class="resonance-link"></div>
+        <figure class="resonance-card result-card"><img id="result-image" alt="Corresponding structural image"><figcaption id="result-caption">structural resonance</figcaption></figure>
+      </div>
+    </section>
+    <section id="realtime-diffusion-stage" class="stage realtime-diffusion-stage">
+      <iframe id="realtime-diffusion-frame" title="Live Diffusion Imagination" data-src="/00_websites/03_diffusion/" allow="autoplay"></iframe>
+    </section>
+    <section id="text-stage" class="stage text-stage">
+      <div class="terminal-copy"><p id="text-kicker">morphogenesis / exhibition mode</p><h1 id="text-title">SYSTEM STANDBY</h1><p id="text-detail">waiting for shared sequence</p></div>
+      <aside class="imagination-trace-panel" aria-label="Shared OpenAI imagination trace">
+        <div class="trace-head">
+          <div><p>Imagination in progress</p><h2 id="diffusion-status">OpenAI / waiting</h2></div>
+          <span id="diffusion-countdown">shared</span>
+        </div>
+        <div class="trace-register" aria-hidden="true"><span><i></i>Frame reading</span><span>Structure → association</span><span>Buffer / shared</span></div>
+        <div class="thought-stream">
+          <p id="diffusion-thought" class="thought-output">Waiting to read the crystallisation structure.</p>
+          <div id="diffusion-prompt-result" class="diffusion-prompt-result" hidden><span>Diffusion prompt</span><p id="diffusion-prompt-output"></p></div>
+        </div>
+      </aside>
+    </section>
+    <aside id="main-temperature" class="main-temperature disconnected" aria-label="Arduino plate temperature">
+      <span class="main-temperature-label">plate minimum</span>
+      <strong><span id="main-temperature-value">--.-</span><small>°C</small></strong>
+      <span id="main-temperature-state" class="main-temperature-state">Arduino disconnected</span>
+    </aside>
+  </main>
+  <script src="/00_websites/experiment-sync.js?v=normalized-phase-rate-sync-v5"></script>
+  <script src="/00_websites/exhibition/exhibition.js?v=9"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+.morphogenesis-session-state {
+  position: fixed;
+  inset: 0;
+  z-index: 900;
+  display: grid;
+  place-items: center;
+  padding: 7vw;
+  pointer-events: none;
+  color: #edf1ed;
+  font-family: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+  text-align: center;
+  transition: opacity 320ms ease, background 320ms ease;
+}
+
+.morphogenesis-session-state[hidden] { display: none; }
+
+.morphogenesis-session-state.entry {
+  align-items: end;
+  padding-bottom: 7vh;
+  background: linear-gradient(180deg, transparent 56%, rgba(3, 6, 7, 0.58));
+}
+
+.morphogenesis-session-state.processing {
+  background:
+    linear-gradient(rgba(143, 220, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(143, 220, 255, 0.035) 1px, transparent 1px),
+    rgba(4, 7, 8, 0.78);
+  background-size: 48px 48px;
+  backdrop-filter: blur(2px);
+}
+
+.morphogenesis-session-copy { max-width: 760px; }
+
+.morphogenesis-session-kicker,
+.morphogenesis-session-detail {
+  margin: 0;
+  color: rgba(237, 241, 237, 0.58);
+  font-size: 9px;
+  line-height: 1.5;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.morphogenesis-session-copy h2 {
+  margin: 18px 0 0;
+  font-size: clamp(18px, 2.25vw, 34px);
+  font-weight: 250;
+  line-height: 1.35;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+}
+
+.morphogenesis-session-detail {
+  margin-top: 20px;
+  color: rgba(143, 220, 255, 0.72);
+}
+
+.morphogenesis-session-pulse {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background: #8fdcff;
+  animation: morphogenesis-session-pulse 1.8s ease-out infinite;
+}
+
+body.morphogenesis-entry .analysis-ledger,
+body.morphogenesis-entry .sequence-readout,
+body.morphogenesis-entry .resonance-cloud,
+body.morphogenesis-entry .resonance-focus,
+body.morphogenesis-entry .selection-crosshair,
+body.morphogenesis-entry .imagination-panel,
+body.morphogenesis-entry #controls-panel {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+body.morphogenesis-entry #diffusion-stage .generated-frame,
+body.morphogenesis-entry #diffusion-stage .atmosphere { opacity: 0; }
+
+body.morphogenesis-entry #diffusion-stage .source-window {
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  border: 0;
+  box-shadow: none;
+  background: #060808;
+}
+
+body.morphogenesis-entry #diffusion-stage .source-media {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+}
+
+body.morphogenesis-entry #diffusion-stage .source-media video { object-fit: cover; }
+body.morphogenesis-entry #diffusion-stage .source-window footer { display: none; }
+
+@keyframes morphogenesis-session-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(143, 220, 255, 0.45); }
+  70%, 100% { box-shadow: 0 0 0 10px rgba(143, 220, 255, 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .morphogenesis-session-pulse { animation: none; }
+}

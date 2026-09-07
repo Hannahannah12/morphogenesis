@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#060808">
+  <title>Morphogenesis — Crystal-Driven Translation</title>
+  <link rel="stylesheet" href="./style.css?v=dino-structure-audio-v12">
+</head>
+<body>
+  <main id="translation-stage" aria-label="Morphogenesis Crystal-Driven Translation">
+    <canvas id="field-canvas" aria-label="Live material data field"></canvas>
+    <div class="stage-shade" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="identity">
+        <h1>Morphogenesis</h1>
+        <p>04 / Crystal-driven translation · experiment</p>
+      </div>
+      <div class="runtime-state" aria-live="polite">
+        <span id="runtime-dot" class="state-dot"></span>
+        <span id="runtime-label">Archive analysis / waiting</span>
+        <span id="audio-label">Audio / locked</span>
+      </div>
+    </header>
+
+    <section class="source-window" aria-label="Material source">
+      <div class="source-media">
+        <video id="archive-video" autoplay muted loop playsinline
+          src="../../../05_shared_data/input/ice_crystal_01.mp4"></video>
+        <video id="camera-video" autoplay muted playsinline hidden></video>
+      </div>
+      <footer>
+        <span class="source-dot"></span>
+        <span id="source-label">Source / ice_crystal_01 archive</span>
+      </footer>
+    </section>
+
+    <aside class="signal-panel" aria-label="Material signal translation">
+      <header>
+        <span>Time volume</span>
+        <strong id="signal-state">Waiting for video frame</strong>
+      </header>
+      <dl>
+        <div>
+          <dt>Time layers</dt>
+          <dd id="activity-value">--</dd>
+        </div>
+        <div>
+          <dt>Model drift</dt>
+          <dd id="edge-value">--</dd>
+        </div>
+        <div>
+          <dt>Coherence</dt>
+          <dd id="growth-value">--</dd>
+        </div>
+        <div>
+          <dt>Fragments</dt>
+          <dd id="resonator-value">--</dd>
+        </div>
+      </dl>
+      <p id="translation-reading">
+        Successive crystal contours are being stacked along a temporal depth axis.
+      </p>
+    </aside>
+
+    <button id="audio-gate" class="audio-gate" type="button">
+      <span>Listen to the time volume</span>
+      <small>DINO structure features shape near tones, delay and acoustic depth</small>
+    </button>
+
+    <section id="controls-panel" class="controls collapsed" aria-label="Translation controls">
+      <header class="controls-head">
+        <button id="controls-toggle" class="controls-toggle" type="button"
+          aria-label="Expand controls" aria-expanded="false"
+          aria-controls="controls-body">+</button>
+      </header>
+      <div id="controls-body" class="controls-body">
+        <div class="control-row">
+          <button id="archive-button" class="active" type="button">Archive source</button>
+          <button id="camera-button" type="button">Find USB camera</button>
+          <select id="camera-select" aria-label="Choose USB camera">
+            <option value="">USB camera not selected</option>
+          </select>
+          <button id="audio-button" type="button">Start audio</button>
+          <button id="fullscreen-button" type="button">Fullscreen</button>
+        </div>
+        <p id="notice" class="notice" role="status" aria-live="polite">
+          Waiting for the archive video.
+        </p>
+      </div>
+    </section>
+
+    <canvas id="analysis-canvas" width="96" height="72" hidden></canvas>
+  </main>
+  <script src="./app.js?v=dino-structure-audio-v12"></script>
+</body>
+</html>

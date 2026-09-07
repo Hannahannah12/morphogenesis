@@ -1,0 +1,687 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MLX90640 热成像</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: Inter, "Microsoft YaHei", system-ui, sans-serif;
+      background: #111;
+      color: #f4f4f4;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: #111; }
+    main { width: min(920px, 94vw); margin: 28px auto; }
+    h1 { margin: 0 0 6px; font-size: clamp(24px, 4vw, 38px); }
+    .sub { margin: 0 0 20px; color: #aaa; }
+    .toolbar, .metrics, .panel {
+      border: 1px solid #333;
+      background: #191919;
+      border-radius: 14px;
+    }
+    .toolbar {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 14px;
+      margin-bottom: 16px;
+    }
+    button {
+      appearance: none;
+      border: 0;
+      border-radius: 9px;
+      padding: 11px 17px;
+      font: inherit;
+      font-weight: 700;
+      color: #111;
+      background: #f4f4f4;
+      cursor: pointer;
+    }
+    button:disabled { opacity: .45; cursor: default; }
+    label { color: #bbb; }
+    input[type="number"], select {
+      width: 72px;
+      margin-left: 5px;
+      padding: 8px;
+      border: 1px solid #444;
+      border-radius: 7px;
+      background: #0d0d0d;
+      color: #fff;
+      font: inherit;
+    }
+    select { width: auto; }
+    input[type="checkbox"] { margin: 0 0 0 6px; accent-color: #f4f4f4; }
+    #status { margin-left: auto; color: #aaa; }
+    #status.ok { color: #8ee59b; }
+    #status.error { color: #ff8d8d; }
+    .metrics {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      overflow: hidden;
+      margin-bottom: 16px;
+    }
+    .metric { padding: 16px; border-right: 1px solid #333; }
+    .metric:last-child { border-right: 0; }
+    .metric .label { display: block; color: #888; font-size: 13px; }
+    .metric .value { display: block; margin-top: 5px; font-size: 24px; font-variant-numeric: tabular-nums; }
+    .metric.primary .value { font-size: clamp(36px, 7vw, 62px); font-weight: 750; }
+    .metric.primary .value.below { color: #82d9ff; }
+    .panel { padding: 16px; }
+    .canvas-wrap {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      background: #000;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+    canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+      image-rendering: auto;
+    }
+    .legend { display: flex; align-items: center; gap: 10px; margin-top: 11px; color: #999; }
+    .bar {
+      height: 10px;
+      flex: 1;
+      border: 1px solid #555;
+      background: linear-gradient(90deg, #040012, #6c1670, #c42d53, #f26e2a, #fcc848, #ffffeb);
+    }
+    .bar.grayscale { background: linear-gradient(90deg, #000, #fff); }
+    details { margin-top: 16px; color: #aaa; }
+    li { margin: 7px 0; }
+    code { color: #eee; }
+    @media (max-width: 680px) {
+      .metrics { grid-template-columns: 1fr 1fr; }
+      .metric:nth-child(2) { border-right: 0; }
+      .metric:nth-child(-n+2) { border-bottom: 1px solid #333; }
+      #status { width: 100%; margin-left: 0; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>MLX90640 热成像</h1>
+    <p class="sub">Arduino Mega 2560 · 32×24 实测温度 · 边缘融合显示</p>
+
+    <section class="toolbar">
+      <button id="connectButton">连接 Mega</button>
+      <button id="calButton" disabled>重新读取校准</button>
+      <label>发射率 <input id="emissivity" type="number" min="0.10" max="1.00" step="0.01" value="0.95"></label>
+      <label>色彩
+        <select id="palette">
+          <option value="thermal">热力伪彩</option>
+          <option value="grayscale">柔和黑白</option>
+        </select>
+      </label>
+      <label>边缘融合 <input id="smoothing" type="checkbox" checked></label>
+      <span id="status">尚未连接</span>
+    </section>
+
+    <section class="metrics">
+      <div class="metric primary">
+        <span class="label">中心 4 像素平均</span>
+        <span class="value" id="centerTemp">-- °C</span>
+      </div>
+      <div class="metric">
+        <span class="label">最低</span>
+        <span class="value" id="minTemp">-- °C</span>
+      </div>
+      <div class="metric">
+        <span class="label">最高</span>
+        <span class="value" id="maxTemp">-- °C</span>
+      </div>
+      <div class="metric">
+        <span class="label">传感器自身</span>
+        <span class="value" id="ambientTemp">-- °C</span>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="canvas-wrap"><canvas id="thermal" width="640" height="480"></canvas></div>
+      <div class="legend">
+        <span id="legendMin">冷</span><div class="bar"></div><span id="legendMax">热</span>
+      </div>
+    </section>
+
+    <details>
+      <summary>连接方法</summary>
+      <ol>
+        <li>先把配套的 <code>MLX90640_Mega_Stream.ino</code> 上传到 Mega。</li>
+        <li>关闭 Arduino 串口监视器，否则网页打不开同一个 COM 口。</li>
+        <li>使用桌面版 Chrome 或 Edge 打开本页，点击“连接 Mega”，选择 Mega 的 COM 口。</li>
+        <li>如果浏览器不允许本地 HTML 使用串口，可在此文件目录运行 <code>python -m http.server 8000</code>，再打开 <code>http://localhost:8000/MLX90640_Thermal_Viewer.html</code>。</li>
+      </ol>
+    </details>
+  </main>
+
+  <script>
+    "use strict";
+
+    const PACKET_CALIBRATION = 1;
+    const PACKET_FRAME = 2;
+    const CAL_WORDS = 832;
+    const FRAME_WORDS = 834;
+    const MAGIC = [0x4d, 0x4c, 0x58, 0x34]; // "MLX4"
+
+    const state = {
+      port: null,
+      reader: null,
+      incoming: new Uint8Array(0),
+      params: null,
+      temperatures: new Float64Array(768),
+      displayTemperatures: new Float64Array(768),
+      subpagesSeen: 0,
+      lastTa: NaN,
+      frameCount: 0,
+      requestingCalibration: false,
+      displayMin: NaN,
+      displayMax: NaN
+    };
+    state.temperatures.fill(NaN);
+    state.displayTemperatures.fill(NaN);
+
+    const connectButton = document.getElementById("connectButton");
+    const calButton = document.getElementById("calButton");
+    const statusElement = document.getElementById("status");
+    const emissivityInput = document.getElementById("emissivity");
+    const paletteSelect = document.getElementById("palette");
+    const smoothingInput = document.getElementById("smoothing");
+    const centerElement = document.getElementById("centerTemp");
+    const minElement = document.getElementById("minTemp");
+    const maxElement = document.getElementById("maxTemp");
+    const ambientElement = document.getElementById("ambientTemp");
+    const legendMinElement = document.getElementById("legendMin");
+    const legendMaxElement = document.getElementById("legendMax");
+    const canvas = document.getElementById("thermal");
+    const context = canvas.getContext("2d", { alpha: false });
+    const sourceCanvas = document.createElement("canvas");
+    sourceCanvas.width = 32;
+    sourceCanvas.height = 24;
+    const sourceContext = sourceCanvas.getContext("2d", { alpha: false });
+    context.fillStyle = "#000";
+    context.fillRect(0, 0, canvas.width, canvas.height);
+
+    function setStatus(message, kind = "") {
+      statusElement.textContent = message;
+      statusElement.className = kind;
+    }
+
+    function signed(value, bits) {
+      const signBit = 2 ** (bits - 1);
+      return (value & signBit) ? value - 2 ** bits : value;
+    }
+
+    function s8(value) {
+      value &= 0xff;
+      return value & 0x80 ? value - 0x100 : value;
+    }
+
+    function s16(value) {
+      value &= 0xffff;
+      return value & 0x8000 ? value - 0x10000 : value;
+    }
+
+    function nibble(value, index) {
+      return (value >> (index * 4)) & 0x0f;
+    }
+
+    function crc16(bytes, start, end) {
+      let crc = 0xffff;
+      for (let i = start; i < end; i++) {
+        crc ^= bytes[i] << 8;
+        for (let bit = 0; bit < 8; bit++) {
+          crc = crc & 0x8000 ? ((crc << 1) ^ 0x1021) : (crc << 1);
+          crc &= 0xffff;
+        }
+      }
+      return crc;
+    }
+
+    function findMagic(bytes) {
+      for (let i = 0; i <= bytes.length - 4; i++) {
+        if (bytes[i] === MAGIC[0] && bytes[i + 1] === MAGIC[1] &&
+            bytes[i + 2] === MAGIC[2] && bytes[i + 3] === MAGIC[3]) return i;
+      }
+      return -1;
+    }
+
+    function appendIncoming(chunk) {
+      const joined = new Uint8Array(state.incoming.length + chunk.length);
+      joined.set(state.incoming);
+      joined.set(chunk, state.incoming.length);
+      state.incoming = joined;
+      parsePackets();
+    }
+
+    function parsePackets() {
+      while (state.incoming.length >= 10) {
+        const magicIndex = findMagic(state.incoming);
+        if (magicIndex < 0) {
+          state.incoming = state.incoming.slice(Math.max(0, state.incoming.length - 3));
+          return;
+        }
+        if (magicIndex > 0) state.incoming = state.incoming.slice(magicIndex);
+        if (state.incoming.length < 10) return;
+
+        const type = state.incoming[4];
+        const sequence = state.incoming[5];
+        const wordCount = state.incoming[6] | (state.incoming[7] << 8);
+        if (wordCount < 1 || wordCount > 900) {
+          state.incoming = state.incoming.slice(1);
+          continue;
+        }
+
+        const packetLength = 8 + wordCount * 2 + 2;
+        if (state.incoming.length < packetLength) return;
+
+        const expectedCRC = state.incoming[packetLength - 2] |
+                            (state.incoming[packetLength - 1] << 8);
+        const actualCRC = crc16(state.incoming, 4, packetLength - 2);
+        if (actualCRC !== expectedCRC) {
+          state.incoming = state.incoming.slice(1);
+          setStatus("收到损坏数据，正在重新同步…", "error");
+          continue;
+        }
+
+        const words = new Uint16Array(wordCount);
+        for (let i = 0; i < wordCount; i++) {
+          words[i] = (state.incoming[8 + i * 2] << 8) |
+                     state.incoming[9 + i * 2];
+        }
+        state.incoming = state.incoming.slice(packetLength);
+        handlePacket(type, sequence, words);
+      }
+    }
+
+    function extractParameters(ee) {
+      if (ee.length !== CAL_WORDS) throw new Error("校准长度错误");
+      const p = {};
+
+      p.kVdd = s8(ee[51] >> 8) * 32;
+      p.vdd25 = ((ee[51] & 0xff) - 256) * 32 - 8192;
+      p.KvPTAT = signed((ee[50] >> 10) & 0x3f, 6) / 4096;
+      p.KtPTAT = signed(ee[50] & 0x3ff, 10) / 8;
+      p.vPTAT25 = ee[49];
+      p.alphaPTAT = (ee[16] & 0xf000) / 16384 + 8;
+      p.gainEE = s16(ee[48]);
+      p.tgc = s8(ee[60]) / 32;
+      p.resolutionEE = (ee[56] >> 12) & 3;
+      p.KsTa = s8(ee[60] >> 8) / 8192;
+
+      const step = ((ee[63] >> 12) & 3) * 10;
+      p.ct = [-40, 0, nibble(ee[63], 1) * step, 0];
+      p.ct[3] = p.ct[2] + nibble(ee[63], 2) * step;
+      const ksToScale = 2 ** (nibble(ee[63], 0) + 8);
+      p.ksTo = [
+        s8(ee[61]) / ksToScale,
+        s8(ee[61] >> 8) / ksToScale,
+        s8(ee[62]) / ksToScale,
+        s8(ee[62] >> 8) / ksToScale
+      ];
+
+      const cpAlphaScale = nibble(ee[32], 3) + 27;
+      p.cpOffset = [signed(ee[58] & 0x3ff, 10), 0];
+      p.cpOffset[1] = p.cpOffset[0] + signed((ee[58] >> 10) & 0x3f, 6);
+      p.cpAlpha = [signed(ee[57] & 0x3ff, 10) / 2 ** cpAlphaScale, 0];
+      p.cpAlpha[1] = (1 + signed((ee[57] >> 10) & 0x3f, 6) / 128) * p.cpAlpha[0];
+      p.cpKta = s8(ee[59]) / 2 ** (nibble(ee[56], 1) + 8);
+      p.cpKv = s8(ee[59] >> 8) / 2 ** nibble(ee[56], 2);
+
+      p.calibrationModeEE = (((ee[10] & 0x0800) >> 4) ^ 0x80);
+      p.ilChessC = [
+        signed(ee[53] & 0x3f, 6) / 16,
+        signed((ee[53] >> 6) & 0x1f, 5) / 2,
+        signed((ee[53] >> 11) & 0x1f, 5) / 8
+      ];
+
+      const ktaRC = [s8(ee[54] >> 8), s8(ee[55] >> 8),
+                     s8(ee[54]), s8(ee[55])];
+      const kvT = [signed(nibble(ee[52], 3), 4), signed(nibble(ee[52], 1), 4),
+                   signed(nibble(ee[52], 2), 4), signed(nibble(ee[52], 0), 4)];
+
+      p.alpha = new Float64Array(768);
+      p.offset = new Int16Array(768);
+      p.kta = new Float64Array(768);
+      p.kv = new Float64Array(768);
+      p.bad = new Uint8Array(768);
+
+      for (let pixel = 0; pixel < 768; pixel++) {
+        const row = Math.floor(pixel / 32);
+        const col = pixel % 32;
+        const pixelEE = ee[64 + pixel];
+        p.bad[pixel] = (pixelEE === 0 || (pixelEE & 1)) ? 1 : 0;
+
+        const alphaRow = signed(nibble(ee[34 + Math.floor(row / 4)], row % 4), 4);
+        const alphaCol = signed(nibble(ee[40 + Math.floor(col / 4)], col % 4), 4);
+        const alphaRem = signed((pixelEE >> 4) & 0x3f, 6);
+        p.alpha[pixel] = (
+          ee[33] +
+          alphaRow * 2 ** nibble(ee[32], 2) +
+          alphaCol * 2 ** nibble(ee[32], 1) +
+          alphaRem * 2 ** nibble(ee[32], 0)
+        ) / 2 ** (nibble(ee[32], 3) + 30);
+        p.alpha[pixel] -= p.tgc * (p.cpAlpha[0] + p.cpAlpha[1]) / 2;
+
+        const offsetRow = signed(nibble(ee[18 + Math.floor(row / 4)], row % 4), 4);
+        const offsetCol = signed(nibble(ee[24 + Math.floor(col / 4)], col % 4), 4);
+        const offsetRem = signed((pixelEE >> 10) & 0x3f, 6);
+        p.offset[pixel] = s16(ee[17]) +
+          offsetRow * 2 ** nibble(ee[16], 2) +
+          offsetCol * 2 ** nibble(ee[16], 1) +
+          offsetRem * 2 ** nibble(ee[16], 0);
+
+        const split = 2 * (row % 2) + (col % 2);
+        const ktaRem = signed((pixelEE >> 1) & 7, 3);
+        p.kta[pixel] = (ktaRC[split] + ktaRem * 2 ** nibble(ee[56], 0)) /
+                       2 ** (nibble(ee[56], 1) + 8);
+        p.kv[pixel] = kvT[split] / 2 ** nibble(ee[56], 2);
+      }
+
+      if (!p.kVdd || !p.KtPTAT || !p.gainEE) throw new Error("校准参数无效");
+      return p;
+    }
+
+    function fourthRoot(value) {
+      return value > 0 && Number.isFinite(value) ? Math.sqrt(Math.sqrt(value)) : NaN;
+    }
+
+    function calculateFrame(frame) {
+      const p = state.params;
+      if (!p || frame.length !== FRAME_WORDS) return;
+
+      const subpage = frame[833] & 1;
+      const control = frame[832];
+      const resolutionRAM = (control >> 10) & 3;
+      const resolutionCorrection = 2 ** p.resolutionEE / 2 ** resolutionRAM;
+      const vdd = (resolutionCorrection * s16(frame[810]) - p.vdd25) / p.kVdd + 3.3;
+
+      const ptat = s16(frame[800]);
+      const ptatArt = ptat / (ptat * p.alphaPTAT + s16(frame[768])) * 2 ** 18;
+      const ta = (ptatArt / (1 + p.KvPTAT * (vdd - 3.3)) - p.vPTAT25) /
+                 p.KtPTAT + 25;
+      if (!Number.isFinite(ta)) return;
+      state.lastTa = ta;
+
+      let emissivity = Number(emissivityInput.value);
+      if (!Number.isFinite(emissivity)) emissivity = 0.95;
+      emissivity = Math.max(0.10, Math.min(1.0, emissivity));
+
+      const tr = ta - 8;
+      const taTr = (tr + 273.15) ** 4 -
+                   (((tr + 273.15) ** 4 - (ta + 273.15) ** 4) / emissivity);
+      const gainRaw = s16(frame[778]);
+      if (!gainRaw || frame[778] === 0x7fff) return;
+      const gain = p.gainEE / gainRaw;
+      const mode = (control & 0x1000) >> 5; // 0 or 128
+
+      const cpCommon = (1 + p.cpKta * (ta - 25)) *
+                       (1 + p.cpKv * (vdd - 3.3));
+      const irDataCP = [s16(frame[776]) * gain, s16(frame[808]) * gain];
+      irDataCP[0] -= p.cpOffset[0] * cpCommon;
+      const cp1Offset = p.cpOffset[1] +
+                        (mode === p.calibrationModeEE ? 0 : p.ilChessC[0]);
+      irDataCP[1] -= cp1Offset * cpCommon;
+
+      const alphaCorrR = [
+        1 / (1 + p.ksTo[0] * 40),
+        1,
+        1 + p.ksTo[1] * p.ct[2],
+        0
+      ];
+      alphaCorrR[3] = alphaCorrR[2] *
+        (1 + p.ksTo[2] * (p.ct[3] - p.ct[2]));
+
+      for (let pixel = 0; pixel < 768; pixel++) {
+        const row = Math.floor(pixel / 32);
+        const col = pixel % 32;
+        const ilPattern = row % 2;
+        const chessPattern = ilPattern ^ (col % 2);
+        const pattern = mode === 0 ? ilPattern : chessPattern;
+        if (pattern !== subpage) continue;
+
+        if (p.bad[pixel] || frame[pixel] === 0x7fff) {
+          state.temperatures[pixel] = NaN;
+          continue;
+        }
+
+        const conversionPattern = (
+          Math.floor((pixel + 2) / 4) - Math.floor((pixel + 3) / 4) +
+          Math.floor((pixel + 1) / 4) - Math.floor(pixel / 4)
+        ) * (1 - 2 * ilPattern);
+
+        let irData = s16(frame[pixel]) * gain;
+        irData -= p.offset[pixel] *
+          (1 + p.kta[pixel] * (ta - 25)) *
+          (1 + p.kv[pixel] * (vdd - 3.3));
+        if (mode !== p.calibrationModeEE) {
+          irData += p.ilChessC[2] * (2 * ilPattern - 1) -
+                    p.ilChessC[1] * conversionPattern;
+        }
+        irData = (irData - p.tgc * irDataCP[subpage]) / emissivity;
+
+        const alphaCompensated = p.alpha[pixel] * (1 + p.KsTa * (ta - 25));
+        const sx = fourthRoot(alphaCompensated ** 3 *
+          (irData + alphaCompensated * taTr)) * p.ksTo[1];
+        const firstDenominator = alphaCompensated *
+          (1 - p.ksTo[1] * 273.15) + sx;
+        let objectTemperature = fourthRoot(irData / firstDenominator + taTr) - 273.15;
+
+        let range;
+        if (objectTemperature < p.ct[1]) range = 0;
+        else if (objectTemperature < p.ct[2]) range = 1;
+        else if (objectTemperature < p.ct[3]) range = 2;
+        else range = 3;
+
+        const finalDenominator = alphaCompensated * alphaCorrR[range] *
+          (1 + p.ksTo[range] * (objectTemperature - p.ct[range]));
+        objectTemperature = fourthRoot(irData / finalDenominator + taTr) - 273.15;
+        state.temperatures[pixel] = Number.isFinite(objectTemperature) ?
+          objectTemperature : NaN;
+      }
+
+      state.subpagesSeen |= 1 << subpage;
+      if (state.subpagesSeen === 3) {
+        state.subpagesSeen = 0;
+        state.frameCount++;
+        drawThermalImage();
+      }
+    }
+
+    function formatTemperature(value) {
+      return Number.isFinite(value) ? `${value.toFixed(2)} °C` : "-- °C";
+    }
+
+    function paletteColor(position) {
+      const value = Math.max(0, Math.min(1, position));
+      if (paletteSelect.value === "grayscale") {
+        const gray = Math.round(value * 255);
+        return [gray, gray, gray];
+      }
+
+      // Perceptual false-colour ramp. It changes display colour only; all
+      // temperature metrics continue to come from the real sensor values.
+      const stops = [
+        [0.00, [4, 0, 18]],
+        [0.16, [32, 12, 74]],
+        [0.34, [108, 22, 112]],
+        [0.54, [196, 45, 83]],
+        [0.72, [242, 110, 42]],
+        [0.88, [252, 200, 72]],
+        [1.00, [255, 255, 235]]
+      ];
+      for (let index = 1; index < stops.length; index++) {
+        if (value <= stops[index][0]) {
+          const [leftPosition, leftColor] = stops[index - 1];
+          const [rightPosition, rightColor] = stops[index];
+          const mix = (value - leftPosition) / (rightPosition - leftPosition);
+          return leftColor.map((channel, channelIndex) =>
+            Math.round(channel + (rightColor[channelIndex] - channel) * mix));
+        }
+      }
+      return stops[stops.length - 1][1];
+    }
+
+    function drawThermalImage() {
+      const rawFinite = Array.from(state.temperatures).filter(Number.isFinite);
+      if (!rawFinite.length) return;
+      const minimum = Math.min(...rawFinite);
+      const maximum = Math.max(...rawFinite);
+
+      const blend = smoothingInput.checked ? 0.34 : 1;
+      for (let pixel = 0; pixel < 768; pixel++) {
+        const current = state.temperatures[pixel];
+        const previous = state.displayTemperatures[pixel];
+        state.displayTemperatures[pixel] = Number.isFinite(current) ?
+          (Number.isFinite(previous) ? previous + (current - previous) * blend : current) : NaN;
+      }
+
+      // Use robust percentiles for colour mapping so one noisy pixel does not
+      // flatten the whole image. The displayed min/max metrics remain raw.
+      const sorted = Array.from(state.displayTemperatures)
+        .filter(Number.isFinite)
+        .sort((a, b) => a - b);
+      if (!sorted.length) return;
+      const targetMin = sorted[Math.floor((sorted.length - 1) * 0.02)];
+      const targetMax = sorted[Math.ceil((sorted.length - 1) * 0.98)];
+      const rangeBlend = smoothingInput.checked ? 0.18 : 1;
+      state.displayMin = Number.isFinite(state.displayMin) ?
+        state.displayMin + (targetMin - state.displayMin) * rangeBlend : targetMin;
+      state.displayMax = Number.isFinite(state.displayMax) ?
+        state.displayMax + (targetMax - state.displayMax) * rangeBlend : targetMax;
+      const span = Math.max(0.5, state.displayMax - state.displayMin);
+
+      const image = sourceContext.createImageData(32, 24);
+      for (let pixel = 0; pixel < 768; pixel++) {
+        const temperature = state.displayTemperatures[pixel];
+        let color = [0, 0, 0];
+        if (Number.isFinite(temperature)) {
+          color = paletteColor((temperature - state.displayMin) / span);
+        }
+        const offset = pixel * 4;
+        image.data[offset] = color[0];
+        image.data[offset + 1] = color[1];
+        image.data[offset + 2] = color[2];
+        image.data[offset + 3] = 255;
+      }
+      sourceContext.putImageData(image, 0, 0);
+      context.imageSmoothingEnabled = smoothingInput.checked;
+      context.imageSmoothingQuality = "high";
+      context.drawImage(sourceCanvas, 0, 0, canvas.width, canvas.height);
+
+      const centerIndices = [11 * 32 + 15, 11 * 32 + 16,
+                             12 * 32 + 15, 12 * 32 + 16];
+      const centerValues = centerIndices.map(i => state.displayTemperatures[i])
+        .filter(Number.isFinite);
+      const center = centerValues.length ?
+        centerValues.reduce((a, b) => a + b, 0) / centerValues.length : NaN;
+
+      centerElement.textContent = formatTemperature(center);
+      centerElement.classList.toggle("below", Number.isFinite(center) && center < 0);
+      minElement.textContent = formatTemperature(minimum);
+      maxElement.textContent = formatTemperature(maximum);
+      ambientElement.textContent = formatTemperature(state.lastTa);
+      legendMinElement.textContent = `${state.displayMin.toFixed(1)} °C`;
+      legendMaxElement.textContent = `${state.displayMax.toFixed(1)} °C`;
+      document.querySelector(".bar").classList.toggle(
+        "grayscale", paletteSelect.value === "grayscale");
+      setStatus(`已连接 · 第 ${state.frameCount} 帧`, "ok");
+    }
+
+    function handlePacket(type, sequence, words) {
+      try {
+        if (type === PACKET_CALIBRATION && words.length === CAL_WORDS) {
+          state.params = extractParameters(words);
+          state.temperatures.fill(NaN);
+          state.displayTemperatures.fill(NaN);
+          state.displayMin = NaN;
+          state.displayMax = NaN;
+          state.subpagesSeen = 0;
+          state.requestingCalibration = false;
+          setStatus("校准完成，等待完整热帧…", "ok");
+        } else if (type === PACKET_FRAME && words.length === FRAME_WORDS) {
+          if (state.params) calculateFrame(words);
+          else if (!state.requestingCalibration) requestCalibration();
+        }
+      } catch (error) {
+        console.error(error, { type, sequence });
+        setStatus(`计算错误：${error.message}`, "error");
+      }
+    }
+
+    async function requestCalibration() {
+      if (!state.port || !state.port.writable) return;
+      state.requestingCalibration = true;
+      const writer = state.port.writable.getWriter();
+      try {
+        await writer.write(new Uint8Array([0x43])); // ASCII 'C'
+        setStatus("正在读取传感器校准…");
+      } finally {
+        writer.releaseLock();
+      }
+    }
+
+    async function readSerial() {
+      while (state.port && state.port.readable) {
+        state.reader = state.port.readable.getReader();
+        try {
+          while (true) {
+            const { value, done } = await state.reader.read();
+            if (done) break;
+            if (value) appendIncoming(value);
+          }
+        } catch (error) {
+          if (state.port) setStatus(`串口读取失败：${error.message}`, "error");
+        } finally {
+          state.reader.releaseLock();
+          state.reader = null;
+        }
+      }
+    }
+
+    async function connectSerial() {
+      if (!("serial" in navigator)) {
+        setStatus("此浏览器不支持 Web Serial，请使用桌面版 Chrome/Edge。", "error");
+        return;
+      }
+      try {
+        state.port = await navigator.serial.requestPort();
+        await state.port.open({ baudRate: 115200, bufferSize: 4096 });
+        state.incoming = new Uint8Array(0);
+        state.params = null;
+        state.temperatures.fill(NaN);
+        state.displayTemperatures.fill(NaN);
+        state.displayMin = NaN;
+        state.displayMax = NaN;
+        connectButton.disabled = true;
+        calButton.disabled = false;
+        setStatus("串口已打开，等待 Mega 启动…");
+        readSerial();
+        setTimeout(requestCalibration, 1800);
+      } catch (error) {
+        setStatus(`连接失败：${error.message}`, "error");
+        state.port = null;
+      }
+    }
+
+    connectButton.addEventListener("click", connectSerial);
+    calButton.addEventListener("click", requestCalibration);
+    paletteSelect.addEventListener("change", drawThermalImage);
+    smoothingInput.addEventListener("change", () => {
+      state.displayTemperatures.fill(NaN);
+      state.displayMin = NaN;
+      state.displayMax = NaN;
+      drawThermalImage();
+    });
+    navigator.serial?.addEventListener("disconnect", () => {
+      state.port = null;
+      connectButton.disabled = false;
+      calButton.disabled = true;
+      setStatus("Mega 已断开", "error");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+:root {
+  color-scheme: dark;
+  --black: #050607;
+  --white: #f4f5f2;
+  --split: 50%;
+}
+
+* { box-sizing: border-box; }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: var(--black);
+  color: var(--white);
+  font-family: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+}
+
+.comparison {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  background: var(--black);
+  touch-action: none;
+}
+
+.comparison-video,
+.stabilized-layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.comparison-video {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.stabilized-layer {
+  clip-path: inset(0 0 0 var(--split));
+}
+
+.divider {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  bottom: 0;
+  left: var(--split);
+  width: 1px;
+  background: rgba(244, 245, 242, .9);
+  outline: none;
+  cursor: ew-resize;
+}
+
+.divider::after {
+  content: "↔";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  transform: translate(-50%, -50%);
+  color: var(--black);
+  background: rgba(244, 245, 242, .92);
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.header {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 18px 20px;
+  background: linear-gradient(180deg, rgba(5, 6, 7, .76), transparent);
+}
+
+.header > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 9px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.header span { color: rgba(244, 245, 242, .62); }
+
+.channels {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.channels button {
+  margin-left: -1px;
+  padding: 5px 9px;
+  border: 1px solid rgba(244, 245, 242, .52);
+  color: rgba(244, 245, 242, .76);
+  background: rgba(5, 6, 7, .34);
+  font: inherit;
+  font-size: 9px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.channels button.active {
+  color: var(--black);
+  background: var(--white);
+}
+
+.side-label,
+.drag-note {
+  position: absolute;
+  z-index: 5;
+  bottom: 16px;
+  padding: 4px 6px;
+  color: rgba(244, 245, 242, .72);
+  background: rgba(5, 6, 7, .36);
+  font-size: 8px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.original-label { left: 16px; }
+.stabilized-label { right: 16px; }
+.drag-note { left: 50%; transform: translateX(-50%); }
+
+@media (max-width: 760px) {
+  .header { flex-direction: column; gap: 10px; }
+  .drag-note { display: none; }
+}

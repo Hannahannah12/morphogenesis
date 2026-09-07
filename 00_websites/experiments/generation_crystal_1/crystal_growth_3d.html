@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Morphogenesis</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#000; overflow:hidden; font-family:'Courier New',monospace; }
+#controls {
+    position:fixed; bottom:20px; right:20px;
+    background:rgba(5,5,10,0.92); border:1px solid rgba(200,200,220,0.15);
+    padding:18px; width:230px; opacity:0; pointer-events:none;
+    transition:opacity 0.4s; backdrop-filter:blur(12px);
+}
+#tz { position:fixed; bottom:0; right:0; width:100px; height:100px; z-index:100; }
+#tz:hover + #controls, #controls:hover { opacity:1; pointer-events:all; }
+.lb { color:rgba(200,210,230,0.5); font-size:9px; letter-spacing:2px; text-transform:uppercase; margin:9px 0 3px; display:flex; justify-content:space-between; }
+.lb span { color:rgba(220,230,255,0.85); }
+input[type=range] { width:100%; height:1px; -webkit-appearance:none; background:rgba(200,210,255,0.15); outline:none; margin:3px 0; }
+input[type=range]::-webkit-slider-thumb { -webkit-appearance:none; width:7px; height:7px; border-radius:50%; background:rgba(200,220,255,0.8); cursor:pointer; }
+.ttl { color:rgba(200,210,230,0.35); font-size:8px; letter-spacing:4px; border-bottom:1px solid rgba(200,210,255,0.1); padding-bottom:7px; margin-bottom:2px; }
+button { width:100%; margin-top:12px; background:rgba(200,210,255,0.06); border:1px solid rgba(200,210,255,0.2); color:rgba(200,220,255,0.7); padding:7px; cursor:pointer; font-family:inherit; font-size:8px; letter-spacing:3px; text-transform:uppercase; }
+button:hover { background:rgba(200,210,255,0.15); }
+</style>
+</head>
+<body>
+<div id="tz"></div>
+<div id="controls">
+    <div class="ttl">MORPHOGENESIS</div>
+    <div class="lb">Growth Speed <span id="v-spd">1.0</span></div>
+    <input type="range" id="c-spd" min="0.1" max="4" value="1.0" step="0.1">
+    <div class="lb">Branch Depth <span id="v-dep">5</span></div>
+    <input type="range" id="c-dep" min="2" max="8" value="5" step="1">
+    <div class="lb">Branch Count <span id="v-brc">3</span></div>
+    <input type="range" id="c-brc" min="1" max="6" value="3" step="1">
+    <div class="lb">Spread Angle <span id="v-ang">49</span>°</div>
+    <input type="range" id="c-ang" min="10" max="120" value="49" step="1">
+    <div class="lb">Organic Noise <span id="v-noi">0.5</span></div>
+    <input type="range" id="c-noi" min="0" max="2" value="0.5" step="0.05">
+    <div class="lb">Thickness <span id="v-thk">1.0</span></div>
+    <input type="range" id="c-thk" min="0.2" max="4" value="1.0" step="0.1">
+    <div class="lb">Transparency <span id="v-trn">0.6</span></div>
+    <input type="range" id="c-trn" min="0.1" max="1.0" value="0.6" step="0.05">
+    <div class="lb">Roughness <span id="v-rgh">0.4</span></div>
+    <input type="range" id="c-rgh" min="0" max="1" value="0.4" step="0.05">
+    <div class="lb">Emission <span id="v-emi">0.2</span></div>
+    <input type="range" id="c-emi" min="0" max="1" value="0.2" step="0.05">
+    <div class="lb">Color Hue <span id="v-hue">210</span>°</div>
+    <input type="range" id="c-hue" min="0" max="360" value="210" step="5">
+    <div class="lb">Float <span id="v-flt">0.3</span></div>
+    <input type="range" id="c-flt" min="0" max="1" value="0.3" step="0.05">
+    <button onclick="rebuild()">REGENERATE</button>
+</div>
+
+<script src="three.min.js"></script>
+<script>
+const cd = {"brightness": [128.11875, 128.0500171467764, 128.09720764746228, 128.17873628257888, 128.22146862139917, 128.17873456790124, 128.35748971193416, 128.34229338134432, 128.5350377229081, 128.4182218792867, 128.4551989026063, 128.6830744170096, 128.99913237311387, 128.97473593964335, 129.10673353909465, 128.99575703017834, 129.06415380658436, 129.22335133744855, 129.2728377914952, 129.35038237311386, 129.7405864197531, 129.7474399862826, 129.81475823045267, 129.8351054526749, 130.16059842249658, 130.13552726337448, 130.44107596021948, 130.4154603909465, 130.59186985596708, 130.5312748628258, 130.58860425240056, 130.83105366941015, 131.07278034979424, 131.0512045610425, 131.46037808641975, 131.52838048696844, 131.5771502057613, 131.66770919067216, 131.92990054869685, 131.90619855967077, 132.17615483539095, 132.15614283264748, 132.5563434499314, 132.642533436214, 133.0838425925926, 133.06386745541838, 133.5699245541838, 133.6084885116598, 133.67515775034295, 133.9774065500686, 134.02253086419753, 134.22166580932785, 134.60066786694102, 134.58208419067216, 135.0712534293553, 135.21863768861454, 135.7397385116598, 135.71727794924553, 136.12048611111112, 136.09652263374485, 136.66832047325101, 136.81890860768175, 136.87765260631002, 137.16391546639233, 137.59675840192043, 137.57652177640603, 138.07543552812072, 138.05695387517147, 138.56761059670782, 138.80065929355283, 139.38967249657065, 139.36095679012345, 139.7467472565158, 139.71819101508916, 140.24265432098767, 140.45856652949246, 140.51137517146776, 140.93618912894377, 141.36716735253773, 141.34137774348423, 142.0047976680384, 142.23057355967077, 142.29853737997257, 142.7514188957476, 143.23199074074074, 143.20118141289439, 143.7949537037037, 144.055615569273, 144.13697959533607, 144.50581361454047, 144.55451989026062, 145.04230366941016, 145.72479166666668, 145.97429269547325, 146.08765689300412, 146.5171913580247, 146.59380829903978, 147.00932184499314, 147.42496399176954, 147.4330075445816, 147.7623268175583, 146.1745190329218, 146.19787722908094, 146.45156121399177, 146.81128172153635, 146.78870284636488, 146.09731567215363, 146.26273748285323, 146.276765260631, 146.46656035665296, 145.1289308984911, 145.1139917695473, 145.31275891632373, 145.2984585048011, 145.51658179012347, 144.94469735939643, 145.17621313443072, 145.15666580932785, 145.50575788751715, 145.48743998628257, 143.12672410836763, 143.19104080932786, 143.21125514403292, 143.38948816872428, 142.7364617626886, 142.72195216049383, 142.94468535665294, 142.93167866941016, 143.17542009602195, 141.30143604252402, 141.65252657750344, 141.63258230452675, 141.8456541495199, 140.5600677297668, 140.5862242798354, 140.6672342249657, 140.69222479423868, 140.97176354595337, 140.09487654320986, 140.08061556927296, 140.40163580246914, 140.62019633058986, 140.6106078532236, 137.97091049382715, 137.9825, 137.9685270919067, 138.18343192729768, 138.34177812071331, 138.3997085048011, 138.63600308641975, 138.94060785322358, 138.91422153635116, 139.4677031893004, 139.60719050068587, 139.70488940329219, 139.91511145404664, 140.1959164951989, 140.16296724965707, 140.3283864883402, 140.17096279149519, 140.65921639231826, 140.74366855281207, 140.80820387517147, 141.01094821673524, 141.52686556927299, 141.67323816872428, 141.73312157064473, 141.85393432784636, 141.9106412894376, 142.03511574074074, 142.22439043209877, 142.20039780521262, 142.4444675925926, 142.52717764060355, 142.5717532578875, 142.82064986282577, 142.9954938271605, 142.9616846707819, 143.2717198216735, 143.21002657750344, 143.284012345679, 143.3497213648834, 143.41284807956103, 143.3792566872428, 143.5304303840878, 143.50357338820302, 143.85208419067214, 143.83124485596707], "t_histogram": [392, 0, 380, 0, 0, 382, 0, 391, 0, 0, 412, 0, 0, 401, 0, 393, 0, 0, 417, 0, 0, 399, 0, 388, 0, 0, 367, 0, 371, 0, 0, 335, 0, 0, 313, 0, 301, 0, 0, 281, 0, 0, 248, 0, 257, 0, 0, 248, 0, 248], "t_max": 190, "growth_rate": 0.19509351055132937, "nucleation_x": 0.6496424538598812, "nucleation_y": 0.5733131363493849, "avg_angle": 48.858018841747324, "angle_std": 54.90358796435364, "branch_factor": 5, "coverage": 0.08632973251028807, "growth_duration": 188};
+const brightness = cd.brightness;
+const minB = Math.min(...brightness), maxB = Math.max(...brightness);
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(55, innerWidth/innerHeight, 0.1, 5000);
+camera.position.set(0, 100, 550);
+camera.lookAt(0, 100, 0);
+
+const renderer = new THREE.WebGLRenderer({antialias:true});
+renderer.setSize(innerWidth, innerHeight);
+renderer.setPixelRatio(devicePixelRatio);
+renderer.setClearColor(0x000000);
+document.body.appendChild(renderer.domElement);
+
+function gp(id) { return parseFloat(document.getElementById(id).value); }
+function sr(s) { return ((Math.sin(s*127.1+s*311.7)*43758.5453)%1+1)%1; }
+
+let rootGroup = new THREE.Group();
+scene.add(rootGroup);
+let activeBranches = [];
+let time = 0;
+
+class GrowingBranch {
+    constructor(points, radius, depth, hue, roughness, transparency, emission) {
+        this.points = points;
+        this.radius = radius;
+        this.depth = depth;
+        this.duration = 80 + (6-depth)*25;
+        this.progress = 0;
+        this.done = false;
+        this.childrenSpawned = false;
+        this.hue = hue;
+        this.roughness = roughness;
+        this.transparency = transparency;
+        this.emission = emission;
+        
+        const curve = new THREE.CatmullRomCurve3(points);
+        const tubeSeg = Math.max(8, points.length * 3);
+        this.geo = new THREE.TubeGeometry(curve, tubeSeg, radius, 8, false);
+        this.totalIndex = this.geo.index.count;
+        this.geo.setDrawRange(0, 0);
+        
+        const maxDep = gp('c-dep');
+        const t = depth / maxDep;
+        const col = new THREE.Color().setHSL(hue/360 + sr(depth)*0.06, 0.3+t*0.2, 0.55+t*0.3);
+        this.mat = new THREE.MeshPhysicalMaterial({
+            color: col,
+            transparent: true,
+            opacity: transparency * (0.3 + t*0.7),
+            roughness: roughness,
+            metalness: 0.05,
+            transmission: 0.5 - roughness*0.3,
+            emissive: col,
+            emissiveIntensity: emission * t * 0.5,
+            side: THREE.DoubleSide
+        });
+        
+        this.mesh = new THREE.Mesh(this.geo, this.mat);
+        rootGroup.add(this.mesh);
+    }
+    
+    update(dt, speed) {
+        if(this.done) return false;
+        this.progress = Math.min(1, this.progress + dt * speed / this.duration);
+        this.geo.setDrawRange(0, Math.floor(this.progress * this.totalIndex));
+        if(this.progress >= 0.99 && !this.childrenSpawned) {
+            this.childrenSpawned = true;
+            this.done = true;
+            return true;
+        }
+        return false;
+    }
+    
+    getEndPoint() { return this.points[this.points.length-1]; }
+    
+    getEndDir() {
+        const n = this.points.length;
+        const a = this.points[n-2], b = this.points[n-1];
+        return new THREE.Vector3(b.x-a.x, b.y-a.y, b.z-a.z).normalize();
+    }
+}
+
+function makePath(sx,sy,sz, dx,dy,dz, length, noise, seed) {
+    const segs = Math.max(6, 10);
+    const pts = [];
+    for(let i=0; i<=segs; i++) {
+        const t = i/segs;
+        const n = noise * 12 * (1 - t*0.4);
+        pts.push(new THREE.Vector3(
+            sx + dx*length*t + sr(seed+i*0.3)*n*2-n,
+            sy + dy*length*t + sr(seed+i*0.7)*n*2-n - t*t*length*0.15,
+            sz + dz*length*t + sr(seed+i*0.5)*n*2-n
+        ));
+    }
+    return pts;
+}
+
+function spawnBranch(x,y,z, dx,dy,dz, length, depth, seed) {
+    if(depth <= 0 || length < 2) return null;
+    const pts = makePath(x,y,z, dx,dy,dz, length, gp('c-noi'), seed);
+    const radius = (depth * 0.8 + 0.5) * gp('c-thk') * (0.4 + cd.coverage*2);
+    const b = new GrowingBranch(pts, radius, depth, gp('c-hue'), gp('c-rgh'), gp('c-trn'), gp('c-emi'));
+    return b;
+}
+
+function spawnChildren(b) {
+    const end = b.getEndPoint();
+    const dir = b.getEndDir();
+    const numB = Math.max(1, Math.round(gp('c-brc') * (0.6 + sr(b.depth*17)*0.8)));
+    const angleRad = gp('c-ang') * Math.PI / 180;
+    const newDepth = b.depth - 1;
+    const len = b.points[0].distanceTo(b.points[b.points.length-1]);
+    const newLen = len * (0.55 + cd.coverage * 1.2 + sr(b.depth)*0.1);
+    
+    for(let i=0; i<numB; i++) {
+        const spread = (i - numB/2 + 0.5) * angleRad * (0.5 + sr(b.depth*i+3)*0.5);
+        const tilt = (sr(b.depth*i+7)-0.5) * angleRad * 0.6;
+        const theta = Math.atan2(dir.z, dir.x) + spread;
+        const phi = Math.acos(Math.max(-1, Math.min(1, dir.y))) + tilt;
+        const nx = Math.sin(phi)*Math.cos(theta);
+        const ny = Math.cos(phi);
+        const nz = Math.sin(phi)*Math.sin(theta);
+        const child = spawnBranch(end.x, end.y, end.z, nx, ny, nz, newLen, newDepth, b.depth*100+i*37);
+        if(child) activeBranches.push(child);
+    }
+}
+
+function rebuild() {
+    while(rootGroup.children.length) rootGroup.remove(rootGroup.children[0]);
+    activeBranches = [];
+    time = 0;
+    
+    const nx = (cd.nucleation_x-0.5)*80;
+    const nz = (cd.nucleation_y-0.5)*80;
+    const baseLen = 80 + cd.coverage * 150;
+    
+    for(let i=0; i<2; i++) {
+        const tilt = (sr(i*17)-0.5)*0.25;
+        const tz = (sr(i*31)-0.5)*0.25;
+        const b = spawnBranch(
+        nx + (sr(i*7)-0.5)*20, -100, nz + (sr(i*13)-0.5)*20,
+        tilt, 1, tz, baseLen, gp('c-dep'), i*77
+    );
+        if(b) activeBranches.push(b);
+    }
+}
+
+scene.add(new THREE.AmbientLight(0x223344, 4));
+const l1 = new THREE.PointLight(0xffffff, 3, 1500);
+l1.position.set(200, 400, 300); scene.add(l1);
+const l2 = new THREE.PointLight(0xaabbff, 2, 1000);
+l2.position.set(-300, 200, -100); scene.add(l2);
+const l3 = new THREE.PointLight(0xffffff, 1.5, 800);
+l3.position.set(0, -100, 400); scene.add(l3);
+
+rebuild();
+
+const clock = new THREE.Clock();
+let ft = 0;
+
+function getBSpeed() {
+    const idx = Math.floor((time/300) * brightness.length) % brightness.length;
+    const b = brightness[Math.min(idx, brightness.length-1)] || minB;
+    return 0.4 + ((b-minB)/(maxB-minB||1)) * 2;
+}
+
+function animate() {
+    requestAnimationFrame(animate);
+    const dt = clock.getDelta() * 60;
+    ft += dt * 0.01;
+    time += dt;
+    
+    const spd = gp('c-spd') * getBSpeed();
+    
+    for(let i = activeBranches.length-1; i>=0; i--) {
+        const done = activeBranches[i].update(dt, spd);
+        if(done) {
+            spawnChildren(activeBranches[i]);
+            activeBranches.splice(i, 1);
+        }
+    }
+    
+    const flt = gp('c-flt');
+    rootGroup.children.forEach((child, i) => {
+        child.position.y += Math.sin(ft*0.8 + i*0.4) * flt * 0.06;
+        child.rotation.z += Math.sin(ft*0.3 + i*0.2) * flt * 0.0003;
+    });
+    
+    rootGroup.rotation.y += 0.003;
+    l1.position.x = Math.cos(ft*0.4)*250;
+    l1.position.z = Math.sin(ft*0.4)*250;
+    
+    renderer.render(scene, camera);
+}
+animate();
+
+document.querySelectorAll('input[type=range]').forEach(inp => {
+    inp.addEventListener('input', () => {
+        document.getElementById('v-'+inp.id.replace('c-','')).textContent = inp.value;
+    });
+});
+
+window.addEventListener('resize', () => {
+    camera.aspect = innerWidth/innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(innerWidth, innerHeight);
+});
+</script>
+<script src="../agent-monitor.js" data-page="generation"></script>
+</body>
+</html>

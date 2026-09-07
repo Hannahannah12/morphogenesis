@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#060808">
+  <title>Morphogenesis — 02 Structural Resonance</title>
+  <link rel="stylesheet" href="./style.css?v=natural-source-colour-v9">
+  <link rel="stylesheet" href="../rehearsal-terminal.css?v=shared-terminal-v1">
+  <link rel="stylesheet" href="../session-state.css?v=backstage-type-v1">
+  <link rel="stylesheet" href="../exhibition-idle-text.css?v=idle-copy-v2">
+</head>
+<body>
+  <main id="structural-stage" aria-label="Morphogenesis Structural Resonance">
+    <video id="analysis-video" class="stage-media" autoplay muted loop playsinline></video>
+    <video id="camera-video" class="stage-media" autoplay muted playsinline hidden></video>
+    <div class="stage-shade" aria-hidden="true"></div>
+
+    <section id="source-window" class="source-window collapsed" aria-label="Original crystallisation video">
+      <div class="source-media">
+        <video id="source-preview" autoplay muted loop playsinline></video>
+      </div>
+      <footer>
+        <span class="source-caption">
+          <span class="source-dot"></span>
+          <span id="source-label">Original water crystallisation</span>
+        </span>
+        <button id="source-toggle" class="source-toggle" type="button"
+          aria-label="Expand original video" aria-expanded="false">+</button>
+      </footer>
+    </section>
+
+    <header class="topbar">
+      <div class="identity">
+        <h1>Morphogenesis</h1>
+        <p>02 / Structural resonance</p>
+      </div>
+      <div class="runtime-state">
+        <span class="state-dot"></span>
+        <span id="mode-label">Agent session / current crystal</span>
+        <span id="stage-label">connecting</span>
+      </div>
+    </header>
+
+    <section id="resonance-cloud" class="resonance-cloud"
+      aria-label="Structural patches" hidden></section>
+    <div id="selection-crosshair" class="selection-crosshair" aria-hidden="true" hidden>
+      <span></span>
+    </div>
+
+    <section id="resonance-focus" class="resonance-focus"
+      aria-label="Structural resonance search results" hidden>
+      <img id="focus-patch" class="focus-patch" alt="Selected crystal patch">
+      <span id="focus-index" class="focus-index"></span>
+      <div id="search-results" class="search-results"></div>
+    </section>
+
+    <section id="resonance-terminal" class="rehearsal-terminal" aria-live="polite">
+      <div class="rehearsal-terminal-copy">
+        <div class="rehearsal-terminal-inner">
+          <p id="resonance-terminal-kicker" class="rehearsal-terminal-kicker">step 02 / structural resonance</p>
+          <h2 id="resonance-terminal-title" class="rehearsal-terminal-title">Building structural resonance</h2>
+          <p id="resonance-terminal-value" class="rehearsal-terminal-value">pipeline / running</p>
+          <div id="resonance-terminal-log" class="rehearsal-terminal-log"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="controls-panel" class="controls collapsed" aria-label="Structural controls">
+      <header class="controls-head">
+        <button id="controls-toggle" class="controls-toggle" type="button"
+          aria-label="Expand controls" aria-expanded="false"
+          aria-controls="controls-body">+</button>
+      </header>
+      <div id="controls-body" class="controls-body">
+        <div class="control-row">
+          <button id="camera-button" type="button">Find USB camera</button>
+          <select id="camera-select" aria-label="Choose USB camera">
+            <option value="">USB camera not selected</option>
+          </select>
+          <button id="fullscreen-button" type="button">Fullscreen</button>
+        </div>
+        <p id="notice" class="notice" role="status" aria-live="polite">
+          Waiting for the current Agent structural output
+        </p>
+      </div>
+    </section>
+  </main>
+  <script src="../experiment-sync.js?v=normalized-phase-rate-sync-v5"></script>
+  <script src="./app.js?v=material-handoff-v31"></script>
+  <script src="../session-state.js?v=rehearsal-routing-v5" data-page="structural"></script>
+  <script src="../agent-monitor.js?v=compact-cooling-v2" data-page="structural"></script>
+  <script src="../exhibition-idle-text.js?v=body-safe-v4" data-idle-ms="4000"
+    data-preserve=".runtime-state,.resonance-patch figcaption,.focus-index,.rehearsal-terminal"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "pipeline": "morphogenesis-exhibition-migrated",
+  "crystal": "ice_crystal_01",
+  "outputLayout": "per-crystal",
+  "sessionRootUrl": "/05_shared_data/exhibition/ice_crystal_01",
+  "rawSourceUrl": "/05_shared_data/input/ice_crystal_01.mp4",
+  "createdAt": "2026-07-26T21:28:12.313795+00:00",
+  "updatedAt": "2026-07-26T21:28:12.313795+00:00",
+  "phase": "outputs_ready",
+  "detection": {
+    "state": "historical_recording",
+    "onsetSeconds": null,
+    "trimStartSeconds": null,
+    "confidence": null,
+    "method": "Previous Notebook test; detection metadata was not recorded"
+  },
+  "playback": {
+    "revision": 1,
+    "stage": "recorded_source",
+    "url": "/05_shared_data/exhibition/ice_crystal_01/source/crystallization.mp4",
+    "startedAtEpochMs": null,
+    "offsetSeconds": 0,
+    "durationSeconds": 23.367
+  },
+  "directions": {
+    "01_material_analysis": {
+      "state": "complete",
+      "progress": 1.0,
+      "message": "Four tested Notebook exhibition streams imported",
+      "updatedAt": "2026-07-26T21:28:12.313795+00:00",
+      "outputUrls": [
+        "/05_shared_data/exhibition/ice_crystal_01/01_material_analysis/edge.mp4",
+        "/05_shared_data/exhibition/ice_crystal_01/01_material_analysis/threshold.mp4",
+        "/05_shared_data/exhibition/ice_crystal_01/01_material_analysis/spacetime.mp4",
+        "/05_shared_data/exhibition/ice_crystal_01/01_material_analysis/motion.mp4"
+      ],
+      "pipeline": "previous-notebook-exhibition",
+      "resolution": "720x720"
+    },
+    "02_structural_resonance": {
+      "state": "complete",
+      "progress": 1.0,
+      "message": "DINO video, 50 patches and 10 saved search sets imported / combined, attention map and blob track videos available",
+      "updatedAt": "2026-07-26T21:28:12.313795+00:00",
+      "outputUrl": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/attention_blob.mp4",
+      "manifestUrl": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/manifest.json",
+      "patchCount": 50,
+      "resonanceCount": 10,
+      "searchState": "complete",
+      "pipeline": "previous-notebook-dino",
+      "resolution": "1440x720",
+      "outputUrls": [
+        "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/attention_blob.mp4",
+        "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/attention_map.mp4",
+        "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/blob_track.mp4"
+      ],
+      "videoUrls": {
+        "combined": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/attention_blob.mp4",
+        "attentionMap": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/attention_map.mp4",
+        "blobTrack": "/05_shared_data/exhibition/ice_crystal_01/02_structural_resonance/blob_track.mp4"
+      }
+    },
+    "03_diffusion_imagination": {
+      "state": "waiting_page",
+      "progress": 0.0,
+      "message": "Recorded source is available; historical Diffusion output was intentionally not required for this import",
+      "updatedAt": "2026-07-26T21:28:12.313795+00:00",
+      "sourceUrl": "/05_shared_data/exhibition/ice_crystal_01/source/crystallization.mp4",
+      "mode": "live",
+      "recordingPolicy": "optional_one_per_crystal"
+    }
+  }
+}

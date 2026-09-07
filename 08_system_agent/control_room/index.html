@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080a0a">
+  <title>Morphogenesis — Control Room</title>
+  <link rel="stylesheet" href="./style.css?v=terminal-temperature-v2">
+</head>
+<body>
+  <header class="masthead">
+    <div>
+      <p class="eyebrow">Morphogenesis / System Agent</p>
+      <h1>Control Room</h1>
+    </div>
+    <div class="masthead-actions">
+      <button id="system-view-button" class="system-view-button" type="button">System view</button>
+      <div class="connection">
+        <span id="connection-dot" class="connection-dot"></span>
+        <div>
+          <strong id="connection-label">Connecting</strong>
+          <span id="last-update">Waiting for Agent</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-grid" aria-label="Installation overview">
+      <article class="state-panel panel">
+        <p class="panel-label">Current state</p>
+        <div class="state-line">
+          <h2 id="current-state">—</h2>
+          <span id="state-description">Awaiting Agent</span>
+        </div>
+        <div class="state-controls" aria-label="Agent state controls">
+          <button type="button" data-state="IDLE">Idle</button>
+          <button type="button" data-state="OBSERVING">Observe</button>
+          <button type="button" data-state="GROWING">Grow</button>
+          <button type="button" data-state="ARCHIVING">Archive</button>
+        </div>
+        <button id="safe-stop" class="safe-stop" type="button">Safe return to idle</button>
+      </article>
+
+      <article class="temperature-panel panel">
+        <p class="panel-label">Surface sensing</p>
+        <div class="temperature-row">
+          <div class="minimum-block">
+            <span class="temperature-name">Minimum</span>
+            <strong><span id="minimum-temperature">--.-</span><small>°C</small></strong>
+          </div>
+          <div class="secondary-temperatures">
+            <div>
+              <span class="temperature-name">Center</span>
+              <strong><span id="center-temperature">--.-</span><small>°C</small></strong>
+            </div>
+            <div>
+              <span class="temperature-name">Ambient</span>
+              <strong><span id="ambient-temperature">--.-</span><small>°C</small></strong>
+            </div>
+          </div>
+        </div>
+        <div class="sensor-source">
+          <span id="sensor-source-dot"></span>
+          <span id="sensor-source">No sensor information</span>
+        </div>
+        <div class="sensor-controls">
+          <select id="sensor-port" aria-label="Arduino serial port">
+            <option value="">Checking serial ports…</option>
+          </select>
+          <button id="sensor-connect-button" type="button">Connect Mega</button>
+        </div>
+        <div class="manual-cooling">
+          <div>
+            <span class="temperature-name">Manual Peltier test</span>
+            <strong id="manual-cooling-status">Not cooling</strong>
+            <span id="manual-cooling-time">No manual cooling recorded</span>
+          </div>
+          <button id="manual-cooling-button" type="button">Mark cooling started</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="safety-strip" aria-label="Hardware safety">
+      <div>
+        <span class="safety-icon">S</span>
+        <div>
+          <strong id="safety-title">Hardware protected</strong>
+          <p id="safety-copy">V0 observation mode — physical outputs disabled</p>
+        </div>
+      </div>
+      <span id="hardware-badge" class="badge protected">Hardware off</span>
+    </section>
+
+    <section class="section-block connections-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Live system</p>
+          <h2>Connections</h2>
+        </div>
+      </div>
+      <div class="connections-grid">
+        <article class="connection-card panel">
+          <span id="connection-agent-dot" class="device-dot"></span>
+          <div><strong>Python Agent</strong><p id="connection-agent">Checking</p></div>
+        </article>
+        <article class="connection-card panel">
+          <span id="connection-live-dot" class="device-dot"></span>
+          <div><strong>Ice Crystallizing page</strong><p id="connection-live">Checking</p></div>
+        </article>
+        <article class="connection-card panel">
+          <span id="connection-arduino-dot" class="device-dot"></span>
+          <div>
+            <strong>Arduino / MLX90640</strong>
+            <p id="connection-arduino">Checking</p>
+            <button id="connection-sensor-button" class="connection-action" type="button">Connect</button>
+          </div>
+        </article>
+        <article class="connection-card panel">
+          <span id="connection-camera-dot" class="device-dot"></span>
+          <div>
+            <strong>USB camera</strong>
+            <p id="connection-camera">Checking</p>
+            <select id="camera-device-select" class="camera-device-select" aria-label="Choose camera">
+              <option value="">USB camera (auto)</option>
+            </select>
+            <button id="connection-camera-button" class="connection-action" type="button">Connect camera</button>
+          </div>
+        </article>
+        <article class="connection-card panel">
+          <span id="connection-ai-dot" class="device-dot"></span>
+          <div><strong>OpenAI imagination</strong><p id="connection-ai">Checking</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Exhibition surfaces</p>
+          <h2>Display modes</h2>
+        </div>
+        <button id="refresh-button" class="text-button" type="button">Check now</button>
+      </div>
+      <div class="display-mode-stack">
+        <section class="display-mode-panel" aria-labelledby="display-mode-v1-title">
+          <header class="display-mode-header">
+            <div>
+              <p class="mode-version">1.0</p>
+              <h3 id="display-mode-v1-title">Original display mode</h3>
+            </div>
+            <p>Existing pages and URLs remain unchanged.</p>
+          </header>
+          <div id="pages-grid" class="pages-grid"></div>
+        </section>
+
+        <section class="display-mode-panel exhibition-mode" aria-labelledby="display-mode-v2-title">
+          <header class="display-mode-header">
+            <div>
+              <p class="mode-version">2.0</p>
+              <h3 id="display-mode-v2-title">Exhibition mode / four screens</h3>
+            </div>
+            <p>
+              Formation → Analysis → Resonance → Diffusion. The same sequence controls all four screen pages.
+              <a class="mode-preview-link" href="/exhibition/layout/" target="_blank" rel="noopener">Open five-screen monitor ↗</a>
+            </p>
+          </header>
+          <div id="exhibition-pages-grid" class="pages-grid exhibition-pages-grid"></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Current crystal run</p>
+          <h2>Live processing progress</h2>
+        </div>
+        <p id="current-run-note" class="progress-note">Waiting for cooling start</p>
+        <button id="analysis-button" class="text-button" type="button">Start analysis rehearsal</button>
+        <button id="sample-button" class="text-button" type="button">Start archive loop</button>
+      </div>
+      <div id="progress-grid" class="progress-grid"></div>
+    </section>
+
+    <section class="diagnostic-grid">
+      <article class="panel">
+        <div class="section-heading compact">
+          <div>
+            <p class="eyebrow">Workspace</p>
+            <h2>Project sections</h2>
+          </div>
+        </div>
+        <div id="project-list" class="diagnostic-list"></div>
+      </article>
+
+      <article class="panel">
+        <div class="section-heading compact">
+          <div>
+            <p class="eyebrow">Integrity</p>
+            <h2>Notebooks</h2>
+          </div>
+          <span id="notebook-badge" class="badge">Checking</span>
+        </div>
+        <div id="notebook-summary" class="notebook-summary"></div>
+      </article>
+    </section>
+
+    <section class="section-block log-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Agent memory</p>
+          <h2>Recent activity</h2>
+        </div>
+      </div>
+      <div id="activity-log" class="activity-log"></div>
+    </section>
+  </main>
+
+  <section id="system-view" class="system-view" aria-label="Exhibition system monitor" hidden>
+    <header class="system-view-head">
+      <div>
+        <p class="eyebrow">Synchronized exhibition test</p>
+        <div class="system-view-title">
+          <h2>System View</h2>
+          <span id="monitor-phase" class="badge warn">Idle</span>
+          <span id="monitor-crystal">No active rehearsal</span>
+        </div>
+      </div>
+      <div class="system-view-actions">
+        <button id="start-analysis-button" class="text-button" type="button">Start analysis</button>
+        <button id="start-test-button" class="text-button" type="button">Start archive loop</button>
+        <button id="reload-view-button" class="text-button" type="button">Reload views</button>
+        <button id="close-view-button" class="text-button" type="button">Close</button>
+      </div>
+    </header>
+
+    <div id="monitor-jobs" class="monitor-jobs"></div>
+
+    <div class="system-view-grid">
+      <article class="monitor-frame monitor-live">
+        <header><strong>Ice Crystallizing</strong><span id="monitor-live-state">Input</span></header>
+        <iframe title="Ice crystallizing process" data-src="/00_websites/live/?monitor=1" allow="autoplay; camera"></iframe>
+      </article>
+      <article class="monitor-frame monitor-backstage">
+        <header><strong>Backstage</strong><span>Console</span></header>
+        <iframe title="Processing backstage" data-src="/00_websites/backstage/?monitor=1" allow="autoplay"></iframe>
+      </article>
+      <article class="monitor-frame">
+        <header><strong>01 / Material</strong><span id="monitor-material-state">Standby</span></header>
+        <iframe title="Material analysis" data-src="/00_websites/01_material/?monitor=1" allow="autoplay"></iframe>
+      </article>
+      <article class="monitor-frame">
+        <header><strong>02 / Structural</strong><span id="monitor-structural-state">Standby</span></header>
+        <iframe title="Structural resonance" data-src="/00_websites/02_structural/?monitor=1" allow="autoplay; camera"></iframe>
+      </article>
+      <article class="monitor-frame">
+        <header><strong>03 / Diffusion</strong><span id="monitor-diffusion-state">Standby</span></header>
+        <iframe title="Diffusion imagination" data-src="/00_websites/03_diffusion/?monitor=1" allow="autoplay; camera"></iframe>
+      </article>
+    </div>
+  </section>
+
+  <div id="notice" class="notice" role="status" aria-live="polite"></div>
+  <script src="./app.js?v=start-stop-v2"></script>
+</body>
+</html>

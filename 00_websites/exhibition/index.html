@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050607">
+  <title>Morphogenesis — Exhibition Mode</title>
+  <style>
+    :root { color-scheme: dark; font-family: Consolas, "Cascadia Mono", monospace; }
+    * { box-sizing: border-box; }
+    body { min-height: 100vh; margin: 0; display: grid; place-items: center; padding: 32px; background: #050607; color: #eef3f3; }
+    main { width: min(760px, 100%); }
+    p { color: rgba(238,243,243,.55); line-height: 1.65; }
+    h1 { margin: 0 0 12px; font-size: clamp(24px, 4vw, 42px); font-weight: 400; }
+    .sequence { margin: 28px 0; padding: 15px 18px; border: 1px solid rgba(176,210,221,.16); color: #96ddff; }
+    nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    a { padding: 15px 17px; border: 1px solid rgba(176,210,221,.16); color: rgba(238,243,243,.82); text-decoration: none; background: rgba(255,255,255,.025); }
+    a:hover { border-color: rgba(150,221,255,.5); background: rgba(150,221,255,.06); }
+    small { display: block; margin-top: 26px; color: rgba(238,243,243,.36); }
+    @media (max-width: 600px) { nav { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main>
+    <p>MORPHOGENESIS / INDEPENDENT DISPLAY ROUTING</p>
+    <h1>Exhibition Mode</h1>
+    <p>Four synchronized screens following one shared crystal and one shared stage.</p>
+    <div class="sequence">Formation → Analysis → Resonance → Diffusion → repeat</div>
+    <nav>
+      <a href="/exhibition/layout/">Five-screen layout preview</a>
+      <a href="/exhibition/main/">Main display</a>
+      <a href="/exhibition/medium-1/">Medium display 1</a>
+      <a href="/exhibition/medium-2/">Medium display 2</a>
+      <a href="/exhibition/small-1/">Small display 1</a>
+    </nav>
+    <small>Uses the existing Control Room Start / Stop sequence. Existing display URLs remain unchanged.</small>
+  </main>
+</body>
+</html>

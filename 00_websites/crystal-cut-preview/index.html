@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050607">
+  <title>Crystal 01 — Temporal Cut Preview</title>
+  <link rel="stylesheet" href="./style.css?v=crystal-cut-v2">
+</head>
+<body>
+  <main class="stage" aria-label="Crystal 01 source, edge and motion temporal cut preview">
+    <video id="source-video" class="layer active" muted autoplay loop playsinline preload="auto"
+      src="/05_shared_data/exhibition/ice_crystal_01/source/crystallization.mp4"></video>
+    <video id="edge-video" class="layer" muted autoplay loop playsinline preload="auto"
+      src="/05_shared_data/exhibition/ice_crystal_01/01_material_analysis/edge_numbers.mp4"></video>
+    <video id="threshold-video" class="layer" muted autoplay loop playsinline preload="auto"
+      src="/05_shared_data/exhibition/ice_crystal_01/01_material_analysis/threshold.mp4"></video>
+    <video id="motion-video" class="layer motion" muted autoplay loop playsinline preload="auto"
+      src="/05_shared_data/exhibition/ice_crystal_01/01_material_analysis/motion.mp4"></video>
+    <div id="cut-flash" class="cut-flash" aria-hidden="true"></div>
+    <output id="cut-readout" class="cut-readout">SOURCE / 00.0</output>
+  </main>
+  <script src="./app.js?v=motion-edge-numbers-threshold-v3"></script>
+</body>
+</html>

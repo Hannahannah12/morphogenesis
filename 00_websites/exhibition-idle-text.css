@@ -1,0 +1,12 @@
+.exhibition-idle-copy {
+  transition: opacity 240ms linear;
+}
+
+body.exhibition-text-idle .exhibition-idle-copy {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .exhibition-idle-copy { transition-duration: 0.01ms !important; }
+}

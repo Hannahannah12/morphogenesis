@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "pipeline": "morphogenesis-exhibition",
+  "crystal": "ice_crystal_03",
+  "outputLayout": "single-current",
+  "sessionRootUrl": "/05_shared_data/exhibition/ice_crystal_03",
+  "rawSourceUrl": "/05_shared_data/input/ice_crystal_03.mp4",
+  "createdAt": "2026-07-26T20:06:00.729258+00:00",
+  "updatedAt": "2026-07-26T20:11:01.277044+00:00",
+  "phase": "outputs_ready",
+  "detection": {
+    "state": "detected",
+    "onsetSeconds": 10.8,
+    "trimStartSeconds": 8.8,
+    "confidence": 0.685,
+    "method": "persistent baseline change / 5 observations per second"
+  },
+  "playback": {
+    "revision": 2,
+    "stage": "trimmed_source",
+    "url": "/05_shared_data/exhibition/ice_crystal_03/source/crystallization.mp4",
+    "startedAtEpochMs": 1785096383427,
+    "offsetSeconds": 0,
+    "durationSeconds": 20.0
+  },
+  "directions": {
+    "01_material_analysis": {
+      "state": "complete",
+      "progress": 1.0,
+      "message": "Four Notebook-faithful Exhibition streams are ready",
+      "updatedAt": "2026-07-26T20:11:01.251418+00:00",
+      "outputUrls": [
+        "/05_shared_data/exhibition/ice_crystal_03/01_material_analysis/edge.mp4",
+        "/05_shared_data/exhibition/ice_crystal_03/01_material_analysis/threshold.mp4",
+        "/05_shared_data/exhibition/ice_crystal_03/01_material_analysis/spacetime.mp4",
+        "/05_shared_data/exhibition/ice_crystal_03/01_material_analysis/motion.mp4"
+      ],
+      "pipeline": "notebook-faithful-exhibition-material",
+      "resolution": "1280x720"
+    },
+    "02_structural_resonance": {
+      "state": "complete",
+      "progress": 1.0,
+      "message": "6 representative patches / 60 dual-search images ready",
+      "updatedAt": "2026-07-26T20:07:31.071726+00:00",
+      "outputUrl": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/attention_blob.mp4",
+      "manifestUrl": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/manifest.json",
+      "patchCount": 49,
+      "resonanceCount": 12,
+      "searchState": "complete",
+      "pipeline": "notebook-faithful-dino-clip-hog",
+      "resolution": "1440x720",
+      "outputUrls": [
+        "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/attention_blob.mp4",
+        "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/attention_map.mp4",
+        "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/blob_track.mp4"
+      ],
+      "videoUrls": {
+        "combined": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/attention_blob.mp4",
+        "attentionMap": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/attention_map.mp4",
+        "blobTrack": "/05_shared_data/exhibition/ice_crystal_03/02_structural_resonance/blob_track.mp4"
+      },
+      "searchBranches": [
+        "contrast",
+        "structure"
+      ],
+      "searchPatchCount": 6,
+      "searchResultCount": 60
+    },
+    "03_diffusion_imagination": {
+      "state": "waiting_page",
+      "progress": 0.0,
+      "message": "Trimmed source is ready; Diffusion will play live when its GPU worker is ready",
+      "updatedAt": "2026-07-26T20:11:01.265495+00:00",
+      "sourceUrl": "/05_shared_data/exhibition/ice_crystal_03/source/crystallization.mp4",
+      "mode": "live",
+      "recordingPolicy": "optional_one_per_crystal",
+      "optionalRecordingUrl": "/05_shared_data/exhibition/ice_crystal_03/03_diffusion_imagination/diffusion_capture.mp4"
+    }
+  }
+}

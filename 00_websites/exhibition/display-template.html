@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050607">
+  <title>Morphogenesis — Exhibition Display</title>
+  <link rel="stylesheet" href="/00_websites/exhibition/exhibition.css?v=1">
+</head>
+<body data-role="ROLE">
+  <main id="display" class="display" aria-live="polite">
+    <section id="media-stage" class="stage media-stage" aria-label="Synchronized visual">
+      <video id="video-a" class="media media-a" muted playsinline preload="auto"></video>
+      <video id="video-b" class="media media-b" muted playsinline preload="auto"></video>
+      <div id="analysis-caption" class="analysis-caption" hidden>
+        <span id="analysis-label">material analysis</span>
+        <span id="analysis-state">processing</span>
+      </div>
+    </section>
+
+    <section id="resonance-stage" class="stage resonance-stage" aria-label="Structural resonance">
+      <video id="blob-video" class="media" muted playsinline preload="auto"></video>
+      <div class="resonance-vignette" aria-hidden="true"></div>
+      <div id="resonance-pair" class="resonance-pair">
+        <figure class="resonance-card patch-card">
+          <img id="patch-image" alt="Detected crystal patch">
+          <figcaption id="patch-caption">detected patch</figcaption>
+        </figure>
+        <div class="resonance-link" aria-hidden="true"></div>
+        <figure class="resonance-card result-card">
+          <img id="result-image" alt="Corresponding structural image">
+          <figcaption id="result-caption">structural resonance</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="text-stage" class="stage text-stage" aria-label="System text">
+      <div class="terminal-copy">
+        <p id="text-kicker">morphogenesis / exhibition mode</p>
+        <h1 id="text-title">SYSTEM STANDBY</h1>
+        <p id="text-detail">waiting for shared sequence</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="/00_websites/experiment-sync.js?v=normalized-phase-rate-sync-v5"></script>
+  <script src="/00_websites/exhibition/exhibition.js?v=1"></script>
+</body>
+</html>

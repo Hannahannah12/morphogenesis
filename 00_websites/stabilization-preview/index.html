@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050607">
+  <title>Crystal 01 — Stabilization Comparison</title>
+  <link rel="stylesheet" href="./style.css?v=stabilization-preview-v1">
+</head>
+<body>
+  <main id="comparison" class="comparison" aria-label="Crystal 01 stabilization comparison">
+    <video id="original-video" class="comparison-video original" muted autoplay loop playsinline preload="auto"></video>
+    <div id="stabilized-layer" class="stabilized-layer">
+      <video id="stabilized-video" class="comparison-video stabilized" muted autoplay loop playsinline preload="auto"></video>
+    </div>
+    <div id="divider" class="divider" role="separator" aria-label="Compare original and stabilized video"
+      aria-orientation="vertical" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0"></div>
+
+    <header class="header">
+      <div>
+        <strong id="crystal-label">Crystal 01</strong>
+        <span id="stabilization-label">Fixed plate lock / 7% optical crop</span>
+      </div>
+      <nav id="channels" class="channels" aria-label="Choose comparison channel">
+        <button type="button" data-channel="source" class="active">Source</button>
+        <button type="button" data-channel="edge">Edge</button>
+        <button type="button" data-channel="threshold">Threshold</button>
+        <button type="button" data-channel="spacetime">Spacetime</button>
+        <button type="button" data-channel="motion">Motion</button>
+      </nav>
+    </header>
+
+    <span class="side-label original-label">Original</span>
+    <span class="side-label stabilized-label">Stabilized</span>
+    <span class="drag-note">Drag the vertical line to compare</span>
+  </main>
+  <script src="./app.js?v=plate-lock-selector-v3"></script>
+</body>
+</html>

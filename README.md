@@ -17,7 +17,6 @@ working rules, and hardware safety boundary.
 - `07_3d_touchdesigner` — retained local 3D and TouchDesigner experiments; not
   included in the final GitHub coursework submission
 - `08_system_agent` — project server, connection health, progress, and future orchestration
-- `09_experiments` — retained research experiments outside the three formal directions
 
 Earlier Notebook exports and smoke tests are grouped in
 `09_experiments/previous_tests/`. Current Agent-generated session assets are
